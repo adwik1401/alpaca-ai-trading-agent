@@ -70,3 +70,4 @@ jobs:
           git add agent/audit_log.jsonl
           git diff --staged --quiet || git commit -m "Agent cycle: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
+
