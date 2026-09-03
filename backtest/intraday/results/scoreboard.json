@@ -1,0 +1,58 @@
+[
+  {
+    "num_trades": 42,
+    "total_pnl": 360.0,
+    "win_rate": 0.905,
+    "profit_factor": 1.118,
+    "sharpe": 0.305,
+    "sortino": 0.369,
+    "max_drawdown_pct": 1.548,
+    "trades_per_year": 84.0,
+    "strategy": "0dte_iron_condor",
+    "skipped_days": 84,
+    "final_nav": 100360.0,
+    "return_pct": 0.36
+  },
+  {
+    "num_trades": 115,
+    "total_pnl": -701.0,
+    "win_rate": 0.417,
+    "profit_factor": 0.989,
+    "sharpe": 0.011,
+    "sortino": 0.056,
+    "max_drawdown_pct": 7.859,
+    "trades_per_year": 230.0,
+    "strategy": "orb_breakout",
+    "skipped_days": 11,
+    "final_nav": 99299.0,
+    "return_pct": -0.7
+  },
+  {
+    "num_trades": 189,
+    "total_pnl": -3571.0,
+    "win_rate": 0.651,
+    "profit_factor": 0.914,
+    "sharpe": -0.607,
+    "sortino": -0.74,
+    "max_drawdown_pct": 13.607,
+    "trades_per_year": 378.0,
+    "strategy": "vwap_mean_reversion",
+    "skipped_days": 29,
+    "final_nav": 96429.0,
+    "return_pct": -3.57
+  },
+  {
+    "num_trades": 55,
+    "total_pnl": -3332.0,
+    "win_rate": 0.418,
+    "profit_factor": 0.864,
+    "sharpe": -0.69,
+    "sortino": -3.421,
+    "max_drawdown_pct": 6.921,
+    "trades_per_year": 110.0,
+    "strategy": "vwap_trend_pullback",
+    "skipped_days": 81,
+    "final_nav": 96668.0,
+    "return_pct": -3.33
+  }
+]

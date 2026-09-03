@@ -1,0 +1,72 @@
+name: Trading Agent Cron
+
+# Runs the live autonomous agent (agent/run_agent.py) on a schedule against the fresh submission
+# paper account, and commits the resulting audit log so the Netlify dashboard (Phase 3) and
+# hackathon judges can read real trading activity from the repo. See
+# .claude/plans/alpaca-trading-agent-build-plan.md Phase 2 Step 8, and agent/README-equivalent
+# docstrings in agent/*.py for the underlying Analyst -> Governor -> Executor architecture.
+
+on:
+  schedule:
+    # Every 15 minutes, 13:00-20:00 UTC (~9:00 AM-4:00 PM ET during EDT) Mon-Fri - covers the
+    # full market session with a small buffer on each side. GitHub's scheduler is best-effort
+    # (can run a few minutes late under load), which is fine for a strategy with weekly-cadence
+    # entries and a 3:30 PM ET 0-DTE liquidation check rather than sub-minute timing needs.
+    - cron: "*/15 13-20 * * 1-5"
+  workflow_dispatch: {} # manual trigger, for testing this workflow itself
+
+# Prevent overlapping runs from racing on the audit-log commit or double-submitting orders.
+# cancel-in-progress is deliberately false - never cancel a run mid-way through touching the
+# broker; let it finish and simply skip/queue the next scheduled tick instead.
+concurrency:
+  group: trading-agent
+  cancel-in-progress: false
+
+permissions:
+  contents: write # needed to commit the audit log back to the repo
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "stable"
+
+      - name: Install Alpaca CLI
+        run: |
+          go install github.com/alpacahq/cli/cmd/alpaca@latest
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Verify Alpaca CLI installed
+        run: alpaca --version
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run one agent cycle
+        env:
+          AGENT_ACCOUNT: submission
+          ALPACA_SUBMISSION_API_KEY: ${{ secrets.ALPACA_SUBMISSION_API_KEY }}
+          ALPACA_SUBMISSION_SECRET_KEY: ${{ secrets.ALPACA_SUBMISSION_SECRET_KEY }}
+          ALPACA_SUBMISSION_ACCOUNT_ID: ${{ secrets.ALPACA_SUBMISSION_ACCOUNT_ID }}
+          FEATHERLESS_API_KEY: ${{ secrets.FEATHERLESS_API_KEY }}
+          ALPACA_CLI_PATH: /home/runner/go/bin/alpaca
+        run: python -m agent.run_agent
+
+      - name: Commit audit log
+        if: always() # commit whatever was logged even if the agent step exited non-zero -
+          # agent/run_agent.py's own error handler already logs the failure as an audit event
+          # before re-raising, and that entry is exactly what judges/the dashboard need to see
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add agent/audit_log.jsonl
+          git diff --staged --quiet || git commit -m "Agent cycle: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push

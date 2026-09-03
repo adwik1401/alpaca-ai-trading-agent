@@ -1,0 +1,1612 @@
+{
+  "strategy": "hybrid_0dte",
+  "trades": [
+    {
+      "day": "2026-03-27",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260327C00644000",
+        "long_call": "SPY260327C00645000",
+        "short_put": "SPY260327P00635000",
+        "long_put": "SPY260327P00634000"
+      },
+      "strikes": {
+        "short_call": 644.0,
+        "long_call": 645.0,
+        "short_put": 635.0,
+        "long_put": 634.0
+      },
+      "contracts": 29,
+      "entry_time": "2026-03-27T14:00:00Z",
+      "entry_price": 0.33000000000000007,
+      "exit_time": "2026-03-27T16:50:00Z",
+      "exit_price": 0.16,
+      "pnl": 493.0000000000002,
+      "exit_reason": "profit_take",
+      "meta": {
+        "iv": 0.1503198595893847,
+        "intraday_rv": 0.1308966081844595,
+        "skew": 0.007367338028476111,
+        "skew_rank": 0.0
+      }
+    },
+    {
+      "day": "2026-03-30",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260330C00641000",
+        "long_call": "SPY260330C00642000",
+        "short_put": "SPY260330P00632000",
+        "long_put": "SPY260330P00631000"
+      },
+      "strikes": {
+        "short_call": 641.0,
+        "long_call": 642.0,
+        "short_put": 632.0,
+        "long_put": 631.0
+      },
+      "contracts": 31,
+      "entry_time": "2026-03-30T14:00:00Z",
+      "entry_price": 0.36000000000000004,
+      "exit_time": "2026-03-30T16:05:00Z",
+      "exit_price": 0.17999999999999997,
+      "pnl": 558.0000000000002,
+      "exit_reason": "profit_take",
+      "meta": {
+        "iv": 0.14537858713152768,
+        "intraday_rv": 0.1286394447838466,
+        "skew": 0.015227990794739604,
+        "skew_rank": 13.333333333333334
+      }
+    },
+    {
+      "day": "2026-04-29",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260429C00714000",
+        "long_call": "SPY260429C00715000",
+        "short_put": "SPY260429P00707000",
+        "long_put": "SPY260429P00706000"
+      },
+      "strikes": {
+        "short_call": 714.0,
+        "long_call": 715.0,
+        "short_put": 707.0,
+        "long_put": 706.0
+      },
+      "contracts": 38,
+      "entry_time": "2026-04-29T14:00:00Z",
+      "entry_price": 0.4800000000000001,
+      "exit_time": "2026-04-29T19:30:00Z",
+      "exit_price": 0.31999999999999995,
+      "pnl": 608.0000000000006,
+      "exit_reason": "hard_time_stop",
+      "meta": {
+        "iv": 0.12532099467553243,
+        "intraday_rv": 0.08120635437860367,
+        "skew": 0.01874829581494697,
+        "skew_rank": 19.444444444444443
+      }
+    },
+    {
+      "day": "2026-04-30",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260430C00715000",
+        "long_call": "SPY260430C00716000",
+        "short_put": "SPY260430P00709000",
+        "long_put": "SPY260430P00708000"
+      },
+      "strikes": {
+        "short_call": 715.0,
+        "long_call": 716.0,
+        "short_put": 709.0,
+        "long_put": 708.0
+      },
+      "contracts": 37,
+      "entry_time": "2026-04-30T14:00:00Z",
+      "entry_price": 0.46000000000000013,
+      "exit_time": "2026-04-30T16:10:00Z",
+      "exit_price": 0.5600000000000002,
+      "pnl": -370.0000000000001,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.10435390086207456,
+        "intraday_rv": 0.07962088313155224,
+        "skew": 0.017090439951410505,
+        "skew_rank": 16.216216216216218
+      }
+    },
+    {
+      "day": "2026-05-15",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260515C00742000",
+        "long_call": "SPY260515C00743000",
+        "short_put": "SPY260515P00737000",
+        "long_put": "SPY260515P00736000"
+      },
+      "strikes": {
+        "short_call": 742.0,
+        "long_call": 743.0,
+        "short_put": 737.0,
+        "long_put": 736.0
+      },
+      "contracts": 45,
+      "entry_time": "2026-05-15T14:00:00Z",
+      "entry_price": 0.56,
+      "exit_time": "2026-05-15T14:30:00Z",
+      "exit_price": 0.5800000000000002,
+      "pnl": -90.00000000000058,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.1097087453990461,
+        "intraday_rv": 0.06849884267942849,
+        "skew": 0.00921919982189244,
+        "skew_rank": 4.166666666666667
+      }
+    },
+    {
+      "day": "2026-05-18",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260518C00742000",
+        "long_call": "SPY260518C00743000",
+        "short_put": "SPY260518P00736000",
+        "long_put": "SPY260518P00735000"
+      },
+      "strikes": {
+        "short_call": 742.0,
+        "long_call": 743.0,
+        "short_put": 736.0,
+        "long_put": 735.0
+      },
+      "contracts": 32,
+      "entry_time": "2026-05-18T14:00:00Z",
+      "entry_price": 0.38000000000000006,
+      "exit_time": "2026-05-18T15:25:00Z",
+      "exit_price": 0.47,
+      "pnl": -287.9999999999997,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.08522594725111765,
+        "intraday_rv": 0.07190966270824121,
+        "skew": 0.017987346170123625,
+        "skew_rank": 20.408163265306122
+      }
+    },
+    {
+      "day": "2026-05-19",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260519C00738000",
+        "long_call": "SPY260519C00739000",
+        "short_put": "SPY260519P00732000",
+        "long_put": "SPY260519P00731000"
+      },
+      "strikes": {
+        "short_call": 738.0,
+        "long_call": 739.0,
+        "short_put": 732.0,
+        "long_put": 731.0
+      },
+      "contracts": 37,
+      "entry_time": "2026-05-19T14:00:00Z",
+      "entry_price": 0.45999999999999996,
+      "exit_time": "2026-05-19T14:45:00Z",
+      "exit_price": 0.51,
+      "pnl": -185.00000000000017,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.1015630836057581,
+        "intraday_rv": 0.07922677320583286,
+        "skew": 0.01646454683586429,
+        "skew_rank": 14.0
+      }
+    },
+    {
+      "day": "2026-05-20",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260520C00739000",
+        "long_call": "SPY260520C00740000",
+        "short_put": "SPY260520P00732000",
+        "long_put": "SPY260520P00731000"
+      },
+      "strikes": {
+        "short_call": 739.0,
+        "long_call": 740.0,
+        "short_put": 732.0,
+        "long_put": 731.0
+      },
+      "contracts": 35,
+      "entry_time": "2026-05-20T14:00:00Z",
+      "entry_price": 0.43999999999999995,
+      "exit_time": "2026-05-20T14:55:00Z",
+      "exit_price": 0.61,
+      "pnl": -595.0000000000001,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.11519549289302079,
+        "intraday_rv": 0.0829037462414611,
+        "skew": 0.014225067595124333,
+        "skew_rank": 7.8431372549019605
+      }
+    },
+    {
+      "day": "2026-05-21",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260521C00744000",
+        "long_call": "SPY260521C00745000",
+        "short_put": "SPY260521P00737000",
+        "long_put": "SPY260521P00736000"
+      },
+      "strikes": {
+        "short_call": 744.0,
+        "long_call": 745.0,
+        "short_put": 737.0,
+        "long_put": 736.0
+      },
+      "contracts": 32,
+      "entry_time": "2026-05-21T14:00:00Z",
+      "entry_price": 0.3900000000000001,
+      "exit_time": "2026-05-21T17:00:00Z",
+      "exit_price": 0.17999999999999997,
+      "pnl": 672.0000000000005,
+      "exit_reason": "profit_take",
+      "meta": {
+        "iv": 0.10303505032857484,
+        "intraday_rv": 0.08391833506653058,
+        "skew": 0.01646716037634767,
+        "skew_rank": 17.307692307692307
+      }
+    },
+    {
+      "day": "2026-05-22",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260522C00750000",
+        "long_call": "SPY260522C00751000",
+        "short_put": "SPY260522P00743000",
+        "long_put": "SPY260522P00742000"
+      },
+      "strikes": {
+        "short_call": 750.0,
+        "long_call": 751.0,
+        "short_put": 743.0,
+        "long_put": 742.0
+      },
+      "contracts": 31,
+      "entry_time": "2026-05-22T14:00:00Z",
+      "entry_price": 0.36999999999999994,
+      "exit_time": "2026-05-22T16:00:00Z",
+      "exit_price": 0.17999999999999997,
+      "pnl": 588.9999999999999,
+      "exit_reason": "profit_take",
+      "meta": {
+        "iv": 0.09603817641424514,
+        "intraday_rv": 0.08683898119920049,
+        "skew": 0.01207371487244395,
+        "skew_rank": 7.547169811320755
+      }
+    },
+    {
+      "day": "2026-06-05",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260605C00753000",
+        "long_call": "SPY260605C00754000",
+        "short_put": "SPY260605P00745000",
+        "long_put": "SPY260605P00744000"
+      },
+      "strikes": {
+        "short_call": 753.0,
+        "long_call": 754.0,
+        "short_put": 745.0,
+        "long_put": 744.0
+      },
+      "contracts": 28,
+      "entry_time": "2026-06-05T14:00:00Z",
+      "entry_price": 0.29,
+      "exit_time": "2026-06-05T16:15:00Z",
+      "exit_price": 0.4600000000000002,
+      "pnl": -476.00000000000057,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.09862113730454988,
+        "intraday_rv": 0.08422452482843341,
+        "skew": 0.00598914966594008,
+        "skew_rank": 0.0
+      }
+    },
+    {
+      "day": "2026-06-08",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260608C00745000",
+        "long_call": "SPY260608C00746000",
+        "short_put": "SPY260608P00738000",
+        "long_put": "SPY260608P00737000"
+      },
+      "strikes": {
+        "short_call": 745.0,
+        "long_call": 746.0,
+        "short_put": 738.0,
+        "long_put": 737.0
+      },
+      "contracts": 35,
+      "entry_time": "2026-06-08T14:00:00Z",
+      "entry_price": 0.4299999999999998,
+      "exit_time": "2026-06-08T15:05:00Z",
+      "exit_price": 0.52,
+      "pnl": -315.0000000000007,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.11322032256333305,
+        "intraday_rv": 0.08904662874462961,
+        "skew": 0.025455715441123974,
+        "skew_rank": 61.904761904761905
+      }
+    },
+    {
+      "day": "2026-06-12",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260612C00744000",
+        "long_call": "SPY260612C00745000",
+        "short_put": "SPY260612P00734000",
+        "long_put": "SPY260612P00733000"
+      },
+      "strikes": {
+        "short_call": 744.0,
+        "long_call": 745.0,
+        "short_put": 734.0,
+        "long_put": 733.0
+      },
+      "contracts": 35,
+      "entry_time": "2026-06-12T14:00:00Z",
+      "entry_price": 0.43999999999999995,
+      "exit_time": "2026-06-12T15:20:00Z",
+      "exit_price": 0.5299999999999998,
+      "pnl": -314.9999999999995,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.16001566724108293,
+        "intraday_rv": 0.12320053584468492,
+        "skew": 0.011745044388655423,
+        "skew_rank": 7.462686567164179
+      }
+    },
+    {
+      "day": "2026-07-23",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260723C00744000",
+        "long_call": "SPY260723C00745000",
+        "short_put": "SPY260723P00737000",
+        "long_put": "SPY260723P00736000"
+      },
+      "strikes": {
+        "short_call": 744.0,
+        "long_call": 745.0,
+        "short_put": 737.0,
+        "long_put": 736.0
+      },
+      "contracts": 33,
+      "entry_time": "2026-07-23T14:00:00Z",
+      "entry_price": 0.40000000000000013,
+      "exit_time": "2026-07-23T15:10:00Z",
+      "exit_price": 0.51,
+      "pnl": -362.9999999999996,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.10111638700860712,
+        "intraday_rv": 0.07940850500757592,
+        "skew": 0.01418053826085254,
+        "skew_rank": 7.446808510638298
+      }
+    },
+    {
+      "day": "2026-07-29",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260729C00741000",
+        "long_call": "SPY260729C00742000",
+        "short_put": "SPY260729P00734000",
+        "long_put": "SPY260729P00733000"
+      },
+      "strikes": {
+        "short_call": 741.0,
+        "long_call": 742.0,
+        "short_put": 734.0,
+        "long_put": 733.0
+      },
+      "contracts": 47,
+      "entry_time": "2026-07-29T14:00:00Z",
+      "entry_price": 0.5800000000000001,
+      "exit_time": "2026-07-29T15:40:00Z",
+      "exit_price": 0.6199999999999998,
+      "pnl": -187.9999999999986,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.1572791092226945,
+        "intraday_rv": 0.08717608618285164,
+        "skew": 0.016140106712987656,
+        "skew_rank": 15.306122448979592
+      }
+    },
+    {
+      "day": "2026-08-05",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260805C00780000",
+        "long_call": "SPY260805C00781000",
+        "short_put": "SPY260805P00771000",
+        "long_put": "SPY260805P00770000"
+      },
+      "strikes": {
+        "short_call": 780.0,
+        "long_call": 781.0,
+        "short_put": 771.0,
+        "long_put": 770.0
+      },
+      "contracts": 29,
+      "entry_time": "2026-08-05T14:00:00Z",
+      "entry_price": 0.32000000000000006,
+      "exit_time": "2026-08-05T15:55:00Z",
+      "exit_price": 0.42999999999999994,
+      "pnl": -318.99999999999966,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.12053469542122212,
+        "intraday_rv": 0.09708230093741727,
+        "skew": 0.007025595752959787,
+        "skew_rank": 0.970873786407767
+      }
+    },
+    {
+      "day": "2026-08-26",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260826C00770000",
+        "long_call": "SPY260826C00771000",
+        "short_put": "SPY260826P00764000",
+        "long_put": "SPY260826P00763000"
+      },
+      "strikes": {
+        "short_call": 770.0,
+        "long_call": 771.0,
+        "short_put": 764.0,
+        "long_put": 763.0
+      },
+      "contracts": 28,
+      "entry_time": "2026-08-26T14:00:00Z",
+      "entry_price": 0.30000000000000004,
+      "exit_time": "2026-08-26T16:40:00Z",
+      "exit_price": 0.45000000000000007,
+      "pnl": -420.00000000000006,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.07500954917338516,
+        "intraday_rv": 0.06177124643951451,
+        "skew": 0.011345934426177831,
+        "skew_rank": 7.627118644067797
+      }
+    },
+    {
+      "day": "2026-08-28",
+      "strategy": "hybrid_0dte",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260828C00774000",
+        "long_call": "SPY260828C00775000",
+        "short_put": "SPY260828P00769000",
+        "long_put": "SPY260828P00768000"
+      },
+      "strikes": {
+        "short_call": 774.0,
+        "long_call": 775.0,
+        "short_put": 769.0,
+        "long_put": 768.0
+      },
+      "contracts": 33,
+      "entry_time": "2026-08-28T14:00:00Z",
+      "entry_price": 0.4099999999999999,
+      "exit_time": "2026-08-28T14:50:00Z",
+      "exit_price": 0.5899999999999999,
+      "pnl": -593.9999999999998,
+      "exit_reason": "strike_breach",
+      "meta": {
+        "iv": 0.07747682597085198,
+        "intraday_rv": 0.05894409698771866,
+        "skew": 0.017930010678875632,
+        "skew_rank": 30.833333333333332
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "day": "2026-03-04",
+      "reason": "warming_up_rv_buffer",
+      "buffer_size": 77
+    },
+    {
+      "day": "2026-03-05",
+      "reason": "warming_up_rv_buffer",
+      "buffer_size": 155
+    },
+    {
+      "day": "2026-03-06",
+      "reason": "warming_up_rv_buffer",
+      "buffer_size": 233
+    },
+    {
+      "day": "2026-03-09",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.14691730863000735,
+      "intraday_rv": 0.13542920442086134,
+      "skew": 0.023967662804990658,
+      "skew_rank": 50.0,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-03-10",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.12709670340921558,
+      "intraday_rv": 0.1472641438568753,
+      "skew": 0.031276345709897624,
+      "skew_rank": 100.0,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-03-11",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.12218959914117802,
+      "intraday_rv": 0.14406904528182493,
+      "skew": 0.027324567812022693,
+      "skew_rank": 50.0,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-03-12",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.13126116364195342,
+      "intraday_rv": 0.14079808487381779,
+      "skew": 0.02284442978387774,
+      "skew_rank": 0.0,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-03-13",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.1250013821797431,
+      "intraday_rv": 0.14007703135704655,
+      "skew": 0.03301899014325124,
+      "skew_rank": 100.0,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-03-16",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.09812791792234564,
+      "intraday_rv": 0.13883392329822278,
+      "skew": 0.038573118318921754,
+      "skew_rank": 100.0,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-03-17",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07786796394111431,
+      "intraday_rv": 0.13551677532480869,
+      "skew": 0.04443789394266241,
+      "skew_rank": 100.0,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-03-18",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.12468828701042377,
+      "intraday_rv": 0.1308394759333643,
+      "skew": 0.025483810156894007,
+      "skew_rank": 28.571428571428573,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-03-19",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.126061106042881,
+      "intraday_rv": 0.12876575178973165,
+      "skew": 0.01665801900763253,
+      "skew_rank": 0.0,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-03-20",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.13445166786554766,
+      "intraday_rv": 0.12984113824950153,
+      "skew": 0.007622158591327033,
+      "skew_rank": 0.0,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-03-23",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.13324693335922552,
+      "intraday_rv": 0.1304066994016049,
+      "skew": 0.03781737397739354,
+      "skew_rank": 80.0,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-03-24",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.12513475727482973,
+      "intraday_rv": 0.13235007214583158,
+      "skew": 0.020084230259077906,
+      "skew_rank": 18.181818181818183,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-03-25",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.12473409530019067,
+      "intraday_rv": 0.13292646756123158,
+      "skew": 0.03201282754020243,
+      "skew_rank": 66.66666666666667,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-03-26",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.1250975050170672,
+      "intraday_rv": 0.13341704669408463,
+      "skew": 0.023894083783659703,
+      "skew_rank": 30.76923076923077,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-03-31",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.13123538842078808,
+      "intraday_rv": 0.12759461497547872,
+      "skew": 0.034322187461007625,
+      "skew_rank": 81.25,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-04-01",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.10555202813280219,
+      "intraday_rv": 0.12845604382682738,
+      "skew": 0.0360960960367319,
+      "skew_rank": 82.3529411764706,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-04-02",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.13412713443680663,
+      "intraday_rv": 0.12662013449869944,
+      "skew": 0.03545668576238875,
+      "skew_rank": 77.77777777777777,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-04-06",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.11562801575146722,
+      "intraday_rv": 0.1295199649916442,
+      "skew": 0.026998410524041783,
+      "skew_rank": 47.36842105263158,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-07",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.12761842703098222,
+      "intraday_rv": 0.12789611790352473,
+      "skew": 0.011172218977151399,
+      "skew_rank": 10.0,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-08",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.09647789526600101,
+      "intraday_rv": 0.13035463083710006,
+      "skew": 0.041748625750884144,
+      "skew_rank": 95.23809523809524,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-04-09",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.08085206872354068,
+      "intraday_rv": 0.1314150644833326,
+      "skew": 0.029220207183020985,
+      "skew_rank": 54.54545454545455,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-10",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07874427085389016,
+      "intraday_rv": 0.13077535444765911,
+      "skew": 0.01889593795933281,
+      "skew_rank": 21.73913043478261,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-13",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.08066238305803258,
+      "intraday_rv": 0.1266911990007504,
+      "skew": 0.043424886972138504,
+      "skew_rank": 95.83333333333333,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-04-14",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07887716883285523,
+      "intraday_rv": 0.12448555273659907,
+      "skew": 0.018728047809415185,
+      "skew_rank": 20.0,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-15",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.08033702723586751,
+      "intraday_rv": 0.11823834894656482,
+      "skew": 0.015028237695257712,
+      "skew_rank": 11.538461538461538,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-16",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.082567032345215,
+      "intraday_rv": 0.11383859193701876,
+      "skew": 0.029404797673785815,
+      "skew_rank": 59.25925925925926,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-17",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.08272490239770046,
+      "intraday_rv": 0.11158821426846584,
+      "skew": 0.026210765719168125,
+      "skew_rank": 46.42857142857143,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-20",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07700141254132087,
+      "intraday_rv": 0.10989990855542545,
+      "skew": 0.024206381051633558,
+      "skew_rank": 41.37931034482759,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-21",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07486140317425385,
+      "intraday_rv": 0.10679309235784283,
+      "skew": 0.021556090747951243,
+      "skew_rank": 30.0,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-22",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07498909515067673,
+      "intraday_rv": 0.10666123978962214,
+      "skew": 0.030588671214861557,
+      "skew_rank": 64.51612903225806,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-23",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06810041528129007,
+      "intraday_rv": 0.09742693344783483,
+      "skew": 0.03006313162947144,
+      "skew_rank": 62.5,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-24",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07961896279475479,
+      "intraday_rv": 0.09898972433458995,
+      "skew": 0.029781870174710026,
+      "skew_rank": 60.60606060606061,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-27",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.0662580191829001,
+      "intraday_rv": 0.09032630697454908,
+      "skew": 0.02585728371422359,
+      "skew_rank": 44.11764705882353,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-04-28",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07513035122172554,
+      "intraday_rv": 0.08752294939910403,
+      "skew": 0.02143845502443842,
+      "skew_rank": 25.714285714285715,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-01",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.061304039594704506,
+      "intraday_rv": 0.07852631823566651,
+      "skew": 0.02088932407935829,
+      "skew_rank": 28.94736842105263,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-04",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06223221963605265,
+      "intraday_rv": 0.0791998262787268,
+      "skew": 0.02062861798030976,
+      "skew_rank": 28.205128205128204,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-05",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.05780391276515129,
+      "intraday_rv": 0.08029518868379387,
+      "skew": 0.0294001731611946,
+      "skew_rank": 62.5,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-06",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.0685318083212185,
+      "intraday_rv": 0.07930254872030566,
+      "skew": 0.02265068308021241,
+      "skew_rank": 36.58536585365854,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-07",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.0653246035313561,
+      "intraday_rv": 0.07776897846946687,
+      "skew": 0.01746541927407469,
+      "skew_rank": 16.666666666666668,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-08",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06343478207909116,
+      "intraday_rv": 0.0781211164134296,
+      "skew": 0.0264045791815547,
+      "skew_rank": 55.81395348837209,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-11",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06285281076534602,
+      "intraday_rv": 0.07699521275941246,
+      "skew": 0.01966603047832613,
+      "skew_rank": 25.0,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-12",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07182676760892481,
+      "intraday_rv": 0.07670388002009199,
+      "skew": 0.02307286672240995,
+      "skew_rank": 42.22222222222222,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-13",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07597102467436721,
+      "intraday_rv": 0.07290608023035329,
+      "skew": 0.0160899966147304,
+      "skew_rank": 10.869565217391305,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-14",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07906656475072843,
+      "intraday_rv": 0.07316790845792945,
+      "skew": 0.018544300864863028,
+      "skew_rank": 19.148936170212767,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-26",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06745515493223718,
+      "intraday_rv": 0.08693036030819877,
+      "skew": 0.020498864385307333,
+      "skew_rank": 38.888888888888886,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-27",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.0699535261082928,
+      "intraday_rv": 0.08499456347816083,
+      "skew": 0.015828463603946685,
+      "skew_rank": 14.545454545454545,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-28",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06227426979596937,
+      "intraday_rv": 0.08601446905510994,
+      "skew": 0.01813007421833307,
+      "skew_rank": 28.571428571428573,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-05-29",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06205987029465456,
+      "intraday_rv": 0.08687566301615858,
+      "skew": 0.026850935110693995,
+      "skew_rank": 66.66666666666667,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-06-01",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07028918875205367,
+      "intraday_rv": 0.08543546591606625,
+      "skew": 0.020779674158536404,
+      "skew_rank": 43.10344827586207,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-06-02",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06002936807948014,
+      "intraday_rv": 0.08578052655679581,
+      "skew": 0.01806828685541905,
+      "skew_rank": 27.11864406779661,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-06-03",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07973467027705644,
+      "intraday_rv": 0.08517646257016986,
+      "skew": 0.014756718350257492,
+      "skew_rank": 10.0,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-06-04",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06943588312550149,
+      "intraday_rv": 0.08465193458991635,
+      "skew": 0.018864703249562617,
+      "skew_rank": 36.0655737704918,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-06-09",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.08934428705622972,
+      "intraday_rv": 0.09103110508384758,
+      "skew": 0.015802249450977177,
+      "skew_rank": 15.625,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-06-10",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.1477596739034548,
+      "intraday_rv": 0.10581360495570288,
+      "skew": 0.025990217791558023,
+      "skew_rank": 66.15384615384616,
+      "vrp_ok": true,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-06-11",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.14064603006294618,
+      "intraday_rv": 0.11094514321029336,
+      "skew": 0.032995772233497284,
+      "skew_rank": 86.36363636363636,
+      "vrp_ok": true,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-06-15",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.08163901397753023,
+      "intraday_rv": 0.12801137831601142,
+      "skew": 0.026879644746970688,
+      "skew_rank": 70.58823529411765,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-06-16",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07445299622079059,
+      "intraday_rv": 0.12749862154365849,
+      "skew": 0.016861739786123986,
+      "skew_rank": 24.63768115942029,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-06-17",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.11936409386177185,
+      "intraday_rv": 0.127889165604697,
+      "skew": 0.027021254650841542,
+      "skew_rank": 72.85714285714286,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-06-18",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.10298967775095415,
+      "intraday_rv": 0.13639561756469384,
+      "skew": 0.03807744811735274,
+      "skew_rank": 94.36619718309859,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-06-22",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06912024142445614,
+      "intraday_rv": 0.1371099276327144,
+      "skew": 0.027979404834345634,
+      "skew_rank": 73.61111111111111,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-06-23",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.10550263871322203,
+      "intraday_rv": 0.13893389407390003,
+      "skew": 0.030736098279298726,
+      "skew_rank": 82.1917808219178,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-06-24",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.10732445783755118,
+      "intraday_rv": 0.14047348488816253,
+      "skew": 0.01991744014551855,
+      "skew_rank": 39.189189189189186,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-06-25",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.13196333708771263,
+      "intraday_rv": 0.14373155620818806,
+      "skew": 0.03311147069469941,
+      "skew_rank": 88.0,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-06-26",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.10348950623408085,
+      "intraday_rv": 0.15061238707250363,
+      "skew": 0.03708544920988929,
+      "skew_rank": 92.10526315789474,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-06-29",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.09334120729280879,
+      "intraday_rv": 0.15474616660445512,
+      "skew": 0.039788316690094666,
+      "skew_rank": 96.1038961038961,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-06-30",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07599835709532556,
+      "intraday_rv": 0.15465953304462368,
+      "skew": 0.04238185657698909,
+      "skew_rank": 97.43589743589743,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-07-01",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.08166032651903447,
+      "intraday_rv": 0.15165734862913527,
+      "skew": 0.024895023394081298,
+      "skew_rank": 54.43037974683544,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-07-02",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07457694935703003,
+      "intraday_rv": 0.13954700333637698,
+      "skew": 0.03002014032144598,
+      "skew_rank": 75.0,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-07-06",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.0688777347283267,
+      "intraday_rv": 0.13530158561162067,
+      "skew": 0.02710980851270131,
+      "skew_rank": 66.66666666666667,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-07-07",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06963545548408266,
+      "intraday_rv": 0.1226108963660829,
+      "skew": 0.02836789445495294,
+      "skew_rank": 69.51219512195122,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-07-08",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.09007153089084181,
+      "intraday_rv": 0.11402674762842277,
+      "skew": 0.025463919466669177,
+      "skew_rank": 54.21686746987952,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-07-09",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06538296691376587,
+      "intraday_rv": 0.11517364760939418,
+      "skew": 0.03388465650710705,
+      "skew_rank": 85.71428571428571,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-07-10",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.05879967045010124,
+      "intraday_rv": 0.11519265922181786,
+      "skew": 0.030310702780701963,
+      "skew_rank": 76.47058823529412,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-07-13",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.05778911208574083,
+      "intraday_rv": 0.10707442084831267,
+      "skew": 0.031390491221706486,
+      "skew_rank": 80.23255813953489,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-07-14",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07770182692098375,
+      "intraday_rv": 0.10428346225934482,
+      "skew": 0.025154655280432467,
+      "skew_rank": 50.57471264367816,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-07-15",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.05619198951968214,
+      "intraday_rv": 0.10224219291844555,
+      "skew": 0.027449185016468494,
+      "skew_rank": 65.9090909090909,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-07-16",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06555647574823045,
+      "intraday_rv": 0.10178530661925855,
+      "skew": 0.027617603947622346,
+      "skew_rank": 66.29213483146067,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-07-17",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.09252565746156213,
+      "intraday_rv": 0.09828782204112206,
+      "skew": 0.024893143888563257,
+      "skew_rank": 47.77777777777778,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-07-20",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07272682804091583,
+      "intraday_rv": 0.08958801705084318,
+      "skew": 0.027237346398391635,
+      "skew_rank": 63.73626373626374,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-07-21",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.0658822332109988,
+      "intraday_rv": 0.08758353661401957,
+      "skew": 0.02748522090804971,
+      "skew_rank": 66.30434782608695,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-07-22",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07319773229499459,
+      "intraday_rv": 0.08036523738727151,
+      "skew": 0.02153190297278325,
+      "skew_rank": 38.70967741935484,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-07-24",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.0844999661199067,
+      "intraday_rv": 0.08278992635661886,
+      "skew": 0.01906326085085619,
+      "skew_rank": 30.526315789473685,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-07-27",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07731324499263469,
+      "intraday_rv": 0.08209956674309088,
+      "skew": 0.021797718919335782,
+      "skew_rank": 41.666666666666664,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-07-28",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.09400991146419599,
+      "intraday_rv": 0.08602454240033083,
+      "skew": 0.020507983283874848,
+      "skew_rank": 35.05154639175258,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-07-30",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.10299952730444449,
+      "intraday_rv": 0.09387271508495296,
+      "skew": 0.027323464023695773,
+      "skew_rank": 65.65656565656566,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-07-31",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.1037943192403686,
+      "intraday_rv": 0.09505325971845055,
+      "skew": 0.023916182812175488,
+      "skew_rank": 47.0,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-03",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.05266773464794132,
+      "intraday_rv": 0.09819335076837715,
+      "skew": 0.03668411062266555,
+      "skew_rank": 91.08910891089108,
+      "vrp_ok": false,
+      "skew_ok": false
+    },
+    {
+      "day": "2026-08-04",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07674088454843998,
+      "intraday_rv": 0.09713116049377928,
+      "skew": 0.013164541935570082,
+      "skew_rank": 6.862745098039215,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-06",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07919904474870333,
+      "intraday_rv": 0.09725712435432254,
+      "skew": 0.015986044537199443,
+      "skew_rank": 15.384615384615385,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-07",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.07851259088187201,
+      "intraday_rv": 0.09745652303627506,
+      "skew": 0.025487326320889528,
+      "skew_rank": 56.19047619047619,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-10",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.058434599285142864,
+      "intraday_rv": 0.09520551797590981,
+      "skew": 0.011683570450145474,
+      "skew_rank": 5.660377358490566,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-11",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.058462139560744,
+      "intraday_rv": 0.09306833530078339,
+      "skew": 0.011189367951655052,
+      "skew_rank": 5.607476635514018,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-12",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06937703932039108,
+      "intraday_rv": 0.09283779169509444,
+      "skew": 0.017773148933323143,
+      "skew_rank": 25.0,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-13",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.062067065492893016,
+      "intraday_rv": 0.09297339507543742,
+      "skew": 0.016938849078676287,
+      "skew_rank": 22.93577981651376,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-14",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.058281381513987804,
+      "intraday_rv": 0.09026294029776258,
+      "skew": 0.006952281322000223,
+      "skew_rank": 0.9090909090909091,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-17",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.04761113940723997,
+      "intraday_rv": 0.08499350723819257,
+      "skew": 0.013804036028344138,
+      "skew_rank": 10.81081081081081,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-18",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.05827343801753782,
+      "intraday_rv": 0.08027952362668214,
+      "skew": 0.016503054312993752,
+      "skew_rank": 22.321428571428573,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-19",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06060289664849221,
+      "intraday_rv": 0.07842704442524936,
+      "skew": 0.01862249318632167,
+      "skew_rank": 31.858407079646017,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-20",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06614412304635446,
+      "intraday_rv": 0.07157754120058486,
+      "skew": 0.019154454799979237,
+      "skew_rank": 36.8421052631579,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-21",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.05766402794353256,
+      "intraday_rv": 0.06837252865819061,
+      "skew": 0.01454988761359454,
+      "skew_rank": 13.043478260869565,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-24",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.05277234411477563,
+      "intraday_rv": 0.06384503450947719,
+      "skew": 0.017216936611042663,
+      "skew_rank": 26.724137931034484,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-25",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.0510164218650564,
+      "intraday_rv": 0.06309147415031321,
+      "skew": 0.011222804425286212,
+      "skew_rank": 6.837606837606837,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-27",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.06454546124191232,
+      "intraday_rv": 0.06021860024496547,
+      "skew": 0.016608343816288063,
+      "skew_rank": 24.369747899159663,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-08-31",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.05784327473243585,
+      "intraday_rv": 0.05997273842108057,
+      "skew": 0.01211726372570944,
+      "skew_rank": 10.743801652892563,
+      "vrp_ok": false,
+      "skew_ok": true
+    },
+    {
+      "day": "2026-09-01",
+      "reason": "hybrid_filter_failed",
+      "iv": 0.056708293093050685,
+      "intraday_rv": 0.06053650051893284,
+      "skew": 0.010121464663494478,
+      "skew_rank": 4.918032786885246,
+      "vrp_ok": false,
+      "skew_ok": true
+    }
+  ]
+}

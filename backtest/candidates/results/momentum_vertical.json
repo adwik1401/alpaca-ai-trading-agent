@@ -1,0 +1,547 @@
+{
+  "strategy": "momentum_vertical",
+  "trades": [
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-03-04",
+      "expiry_date": "2026-03-16",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260316P00686000",
+        "sold": "SPY260316P00676000"
+      },
+      "strikes": {
+        "bought": 686.0,
+        "sold": 676.0
+      },
+      "contracts": 7,
+      "entry_value": -2.5500000000000007,
+      "exit_date": "2026-03-06",
+      "exit_value": -5.369999999999999,
+      "pnl": 1973.9999999999989,
+      "exit_reason": "profit_take",
+      "meta": {
+        "spot_at_entry": 685.13,
+        "sigma_at_entry": 0.12909217303101586,
+        "regime": "bear"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-03-11",
+      "expiry_date": "2026-03-23",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260323P00677000",
+        "sold": "SPY260323P00668000"
+      },
+      "strikes": {
+        "bought": 677.0,
+        "sold": 668.0
+      },
+      "contracts": 6,
+      "entry_value": -3.2199999999999998,
+      "exit_date": "2026-03-19",
+      "exit_value": -7.800000000000001,
+      "pnl": 2748.000000000001,
+      "exit_reason": "profit_take",
+      "meta": {
+        "spot_at_entry": 676.34,
+        "sigma_at_entry": 0.11175050823746809,
+        "regime": "bear"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-03-18",
+      "expiry_date": "2026-03-30",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260330P00663000",
+        "sold": "SPY260330P00653000"
+      },
+      "strikes": {
+        "bought": 663.0,
+        "sold": 653.0
+      },
+      "contracts": 5,
+      "entry_value": -3.6400000000000006,
+      "exit_date": "2026-03-26",
+      "exit_value": -7.79,
+      "pnl": 2074.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "spot_at_entry": 661.54,
+        "sigma_at_entry": 0.12542263959151653,
+        "regime": "bear"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-03-25",
+      "expiry_date": "2026-04-06",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260406P00658000",
+        "sold": "SPY260406P00647000"
+      },
+      "strikes": {
+        "bought": 658.0,
+        "sold": 647.0
+      },
+      "contracts": 5,
+      "entry_value": -3.83,
+      "exit_date": "2026-03-27",
+      "exit_value": -8.55,
+      "pnl": 2360.0000000000005,
+      "exit_reason": "profit_take",
+      "meta": {
+        "spot_at_entry": 656.74,
+        "sigma_at_entry": 0.13025790507470536,
+        "regime": "bear"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-04-01",
+      "expiry_date": "2026-04-13",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260413P00657000",
+        "sold": "SPY260413P00642000"
+      },
+      "strikes": {
+        "bought": 657.0,
+        "sold": 642.0
+      },
+      "contracts": 4,
+      "entry_value": -4.81,
+      "exit_date": "2026-04-13",
+      "exit_value": -0.01,
+      "pnl": -1920.0,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 655.18,
+        "sigma_at_entry": 0.18438618919017766,
+        "regime": "bear"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-04-22",
+      "expiry_date": "2026-05-04",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260504C00713000",
+        "sold": "SPY260504C00728000"
+      },
+      "strikes": {
+        "bought": 713.0,
+        "sold": 728.0
+      },
+      "contracts": 3,
+      "entry_value": -5.64,
+      "exit_date": "2026-05-04",
+      "exit_value": -4.46,
+      "pnl": -353.9999999999999,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 711.2,
+        "sigma_at_entry": 0.17579378661629136,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-04-29",
+      "expiry_date": "2026-05-11",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260511C00713000",
+        "sold": "SPY260511C00723000"
+      },
+      "strikes": {
+        "bought": 713.0,
+        "sold": 723.0
+      },
+      "contracts": 4,
+      "entry_value": -4.72,
+      "exit_date": "2026-05-07",
+      "exit_value": -9.5,
+      "pnl": 1912.0,
+      "exit_reason": "profit_take",
+      "meta": {
+        "spot_at_entry": 711.59,
+        "sigma_at_entry": 0.11524820143360236,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-05-06",
+      "expiry_date": "2026-05-18",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260518C00735000",
+        "sold": "SPY260518C00744000"
+      },
+      "strikes": {
+        "bought": 735.0,
+        "sold": 744.0
+      },
+      "contracts": 4,
+      "entry_value": -4.029999999999999,
+      "exit_date": "2026-05-18",
+      "exit_value": -3.0,
+      "pnl": -411.9999999999998,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 733.77,
+        "sigma_at_entry": 0.09869300811860496,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-05-20",
+      "expiry_date": "2026-06-01",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260601C00743000",
+        "sold": "SPY260601C00752000"
+      },
+      "strikes": {
+        "bought": 743.0,
+        "sold": 752.0
+      },
+      "contracts": 4,
+      "entry_value": -4.07,
+      "exit_date": "2026-05-29",
+      "exit_value": -8.219999999999999,
+      "pnl": 1659.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "spot_at_entry": 741.31,
+        "sigma_at_entry": 0.10311400070967103,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-05-27",
+      "expiry_date": "2026-06-08",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260608C00752000",
+        "sold": "SPY260608C00761000"
+      },
+      "strikes": {
+        "bought": 752.0,
+        "sold": 761.0
+      },
+      "contracts": 5,
+      "entry_value": -3.64,
+      "exit_date": "2026-06-08",
+      "exit_value": 0.0,
+      "pnl": -1820.0,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 750.59,
+        "sigma_at_entry": 0.09690742829691618,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-06-03",
+      "expiry_date": "2026-06-15",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260615C00755000",
+        "sold": "SPY260615C00764000"
+      },
+      "strikes": {
+        "bought": 755.0,
+        "sold": 764.0
+      },
+      "contracts": 5,
+      "entry_value": -3.95,
+      "exit_date": "2026-06-15",
+      "exit_value": -0.07,
+      "pnl": -1940.0000000000002,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 754.18,
+        "sigma_at_entry": 0.09547429913840676,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-06-10",
+      "expiry_date": "2026-06-22",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260622C00727000",
+        "sold": "SPY260622C00739000"
+      },
+      "strikes": {
+        "bought": 727.0,
+        "sold": 739.0
+      },
+      "contracts": 3,
+      "entry_value": -5.37,
+      "exit_date": "2026-06-15",
+      "exit_value": -11.600000000000001,
+      "pnl": 1869.0000000000005,
+      "exit_reason": "profit_take",
+      "meta": {
+        "spot_at_entry": 725.58,
+        "sigma_at_entry": 0.13643349337056637,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-06-17",
+      "expiry_date": "2026-06-29",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260629C00742000",
+        "sold": "SPY260629C00757000"
+      },
+      "strikes": {
+        "bought": 742.0,
+        "sold": 757.0
+      },
+      "contracts": 3,
+      "entry_value": -5.970000000000001,
+      "exit_date": "2026-06-29",
+      "exit_value": -0.01,
+      "pnl": -1788.0000000000005,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 741.02,
+        "sigma_at_entry": 0.15923951359539104,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-06-24",
+      "expiry_date": "2026-07-06",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260706C00735000",
+        "sold": "SPY260706C00750000"
+      },
+      "strikes": {
+        "bought": 735.0,
+        "sold": 750.0
+      },
+      "contracts": 2,
+      "entry_value": -7.389999999999999,
+      "exit_date": "2026-07-06",
+      "exit_value": -14.779999999999998,
+      "pnl": 1477.9999999999998,
+      "exit_reason": "profit_take",
+      "meta": {
+        "spot_at_entry": 733.32,
+        "sigma_at_entry": 0.16285155161970874,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-07-01",
+      "expiry_date": "2026-07-13",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260713C00747000",
+        "sold": "SPY260713C00763000"
+      },
+      "strikes": {
+        "bought": 747.0,
+        "sold": 763.0
+      },
+      "contracts": 4,
+      "entry_value": -4.93,
+      "exit_date": "2026-07-13",
+      "exit_value": -1.84,
+      "pnl": -1236.0,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 745.665,
+        "sigma_at_entry": 0.17418220711849397,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-07-08",
+      "expiry_date": "2026-07-20",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260720C00747000",
+        "sold": "SPY260720C00760000"
+      },
+      "strikes": {
+        "bought": 747.0,
+        "sold": 760.0
+      },
+      "contracts": 4,
+      "entry_value": -4.73,
+      "exit_date": "2026-07-20",
+      "exit_value": 0.0,
+      "pnl": -1892.0000000000002,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 745.28,
+        "sigma_at_entry": 0.1496779576416094,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-07-15",
+      "expiry_date": "2026-07-27",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260727C00756000",
+        "sold": "SPY260727C00767000"
+      },
+      "strikes": {
+        "bought": 756.0,
+        "sold": 767.0
+      },
+      "contracts": 4,
+      "entry_value": -4.180000000000001,
+      "exit_date": "2026-07-27",
+      "exit_value": 0.0,
+      "pnl": -1672.0000000000002,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 754.77,
+        "sigma_at_entry": 0.11752604455717815,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-07-22",
+      "expiry_date": "2026-08-03",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260803C00749000",
+        "sold": "SPY260803C00758000"
+      },
+      "strikes": {
+        "bought": 749.0,
+        "sold": 758.0
+      },
+      "contracts": 4,
+      "entry_value": -4.569999999999999,
+      "exit_date": "2026-08-03",
+      "exit_value": -8.78,
+      "pnl": 1684.0,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 747.49,
+        "sigma_at_entry": 0.10062793224657185,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-07-29",
+      "expiry_date": "2026-08-10",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260810P00731000",
+        "sold": "SPY260810P00722000"
+      },
+      "strikes": {
+        "bought": 731.0,
+        "sold": 722.0
+      },
+      "contracts": 7,
+      "entry_value": -2.7199999999999998,
+      "exit_date": "2026-08-10",
+      "exit_value": 0.0,
+      "pnl": -1904.0,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 729.57,
+        "sigma_at_entry": 0.10417951901623834,
+        "regime": "bear"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-08-05",
+      "expiry_date": "2026-08-17",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260817C00771000",
+        "sold": "SPY260817C00785000"
+      },
+      "strikes": {
+        "bought": 771.0,
+        "sold": 785.0
+      },
+      "contracts": 3,
+      "entry_value": -5.34,
+      "exit_date": "2026-08-17",
+      "exit_value": -1.64,
+      "pnl": -1110.0,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 769.79,
+        "sigma_at_entry": 0.1403936534456714,
+        "regime": "bull"
+      }
+    },
+    {
+      "strategy": "momentum_vertical",
+      "entry_date": "2026-08-12",
+      "expiry_date": "2026-08-24",
+      "structure": "debit_vertical",
+      "legs": {
+        "bought": "SPY260824C00774000",
+        "sold": "SPY260824C00787000"
+      },
+      "strikes": {
+        "bought": 774.0,
+        "sold": 787.0
+      },
+      "contracts": 4,
+      "entry_value": -4.1899999999999995,
+      "exit_date": "2026-08-24",
+      "exit_value": 0.0,
+      "pnl": -1675.9999999999998,
+      "exit_reason": "held_to_expiry",
+      "meta": {
+        "spot_at_entry": 772.54,
+        "sigma_at_entry": 0.13587906298992145,
+        "regime": "bull"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "entry_date": "2026-04-08",
+      "reason": "not_a_net_debit",
+      "entry_value": null
+    },
+    {
+      "entry_date": "2026-04-15",
+      "reason": "not_a_net_debit",
+      "entry_value": null
+    },
+    {
+      "entry_date": "2026-05-13",
+      "reason": "no_liquid_contracts",
+      "regime": "bull"
+    }
+  ]
+}

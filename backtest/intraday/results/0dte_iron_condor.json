@@ -1,0 +1,1476 @@
+{
+  "strategy": "0dte_iron_condor",
+  "trades": [
+    {
+      "day": "2026-03-13",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260313C00676000",
+        "long_call": "SPY260313C00677000",
+        "short_put": "SPY260313P00664000",
+        "long_put": "SPY260313P00663000"
+      },
+      "strikes": {
+        "short_call": 676.0,
+        "long_call": 677.0,
+        "short_put": 664.0,
+        "long_put": 663.0
+      },
+      "contracts": 25,
+      "entry_time": "2026-03-13T14:00:00Z",
+      "entry_price": 0.21,
+      "exit_time": "2026-03-13T15:40:00Z",
+      "exit_price": 0.47,
+      "pnl": -650.0,
+      "exit_reason": "strike_breach",
+      "meta": {}
+    },
+    {
+      "day": "2026-03-18",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260318C00674000",
+        "long_call": "SPY260318C00675000",
+        "short_put": "SPY260318P00663000",
+        "long_put": "SPY260318P00662000"
+      },
+      "strikes": {
+        "short_call": 674.0,
+        "long_call": 675.0,
+        "short_put": 663.0,
+        "long_put": 662.0
+      },
+      "contracts": 26,
+      "entry_time": "2026-03-18T14:00:00Z",
+      "entry_price": 0.25,
+      "exit_time": "2026-03-18T18:00:00Z",
+      "exit_price": 0.09999999999999998,
+      "pnl": 390.00000000000006,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-03-24",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260324C00658000",
+        "long_call": "SPY260324C00659000",
+        "short_put": "SPY260324P00646000",
+        "long_put": "SPY260324P00645000"
+      },
+      "strikes": {
+        "short_call": 658.0,
+        "long_call": 659.0,
+        "short_put": 646.0,
+        "long_put": 645.0
+      },
+      "contracts": 24,
+      "entry_time": "2026-03-24T14:00:00Z",
+      "entry_price": 0.17999999999999997,
+      "exit_time": "2026-03-24T17:10:00Z",
+      "exit_price": 0.06,
+      "pnl": 287.9999999999999,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-04-01",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260401C00663000",
+        "long_call": "SPY260401C00664000",
+        "short_put": "SPY260401P00646000",
+        "long_put": "SPY260401P00645000"
+      },
+      "strikes": {
+        "short_call": 663.0,
+        "long_call": 664.0,
+        "short_put": 646.0,
+        "long_put": 645.0
+      },
+      "contracts": 21,
+      "entry_time": "2026-04-01T14:00:00Z",
+      "entry_price": 0.07000000000000002,
+      "exit_time": "2026-04-01T14:40:00Z",
+      "exit_price": 0.029999999999999985,
+      "pnl": 84.00000000000007,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-04-09",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260409C00685000",
+        "long_call": "SPY260409C00686000",
+        "short_put": "SPY260409P00666000",
+        "long_put": "SPY260409P00665000"
+      },
+      "strikes": {
+        "short_call": 685.0,
+        "long_call": 686.0,
+        "short_put": 666.0,
+        "long_put": 665.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-04-09T14:00:00Z",
+      "entry_price": 0.019999999999999997,
+      "exit_time": "2026-04-09T14:35:00Z",
+      "exit_price": 0.009999999999999995,
+      "pnl": 20.000000000000004,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-04-10",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260410C00690000",
+        "long_call": "SPY260410C00691000",
+        "short_put": "SPY260410P00671000",
+        "long_put": "SPY260410P00670000"
+      },
+      "strikes": {
+        "short_call": 690.0,
+        "long_call": 691.0,
+        "short_put": 671.0,
+        "long_put": 670.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-04-10T14:00:00Z",
+      "entry_price": 0.030000000000000002,
+      "exit_time": "2026-04-10T14:05:00Z",
+      "exit_price": 1.0408340855860843e-17,
+      "pnl": 59.999999999999986,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-04-14",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260414C00699000",
+        "long_call": "SPY260414C00700000",
+        "short_put": "SPY260414P00680000",
+        "long_put": "SPY260414P00679000"
+      },
+      "strikes": {
+        "short_call": 699.0,
+        "long_call": 700.0,
+        "short_put": 680.0,
+        "long_put": 679.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-04-14T14:00:00Z",
+      "entry_price": 0.019999999999999993,
+      "exit_time": "2026-04-14T14:05:00Z",
+      "exit_price": 0.0,
+      "pnl": 39.999999999999986,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-04-15",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260415C00705000",
+        "long_call": "SPY260415C00706000",
+        "short_put": "SPY260415P00686000",
+        "long_put": "SPY260415P00685000"
+      },
+      "strikes": {
+        "short_call": 705.0,
+        "long_call": 706.0,
+        "short_put": 686.0,
+        "long_put": 685.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-04-15T14:00:00Z",
+      "entry_price": 0.019999999999999997,
+      "exit_time": "2026-04-15T14:25:00Z",
+      "exit_price": 0.0,
+      "pnl": 39.99999999999999,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-04-23",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260423C00719000",
+        "long_call": "SPY260423C00720000",
+        "short_put": "SPY260423P00701000",
+        "long_put": "SPY260423P00700000"
+      },
+      "strikes": {
+        "short_call": 719.0,
+        "long_call": 720.0,
+        "short_put": 701.0,
+        "long_put": 700.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-04-23T14:00:00Z",
+      "entry_price": 0.03,
+      "exit_time": "2026-04-23T14:10:00Z",
+      "exit_price": -5.204170427930421e-18,
+      "pnl": 60.00000000000001,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-04-27",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260427C00722000",
+        "long_call": "SPY260427C00723000",
+        "short_put": "SPY260427P00706000",
+        "long_put": "SPY260427P00705000"
+      },
+      "strikes": {
+        "short_call": 722.0,
+        "long_call": 723.0,
+        "short_put": 706.0,
+        "long_put": 705.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-04-27T14:00:00Z",
+      "entry_price": 0.04,
+      "exit_time": "2026-04-27T14:05:00Z",
+      "exit_price": 0.019999999999999993,
+      "pnl": 40.000000000000014,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-04-28",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260428C00718000",
+        "long_call": "SPY260428C00719000",
+        "short_put": "SPY260428P00705000",
+        "long_put": "SPY260428P00704000"
+      },
+      "strikes": {
+        "short_call": 718.0,
+        "long_call": 719.0,
+        "short_put": 705.0,
+        "long_put": 704.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-04-28T14:00:00Z",
+      "entry_price": 0.04,
+      "exit_time": "2026-04-28T16:15:00Z",
+      "exit_price": 0.009999999999999995,
+      "pnl": 60.00000000000001,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-05-05",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260505C00729000",
+        "long_call": "SPY260505C00730000",
+        "short_put": "SPY260505P00717000",
+        "long_put": "SPY260505P00716000"
+      },
+      "strikes": {
+        "short_call": 729.0,
+        "long_call": 730.0,
+        "short_put": 717.0,
+        "long_put": 716.0
+      },
+      "contracts": 21,
+      "entry_time": "2026-05-05T14:00:00Z",
+      "entry_price": 0.05,
+      "exit_time": "2026-05-05T15:00:00Z",
+      "exit_price": 0.020000000000000004,
+      "pnl": 63.0,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-05-07",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260507C00740000",
+        "long_call": "SPY260507C00741000",
+        "short_put": "SPY260507P00729000",
+        "long_put": "SPY260507P00728000"
+      },
+      "strikes": {
+        "short_call": 740.0,
+        "long_call": 741.0,
+        "short_put": 729.0,
+        "long_put": 728.0
+      },
+      "contracts": 21,
+      "entry_time": "2026-05-07T14:00:00Z",
+      "entry_price": 0.060000000000000026,
+      "exit_time": "2026-05-07T14:45:00Z",
+      "exit_price": 0.020000000000000004,
+      "pnl": 84.00000000000004,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-05-13",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260513C00742000",
+        "long_call": "SPY260513C00743000",
+        "short_put": "SPY260513P00732000",
+        "long_put": "SPY260513P00731000"
+      },
+      "strikes": {
+        "short_call": 742.0,
+        "long_call": 743.0,
+        "short_put": 732.0,
+        "long_put": 731.0
+      },
+      "contracts": 22,
+      "entry_time": "2026-05-13T14:00:00Z",
+      "entry_price": 0.11000000000000001,
+      "exit_time": "2026-05-13T16:20:00Z",
+      "exit_price": 0.34,
+      "pnl": -506.0,
+      "exit_reason": "stop_loss",
+      "meta": {}
+    },
+    {
+      "day": "2026-05-14",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260514C00750000",
+        "long_call": "SPY260514C00751000",
+        "short_put": "SPY260514P00740000",
+        "long_put": "SPY260514P00739000"
+      },
+      "strikes": {
+        "short_call": 750.0,
+        "long_call": 751.0,
+        "short_put": 740.0,
+        "long_put": 739.0
+      },
+      "contracts": 23,
+      "entry_time": "2026-05-14T14:00:00Z",
+      "entry_price": 0.13999999999999999,
+      "exit_time": "2026-05-14T17:15:00Z",
+      "exit_price": 0.06999999999999999,
+      "pnl": 160.99999999999997,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-05-20",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260520C00740000",
+        "long_call": "SPY260520C00741000",
+        "short_put": "SPY260520P00730000",
+        "long_put": "SPY260520P00729000"
+      },
+      "strikes": {
+        "short_call": 740.0,
+        "long_call": 741.0,
+        "short_put": 730.0,
+        "long_put": 729.0
+      },
+      "contracts": 28,
+      "entry_time": "2026-05-20T14:00:00Z",
+      "entry_price": 0.29,
+      "exit_time": "2026-05-20T15:15:00Z",
+      "exit_price": 0.5700000000000001,
+      "pnl": -784.0000000000002,
+      "exit_reason": "strike_breach",
+      "meta": {}
+    },
+    {
+      "day": "2026-05-22",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260522C00751000",
+        "long_call": "SPY260522C00752000",
+        "short_put": "SPY260522P00741000",
+        "long_put": "SPY260522P00740000"
+      },
+      "strikes": {
+        "short_call": 751.0,
+        "long_call": 752.0,
+        "short_put": 741.0,
+        "long_put": 740.0
+      },
+      "contracts": 24,
+      "entry_time": "2026-05-22T14:00:00Z",
+      "entry_price": 0.19000000000000003,
+      "exit_time": "2026-05-22T15:30:00Z",
+      "exit_price": 0.09000000000000001,
+      "pnl": 240.00000000000006,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-05-26",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260526C00756000",
+        "long_call": "SPY260526C00757000",
+        "short_put": "SPY260526P00746000",
+        "long_put": "SPY260526P00745000"
+      },
+      "strikes": {
+        "short_call": 756.0,
+        "long_call": 757.0,
+        "short_put": 746.0,
+        "long_put": 745.0
+      },
+      "contracts": 22,
+      "entry_time": "2026-05-26T14:00:00Z",
+      "entry_price": 0.1,
+      "exit_time": "2026-05-26T16:30:00Z",
+      "exit_price": 0.04999999999999999,
+      "pnl": 110.00000000000004,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-05-27",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260527C00756000",
+        "long_call": "SPY260527C00757000",
+        "short_put": "SPY260527P00746000",
+        "long_put": "SPY260527P00745000"
+      },
+      "strikes": {
+        "short_call": 756.0,
+        "long_call": 757.0,
+        "short_put": 746.0,
+        "long_put": 745.0
+      },
+      "contracts": 22,
+      "entry_time": "2026-05-27T14:00:00Z",
+      "entry_price": 0.09999999999999999,
+      "exit_time": "2026-05-27T16:20:00Z",
+      "exit_price": 0.04999999999999999,
+      "pnl": 110.0,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-06-01",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260601C00761000",
+        "long_call": "SPY260601C00762000",
+        "short_put": "SPY260601P00751000",
+        "long_put": "SPY260601P00750000"
+      },
+      "strikes": {
+        "short_call": 761.0,
+        "long_call": 762.0,
+        "short_put": 751.0,
+        "long_put": 750.0
+      },
+      "contracts": 22,
+      "entry_time": "2026-06-01T14:00:00Z",
+      "entry_price": 0.09999999999999998,
+      "exit_time": "2026-06-01T14:55:00Z",
+      "exit_price": 0.03999999999999998,
+      "pnl": 132.0,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-06-02",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260602C00763000",
+        "long_call": "SPY260602C00764000",
+        "short_put": "SPY260602P00753000",
+        "long_put": "SPY260602P00752000"
+      },
+      "strikes": {
+        "short_call": 763.0,
+        "long_call": 764.0,
+        "short_put": 753.0,
+        "long_put": 752.0
+      },
+      "contracts": 21,
+      "entry_time": "2026-06-02T14:00:00Z",
+      "entry_price": 0.07999999999999999,
+      "exit_time": "2026-06-02T14:40:00Z",
+      "exit_price": 0.03999999999999999,
+      "pnl": 84.0,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-06-09",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260609C00750000",
+        "long_call": "SPY260609C00751000",
+        "short_put": "SPY260609P00738000",
+        "long_put": "SPY260609P00737000"
+      },
+      "strikes": {
+        "short_call": 750.0,
+        "long_call": 751.0,
+        "short_put": 738.0,
+        "long_put": 737.0
+      },
+      "contracts": 23,
+      "entry_time": "2026-06-09T14:00:00Z",
+      "entry_price": 0.14,
+      "exit_time": "2026-06-09T14:45:00Z",
+      "exit_price": 0.6199999999999999,
+      "pnl": -1103.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {}
+    },
+    {
+      "day": "2026-06-16",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260616C00763000",
+        "long_call": "SPY260616C00764000",
+        "short_put": "SPY260616P00747000",
+        "long_put": "SPY260616P00746000"
+      },
+      "strikes": {
+        "short_call": 763.0,
+        "long_call": 764.0,
+        "short_put": 747.0,
+        "long_put": 746.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-06-16T14:00:00Z",
+      "entry_price": 0.020000000000000007,
+      "exit_time": "2026-06-16T14:10:00Z",
+      "exit_price": 1.0408340855860843e-17,
+      "pnl": 39.99999999999999,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-07-06",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260706C00757000",
+        "long_call": "SPY260706C00758000",
+        "short_put": "SPY260706P00739000",
+        "long_put": "SPY260706P00738000"
+      },
+      "strikes": {
+        "short_call": 757.0,
+        "long_call": 758.0,
+        "short_put": 739.0,
+        "long_put": 738.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-07-06T14:00:00Z",
+      "entry_price": 0.019999999999999997,
+      "exit_time": "2026-07-06T14:05:00Z",
+      "exit_price": -5.204170427930421e-18,
+      "pnl": 40.00000000000001,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-07-08",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260708C00752000",
+        "long_call": "SPY260708C00753000",
+        "short_put": "SPY260708P00736000",
+        "long_put": "SPY260708P00735000"
+      },
+      "strikes": {
+        "short_call": 752.0,
+        "long_call": 753.0,
+        "short_put": 736.0,
+        "long_put": 735.0
+      },
+      "contracts": 21,
+      "entry_time": "2026-07-08T14:00:00Z",
+      "entry_price": 0.06000000000000002,
+      "exit_time": "2026-07-08T16:15:00Z",
+      "exit_price": 0.03,
+      "pnl": 63.000000000000036,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-07-13",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260713C00760000",
+        "long_call": "SPY260713C00761000",
+        "short_put": "SPY260713P00746000",
+        "long_put": "SPY260713P00745000"
+      },
+      "strikes": {
+        "short_call": 760.0,
+        "long_call": 761.0,
+        "short_put": 746.0,
+        "long_put": 745.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-07-13T14:00:00Z",
+      "entry_price": 0.04,
+      "exit_time": "2026-07-13T14:25:00Z",
+      "exit_price": 0.019999999999999993,
+      "pnl": 40.000000000000014,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-07-14",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260714C00757000",
+        "long_call": "SPY260714C00758000",
+        "short_put": "SPY260714P00744000",
+        "long_put": "SPY260714P00743000"
+      },
+      "strikes": {
+        "short_call": 757.0,
+        "long_call": 758.0,
+        "short_put": 744.0,
+        "long_put": 743.0
+      },
+      "contracts": 21,
+      "entry_time": "2026-07-14T14:00:00Z",
+      "entry_price": 0.06999999999999998,
+      "exit_time": "2026-07-14T14:50:00Z",
+      "exit_price": 0.029999999999999995,
+      "pnl": 83.99999999999996,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-07-15",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260715C00762000",
+        "long_call": "SPY260715C00763000",
+        "short_put": "SPY260715P00748000",
+        "long_put": "SPY260715P00747000"
+      },
+      "strikes": {
+        "short_call": 762.0,
+        "long_call": 763.0,
+        "short_put": 748.0,
+        "long_put": 747.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-07-15T14:00:00Z",
+      "entry_price": 0.03,
+      "exit_time": "2026-07-15T14:15:00Z",
+      "exit_price": 0.010000000000000009,
+      "pnl": 39.999999999999986,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-07-16",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260716C00759000",
+        "long_call": "SPY260716C00760000",
+        "short_put": "SPY260716P00747000",
+        "long_put": "SPY260716P00746000"
+      },
+      "strikes": {
+        "short_call": 759.0,
+        "long_call": 760.0,
+        "short_put": 747.0,
+        "long_put": 746.0
+      },
+      "contracts": 21,
+      "entry_time": "2026-07-16T14:00:00Z",
+      "entry_price": 0.07000000000000002,
+      "exit_time": "2026-07-16T14:20:00Z",
+      "exit_price": 0.02999999999999999,
+      "pnl": 84.00000000000007,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-07-21",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260721C00751000",
+        "long_call": "SPY260721C00752000",
+        "short_put": "SPY260721P00740000",
+        "long_put": "SPY260721P00739000"
+      },
+      "strikes": {
+        "short_call": 751.0,
+        "long_call": 752.0,
+        "short_put": 740.0,
+        "long_put": 739.0
+      },
+      "contracts": 22,
+      "entry_time": "2026-07-21T14:00:00Z",
+      "entry_price": 0.1,
+      "exit_time": "2026-07-21T14:20:00Z",
+      "exit_price": 0.049999999999999996,
+      "pnl": 110.00000000000001,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-08-05",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260805C00783000",
+        "long_call": "SPY260805C00784000",
+        "short_put": "SPY260805P00768000",
+        "long_put": "SPY260805P00767000"
+      },
+      "strikes": {
+        "short_call": 783.0,
+        "long_call": 784.0,
+        "short_put": 768.0,
+        "long_put": 767.0
+      },
+      "contracts": 22,
+      "entry_time": "2026-08-05T14:00:00Z",
+      "entry_price": 0.13,
+      "exit_time": "2026-08-05T17:30:00Z",
+      "exit_price": 0.06000000000000001,
+      "pnl": 153.99999999999997,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-08-07",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260807C00778000",
+        "long_call": "SPY260807C00779000",
+        "short_put": "SPY260807P00763000",
+        "long_put": "SPY260807P00762000"
+      },
+      "strikes": {
+        "short_call": 778.0,
+        "long_call": 779.0,
+        "short_put": 763.0,
+        "long_put": 762.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-08-07T14:00:00Z",
+      "entry_price": 0.03,
+      "exit_time": "2026-08-07T15:15:00Z",
+      "exit_price": 0.010000000000000002,
+      "pnl": 39.99999999999999,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-08-14",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260814C00786000",
+        "long_call": "SPY260814C00787000",
+        "short_put": "SPY260814P00771000",
+        "long_put": "SPY260814P00770000"
+      },
+      "strikes": {
+        "short_call": 786.0,
+        "long_call": 787.0,
+        "short_put": 771.0,
+        "long_put": 770.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-08-14T14:00:00Z",
+      "entry_price": 0.009999999999999998,
+      "exit_time": "2026-08-14T14:10:00Z",
+      "exit_price": 0.0,
+      "pnl": 19.999999999999996,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-08-17",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260817C00782000",
+        "long_call": "SPY260817C00783000",
+        "short_put": "SPY260817P00768000",
+        "long_put": "SPY260817P00767000"
+      },
+      "strikes": {
+        "short_call": 782.0,
+        "long_call": 783.0,
+        "short_put": 768.0,
+        "long_put": 767.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-08-17T14:00:00Z",
+      "entry_price": 0.010000000000000002,
+      "exit_time": "2026-08-17T14:05:00Z",
+      "exit_price": 1.734723475976807e-18,
+      "pnl": 20.0,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-08-18",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260818C00776000",
+        "long_call": "SPY260818C00777000",
+        "short_put": "SPY260818P00762000",
+        "long_put": "SPY260818P00761000"
+      },
+      "strikes": {
+        "short_call": 776.0,
+        "long_call": 777.0,
+        "short_put": 762.0,
+        "long_put": 761.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-08-18T14:00:00Z",
+      "entry_price": 0.04,
+      "exit_time": "2026-08-18T14:20:00Z",
+      "exit_price": 0.010000000000000009,
+      "pnl": 59.999999999999986,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-08-19",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260819C00777000",
+        "long_call": "SPY260819C00778000",
+        "short_put": "SPY260819P00763000",
+        "long_put": "SPY260819P00762000"
+      },
+      "strikes": {
+        "short_call": 777.0,
+        "long_call": 778.0,
+        "short_put": 763.0,
+        "long_put": 762.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-08-19T14:00:00Z",
+      "entry_price": 0.04000000000000001,
+      "exit_time": "2026-08-19T14:20:00Z",
+      "exit_price": 0.010000000000000009,
+      "pnl": 60.0,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-08-21",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260821C00772000",
+        "long_call": "SPY260821C00773000",
+        "short_put": "SPY260821P00758000",
+        "long_put": "SPY260821P00757000"
+      },
+      "strikes": {
+        "short_call": 772.0,
+        "long_call": 773.0,
+        "short_put": 758.0,
+        "long_put": 757.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-08-21T14:00:00Z",
+      "entry_price": 0.030000000000000006,
+      "exit_time": "2026-08-21T14:30:00Z",
+      "exit_price": 0.0,
+      "pnl": 60.00000000000001,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-08-24",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260824C00770000",
+        "long_call": "SPY260824C00771000",
+        "short_put": "SPY260824P00756000",
+        "long_put": "SPY260824P00755000"
+      },
+      "strikes": {
+        "short_call": 770.0,
+        "long_call": 771.0,
+        "short_put": 756.0,
+        "long_put": 755.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-08-24T14:00:00Z",
+      "entry_price": 0.020000000000000004,
+      "exit_time": "2026-08-24T14:15:00Z",
+      "exit_price": 0.0,
+      "pnl": 40.00000000000001,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-08-27",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260827C00775000",
+        "long_call": "SPY260827C00776000",
+        "short_put": "SPY260827P00763000",
+        "long_put": "SPY260827P00762000"
+      },
+      "strikes": {
+        "short_call": 775.0,
+        "long_call": 776.0,
+        "short_put": 763.0,
+        "long_put": 762.0
+      },
+      "contracts": 21,
+      "entry_time": "2026-08-27T14:00:00Z",
+      "entry_price": 0.06,
+      "exit_time": "2026-08-27T14:45:00Z",
+      "exit_price": 0.019999999999999997,
+      "pnl": 84.0,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-08-28",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260828C00777000",
+        "long_call": "SPY260828C00778000",
+        "short_put": "SPY260828P00766000",
+        "long_put": "SPY260828P00765000"
+      },
+      "strikes": {
+        "short_call": 777.0,
+        "long_call": 778.0,
+        "short_put": 766.0,
+        "long_put": 765.0
+      },
+      "contracts": 22,
+      "entry_time": "2026-08-28T14:00:00Z",
+      "entry_price": 0.13,
+      "exit_time": "2026-08-28T14:40:00Z",
+      "exit_price": 0.05,
+      "pnl": 176.0,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-08-31",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260831C00771000",
+        "long_call": "SPY260831C00772000",
+        "short_put": "SPY260831P00760000",
+        "long_put": "SPY260831P00759000"
+      },
+      "strikes": {
+        "short_call": 771.0,
+        "long_call": 772.0,
+        "short_put": 760.0,
+        "long_put": 759.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-08-31T14:00:00Z",
+      "entry_price": 0.03999999999999999,
+      "exit_time": "2026-08-31T15:10:00Z",
+      "exit_price": 0.010000000000000002,
+      "pnl": 59.99999999999997,
+      "exit_reason": "profit_take",
+      "meta": {}
+    },
+    {
+      "day": "2026-09-01",
+      "strategy": "0dte_iron_condor",
+      "structure": "credit_spread",
+      "legs": {
+        "short_call": "SPY260901C00767000",
+        "long_call": "SPY260901C00768000",
+        "short_put": "SPY260901P00757000",
+        "long_put": "SPY260901P00756000"
+      },
+      "strikes": {
+        "short_call": 767.0,
+        "long_call": 768.0,
+        "short_put": 757.0,
+        "long_put": 756.0
+      },
+      "contracts": 21,
+      "entry_time": "2026-09-01T14:00:00Z",
+      "entry_price": 0.060000000000000005,
+      "exit_time": "2026-09-01T15:20:00Z",
+      "exit_price": 0.029999999999999995,
+      "pnl": 63.00000000000002,
+      "exit_reason": "profit_take",
+      "meta": {}
+    }
+  ],
+  "skipped": [
+    {
+      "day": "2026-03-04",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005650133160690423
+    },
+    {
+      "day": "2026-03-05",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0005873548499897206
+    },
+    {
+      "day": "2026-03-06",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.006315506584251573
+    },
+    {
+      "day": "2026-03-09",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.007197392642665271
+    },
+    {
+      "day": "2026-03-10",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0007077846121221197
+    },
+    {
+      "day": "2026-03-11",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00041564536145132316
+    },
+    {
+      "day": "2026-03-12",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.0050279078815449055
+    },
+    {
+      "day": "2026-03-16",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0005295575980444219
+    },
+    {
+      "day": "2026-03-17",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0002016119937842501
+    },
+    {
+      "day": "2026-03-19",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005662393162393044
+    },
+    {
+      "day": "2026-03-20",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005543390043336454
+    },
+    {
+      "day": "2026-03-23",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.00606503916369513
+    },
+    {
+      "day": "2026-03-25",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.00670292338863259
+    },
+    {
+      "day": "2026-03-26",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.0059394833494690715
+    },
+    {
+      "day": "2026-03-27",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.006263603764425862
+    },
+    {
+      "day": "2026-03-30",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.00880744930596026
+    },
+    {
+      "day": "2026-03-31",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.006657163891543053
+    },
+    {
+      "day": "2026-04-02",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.0073318555949963855
+    },
+    {
+      "day": "2026-04-06",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0005771177571161856
+    },
+    {
+      "day": "2026-04-07",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005382098406776523
+    },
+    {
+      "day": "2026-04-08",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0004821128321922897
+    },
+    {
+      "day": "2026-04-13",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00138349728733775
+    },
+    {
+      "day": "2026-04-16",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0009800999802929268
+    },
+    {
+      "day": "2026-04-17",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00044576648940504454
+    },
+    {
+      "day": "2026-04-20",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00037424518247298544
+    },
+    {
+      "day": "2026-04-21",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0005663854633055004
+    },
+    {
+      "day": "2026-04-22",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00022660875522356445
+    },
+    {
+      "day": "2026-04-24",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00034759704491078944
+    },
+    {
+      "day": "2026-04-29",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0002218014546570371
+    },
+    {
+      "day": "2026-04-30",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.0053808820426249305
+    },
+    {
+      "day": "2026-05-01",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0007609761516763293
+    },
+    {
+      "day": "2026-05-04",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.000202312551418869
+    },
+    {
+      "day": "2026-05-06",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0002055147954012501
+    },
+    {
+      "day": "2026-05-08",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0005658268541703039
+    },
+    {
+      "day": "2026-05-11",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00034397350918757976
+    },
+    {
+      "day": "2026-05-12",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0005307390949097222
+    },
+    {
+      "day": "2026-05-15",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.0053390427665455315
+    },
+    {
+      "day": "2026-05-18",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005151983513652695
+    },
+    {
+      "day": "2026-05-19",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00031750570873129375
+    },
+    {
+      "day": "2026-05-21",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0008655304739683668
+    },
+    {
+      "day": "2026-05-28",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00023484010715593123
+    },
+    {
+      "day": "2026-05-29",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.000526385303711038
+    },
+    {
+      "day": "2026-06-03",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005299487274606182
+    },
+    {
+      "day": "2026-06-04",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0002029471584048171
+    },
+    {
+      "day": "2026-06-05",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005516449169861215
+    },
+    {
+      "day": "2026-06-08",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0003573179751846834
+    },
+    {
+      "day": "2026-06-10",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.007340076544559875
+    },
+    {
+      "day": "2026-06-11",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.007103817613612853
+    },
+    {
+      "day": "2026-06-12",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.007836414840210592
+    },
+    {
+      "day": "2026-06-15",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00033071451060517757
+    },
+    {
+      "day": "2026-06-17",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0002480915726558778
+    },
+    {
+      "day": "2026-06-18",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005780502231542661
+    },
+    {
+      "day": "2026-06-22",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00021132085953899253
+    },
+    {
+      "day": "2026-06-23",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.006698074559606837
+    },
+    {
+      "day": "2026-06-24",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0002792488206732082
+    },
+    {
+      "day": "2026-06-25",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.013266998341625138
+    },
+    {
+      "day": "2026-06-26",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.0060395113361214866
+    },
+    {
+      "day": "2026-06-29",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.006092088444069757
+    },
+    {
+      "day": "2026-06-30",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.000992070739135615
+    },
+    {
+      "day": "2026-07-01",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0007534072381890687
+    },
+    {
+      "day": "2026-07-02",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005501124317378752
+    },
+    {
+      "day": "2026-07-07",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00044281345688755304
+    },
+    {
+      "day": "2026-07-09",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0004586412667224024
+    },
+    {
+      "day": "2026-07-10",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00023599328911806203
+    },
+    {
+      "day": "2026-07-17",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005440064794816532
+    },
+    {
+      "day": "2026-07-20",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0009525215614751253
+    },
+    {
+      "day": "2026-07-22",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.000663969079610671
+    },
+    {
+      "day": "2026-07-23",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005382240636932357
+    },
+    {
+      "day": "2026-07-24",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0008718545575306972
+    },
+    {
+      "day": "2026-07-27",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005258757854426765
+    },
+    {
+      "day": "2026-07-28",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0003516983850823019
+    },
+    {
+      "day": "2026-07-29",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005077175787030136
+    },
+    {
+      "day": "2026-07-30",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005431009841153183
+    },
+    {
+      "day": "2026-07-31",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.006371616974796592
+    },
+    {
+      "day": "2026-08-03",
+      "reason": "opening_range_too_wide",
+      "range_pct": 0.005886200130804405
+    },
+    {
+      "day": "2026-08-04",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0008203009398786637
+    },
+    {
+      "day": "2026-08-06",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0003534139768273085
+    },
+    {
+      "day": "2026-08-10",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00036851605766065494
+    },
+    {
+      "day": "2026-08-11",
+      "reason": "bad_entry_price"
+    },
+    {
+      "day": "2026-08-12",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00029459271409061307
+    },
+    {
+      "day": "2026-08-13",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0009966513577880558
+    },
+    {
+      "day": "2026-08-20",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00021817293784128788
+    },
+    {
+      "day": "2026-08-25",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.0003597921064489759
+    },
+    {
+      "day": "2026-08-26",
+      "reason": "vwap_slope_too_steep",
+      "slope": 0.00033591422282939977
+    }
+  ]
+}

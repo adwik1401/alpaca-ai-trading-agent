@@ -1,0 +1,2811 @@
+{
+  "strategy": "orb_breakout",
+  "trades": [
+    {
+      "day": "2026-03-04",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260304C00686000",
+        "short": "SPY260304C00687000"
+      },
+      "strikes": {
+        "long": 686.0,
+        "short": 687.0
+      },
+      "contracts": 43,
+      "entry_time": "2026-03-04T15:20:00Z",
+      "entry_price": 0.45999999999999996,
+      "exit_time": "2026-03-04T20:30:00Z",
+      "exit_price": 0.41000000000000003,
+      "pnl": -214.9999999999997,
+      "exit_reason": "hard_time_stop",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.005650133160690423
+      }
+    },
+    {
+      "day": "2026-03-05",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260305P00680000",
+        "short": "SPY260305P00679000"
+      },
+      "strikes": {
+        "long": 680.0,
+        "short": 679.0
+      },
+      "contracts": 47,
+      "entry_time": "2026-03-05T15:30:00Z",
+      "entry_price": 0.41999999999999993,
+      "exit_time": "2026-03-05T15:55:00Z",
+      "exit_price": 0.22999999999999998,
+      "pnl": -892.9999999999997,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.00451639392339716
+      }
+    },
+    {
+      "day": "2026-03-06",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260306C00676000",
+        "short": "SPY260306C00677000"
+      },
+      "strikes": {
+        "long": 676.0,
+        "short": 677.0
+      },
+      "contracts": 41,
+      "entry_time": "2026-03-06T18:10:00Z",
+      "entry_price": 0.48,
+      "exit_time": "2026-03-06T18:50:00Z",
+      "exit_price": 0.20000000000000007,
+      "pnl": -1147.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.006315506584251573
+      }
+    },
+    {
+      "day": "2026-03-09",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260309C00671000",
+        "short": "SPY260309C00672000"
+      },
+      "strikes": {
+        "long": 671.0,
+        "short": 672.0
+      },
+      "contracts": 44,
+      "entry_time": "2026-03-09T17:00:00Z",
+      "entry_price": 0.44999999999999996,
+      "exit_time": "2026-03-09T17:25:00Z",
+      "exit_price": 0.21000000000000002,
+      "pnl": -1055.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.007197392642665271
+      }
+    },
+    {
+      "day": "2026-03-10",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260310C00680000",
+        "short": "SPY260310C00681000"
+      },
+      "strikes": {
+        "long": 680.0,
+        "short": 681.0
+      },
+      "contracts": 44,
+      "entry_time": "2026-03-10T14:35:00Z",
+      "entry_price": 0.44999999999999996,
+      "exit_time": "2026-03-10T16:40:00Z",
+      "exit_price": 0.74,
+      "pnl": 1276.0000000000002,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.004766768811712672
+      }
+    },
+    {
+      "day": "2026-03-11",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260311P00674000",
+        "short": "SPY260311P00672000"
+      },
+      "strikes": {
+        "long": 674.0,
+        "short": 672.0
+      },
+      "contracts": 25,
+      "entry_time": "2026-03-11T15:45:00Z",
+      "entry_price": 0.8,
+      "exit_time": "2026-03-11T16:50:00Z",
+      "exit_price": 0.42000000000000004,
+      "pnl": -950.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0033349354826782943
+      }
+    },
+    {
+      "day": "2026-03-12",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260312P00667000",
+        "short": "SPY260312P00666000"
+      },
+      "strikes": {
+        "long": 667.0,
+        "short": 666.0
+      },
+      "contracts": 45,
+      "entry_time": "2026-03-12T15:10:00Z",
+      "entry_price": 0.43999999999999995,
+      "exit_time": "2026-03-12T15:35:00Z",
+      "exit_price": 0.2300000000000001,
+      "pnl": -944.9999999999993,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0050279078815449055
+      }
+    },
+    {
+      "day": "2026-03-13",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260313P00665000",
+        "short": "SPY260313P00664000"
+      },
+      "strikes": {
+        "long": 665.0,
+        "short": 664.0
+      },
+      "contracts": 48,
+      "entry_time": "2026-03-13T14:55:00Z",
+      "entry_price": 0.41000000000000014,
+      "exit_time": "2026-03-13T17:45:00Z",
+      "exit_price": 0.6900000000000004,
+      "pnl": 1344.0000000000011,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.004970030343343217
+      }
+    },
+    {
+      "day": "2026-03-16",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260316P00667000",
+        "short": "SPY260316P00666000"
+      },
+      "strikes": {
+        "long": 667.0,
+        "short": 666.0
+      },
+      "contracts": 55,
+      "entry_time": "2026-03-16T16:20:00Z",
+      "entry_price": 0.3599999999999999,
+      "exit_time": "2026-03-16T17:05:00Z",
+      "exit_price": 0.17000000000000004,
+      "pnl": -1044.999999999999,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.004627133872416939
+      }
+    },
+    {
+      "day": "2026-03-17",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260317P00671000",
+        "short": "SPY260317P00669000"
+      },
+      "strikes": {
+        "long": 671.0,
+        "short": 669.0
+      },
+      "contracts": 29,
+      "entry_time": "2026-03-17T15:35:00Z",
+      "entry_price": 0.6799999999999999,
+      "exit_time": "2026-03-17T17:35:00Z",
+      "exit_price": 0.31,
+      "pnl": -1072.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.003675978152486163
+      }
+    },
+    {
+      "day": "2026-03-18",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260318P00666000",
+        "short": "SPY260318P00665000"
+      },
+      "strikes": {
+        "long": 666.0,
+        "short": 665.0
+      },
+      "contracts": 46,
+      "entry_time": "2026-03-18T14:30:00Z",
+      "entry_price": 0.43000000000000016,
+      "exit_time": "2026-03-18T18:50:00Z",
+      "exit_price": 0.73,
+      "pnl": 1379.999999999999,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0025451006811886092
+      }
+    },
+    {
+      "day": "2026-03-19",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260319C00660000",
+        "short": "SPY260319C00662000"
+      },
+      "strikes": {
+        "long": 660.0,
+        "short": 662.0
+      },
+      "contracts": 25,
+      "entry_time": "2026-03-19T19:00:00Z",
+      "entry_price": 0.8,
+      "exit_time": "2026-03-19T19:30:00Z",
+      "exit_price": 0.6100000000000001,
+      "pnl": -474.99999999999983,
+      "exit_reason": "hard_time_stop",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.005662393162393044
+      }
+    },
+    {
+      "day": "2026-03-20",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260320P00652000",
+        "short": "SPY260320P00650000"
+      },
+      "strikes": {
+        "long": 652.0,
+        "short": 650.0
+      },
+      "contracts": 22,
+      "entry_time": "2026-03-20T14:10:00Z",
+      "entry_price": 0.8800000000000001,
+      "exit_time": "2026-03-20T16:00:00Z",
+      "exit_price": 0.47000000000000003,
+      "pnl": -902.0000000000001,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.005543390043336454
+      }
+    },
+    {
+      "day": "2026-03-23",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260323C00662000",
+        "short": "SPY260323C00664000"
+      },
+      "strikes": {
+        "long": 662.0,
+        "short": 664.0
+      },
+      "contracts": 20,
+      "entry_time": "2026-03-23T15:00:00Z",
+      "entry_price": 0.9800000000000001,
+      "exit_time": "2026-03-23T15:35:00Z",
+      "exit_price": 0.4,
+      "pnl": -1160.0000000000002,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.00606503916369513
+      }
+    },
+    {
+      "day": "2026-03-24",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260324C00655000",
+        "short": "SPY260324C00656000"
+      },
+      "strikes": {
+        "long": 655.0,
+        "short": 656.0
+      },
+      "contracts": 47,
+      "entry_time": "2026-03-24T14:50:00Z",
+      "entry_price": 0.41999999999999993,
+      "exit_time": "2026-03-24T17:10:00Z",
+      "exit_price": 0.23000000000000004,
+      "pnl": -892.9999999999995,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.004785204332840986
+      }
+    },
+    {
+      "day": "2026-03-25",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260325P00655000",
+        "short": "SPY260325P00654000"
+      },
+      "strikes": {
+        "long": 655.0,
+        "short": 654.0
+      },
+      "contracts": 46,
+      "entry_time": "2026-03-25T15:15:00Z",
+      "entry_price": 0.42999999999999994,
+      "exit_time": "2026-03-25T15:25:00Z",
+      "exit_price": 0.18999999999999995,
+      "pnl": -1104.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.00670292338863259
+      }
+    },
+    {
+      "day": "2026-03-26",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260326P00649000",
+        "short": "SPY260326P00648000"
+      },
+      "strikes": {
+        "long": 649.0,
+        "short": 648.0
+      },
+      "contracts": 52,
+      "entry_time": "2026-03-26T16:50:00Z",
+      "entry_price": 0.3799999999999999,
+      "exit_time": "2026-03-26T17:45:00Z",
+      "exit_price": 0.6299999999999999,
+      "pnl": 1300.0,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0059394833494690715
+      }
+    },
+    {
+      "day": "2026-03-27",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260327P00637000",
+        "short": "SPY260327P00635000"
+      },
+      "strikes": {
+        "long": 637.0,
+        "short": 635.0
+      },
+      "contracts": 24,
+      "entry_time": "2026-03-27T17:25:00Z",
+      "entry_price": 0.8300000000000001,
+      "exit_time": "2026-03-27T19:00:00Z",
+      "exit_price": 1.43,
+      "pnl": 1439.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.006263603764425862
+      }
+    },
+    {
+      "day": "2026-03-30",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260330P00634000",
+        "short": "SPY260330P00632000"
+      },
+      "strikes": {
+        "long": 634.0,
+        "short": 632.0
+      },
+      "contracts": 25,
+      "entry_time": "2026-03-30T17:20:00Z",
+      "entry_price": 0.7899999999999999,
+      "exit_time": "2026-03-30T18:50:00Z",
+      "exit_price": 1.44,
+      "pnl": 1625.0,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.00880744930596026
+      }
+    },
+    {
+      "day": "2026-03-31",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260331C00645000",
+        "short": "SPY260331C00646000"
+      },
+      "strikes": {
+        "long": 645.0,
+        "short": 646.0
+      },
+      "contracts": 43,
+      "entry_time": "2026-03-31T16:35:00Z",
+      "entry_price": 0.45999999999999996,
+      "exit_time": "2026-03-31T17:00:00Z",
+      "exit_price": 0.79,
+      "pnl": 1419.0000000000002,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.006657163891543053
+      }
+    },
+    {
+      "day": "2026-04-01",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260401C00658000",
+        "short": "SPY260401C00660000"
+      },
+      "strikes": {
+        "long": 658.0,
+        "short": 660.0
+      },
+      "contracts": 25,
+      "entry_time": "2026-04-01T17:00:00Z",
+      "entry_price": 0.78,
+      "exit_time": "2026-04-01T17:55:00Z",
+      "exit_price": 0.38,
+      "pnl": -1000.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.004624808575803953
+      }
+    },
+    {
+      "day": "2026-04-02",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260402C00657000",
+        "short": "SPY260402C00658000"
+      },
+      "strikes": {
+        "long": 657.0,
+        "short": 658.0
+      },
+      "contracts": 44,
+      "entry_time": "2026-04-02T14:35:00Z",
+      "entry_price": 0.4500000000000002,
+      "exit_time": "2026-04-02T15:55:00Z",
+      "exit_price": 0.23000000000000004,
+      "pnl": -968.0000000000007,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0073318555949963855
+      }
+    },
+    {
+      "day": "2026-04-06",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260406C00659000",
+        "short": "SPY260406C00660000"
+      },
+      "strikes": {
+        "long": 659.0,
+        "short": 660.0
+      },
+      "contracts": 125,
+      "entry_time": "2026-04-06T19:55:00Z",
+      "entry_price": 0.16,
+      "exit_time": "2026-04-06T20:00:00Z",
+      "exit_price": 0.09000000000000001,
+      "pnl": -874.9999999999999,
+      "exit_reason": "hard_time_stop",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.004576519404442275
+      }
+    },
+    {
+      "day": "2026-04-07",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260407P00652000",
+        "short": "SPY260407P00651000"
+      },
+      "strikes": {
+        "long": 652.0,
+        "short": 651.0
+      },
+      "contracts": 47,
+      "entry_time": "2026-04-07T14:05:00Z",
+      "entry_price": 0.41999999999999993,
+      "exit_time": "2026-04-07T16:00:00Z",
+      "exit_price": 0.22000000000000008,
+      "pnl": -939.9999999999993,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.005382098406776523
+      }
+    },
+    {
+      "day": "2026-04-08",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260408P00673000",
+        "short": "SPY260408P00671000"
+      },
+      "strikes": {
+        "long": 673.0,
+        "short": 671.0
+      },
+      "contracts": 32,
+      "entry_time": "2026-04-08T18:55:00Z",
+      "entry_price": 0.6100000000000001,
+      "exit_time": "2026-04-08T19:10:00Z",
+      "exit_price": 0.19,
+      "pnl": -1344.0000000000002,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0045102519213079196
+      }
+    },
+    {
+      "day": "2026-04-09",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260409C00676000",
+        "short": "SPY260409C00678000"
+      },
+      "strikes": {
+        "long": 676.0,
+        "short": 678.0
+      },
+      "contracts": 25,
+      "entry_time": "2026-04-09T15:15:00Z",
+      "entry_price": 0.8,
+      "exit_time": "2026-04-09T15:50:00Z",
+      "exit_price": 1.4300000000000002,
+      "pnl": 1575.0000000000005,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0019422945764017811
+      }
+    },
+    {
+      "day": "2026-04-10",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260410P00679000",
+        "short": "SPY260410P00678000"
+      },
+      "strikes": {
+        "long": 679.0,
+        "short": 678.0
+      },
+      "contracts": 62,
+      "entry_time": "2026-04-10T16:05:00Z",
+      "entry_price": 0.31999999999999995,
+      "exit_time": "2026-04-10T19:10:00Z",
+      "exit_price": 0.12,
+      "pnl": -1239.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0025213172596294004
+      }
+    },
+    {
+      "day": "2026-04-13",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260413C00681000",
+        "short": "SPY260413C00683000"
+      },
+      "strikes": {
+        "long": 681.0,
+        "short": 683.0
+      },
+      "contracts": 24,
+      "entry_time": "2026-04-13T16:25:00Z",
+      "entry_price": 0.82,
+      "exit_time": "2026-04-13T18:10:00Z",
+      "exit_price": 1.3199999999999998,
+      "pnl": 1199.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.004463032201811955
+      }
+    },
+    {
+      "day": "2026-04-14",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260414C00694000",
+        "short": "SPY260414C00695000"
+      },
+      "strikes": {
+        "long": 694.0,
+        "short": 695.0
+      },
+      "contracts": 62,
+      "entry_time": "2026-04-14T17:15:00Z",
+      "entry_price": 0.31999999999999995,
+      "exit_time": "2026-04-14T18:20:00Z",
+      "exit_price": 0.11000000000000001,
+      "pnl": -1301.9999999999995,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.003271704121620148
+      }
+    },
+    {
+      "day": "2026-04-15",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260415C00697000",
+        "short": "SPY260415C00699000"
+      },
+      "strikes": {
+        "long": 697.0,
+        "short": 699.0
+      },
+      "contracts": 28,
+      "entry_time": "2026-04-15T17:05:00Z",
+      "entry_price": 0.71,
+      "exit_time": "2026-04-15T18:10:00Z",
+      "exit_price": 1.19,
+      "pnl": 1344.0,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0029238081520957604
+      }
+    },
+    {
+      "day": "2026-04-16",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260416C00702000",
+        "short": "SPY260416C00703000"
+      },
+      "strikes": {
+        "long": 702.0,
+        "short": 703.0
+      },
+      "contracts": 50,
+      "entry_time": "2026-04-16T15:35:00Z",
+      "entry_price": 0.4,
+      "exit_time": "2026-04-16T17:10:00Z",
+      "exit_price": 0.15999999999999998,
+      "pnl": -1200.0000000000002,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0037936267071321484
+      }
+    },
+    {
+      "day": "2026-04-17",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260417C00711000",
+        "short": "SPY260417C00712000"
+      },
+      "strikes": {
+        "long": 711.0,
+        "short": 712.0
+      },
+      "contracts": 48,
+      "entry_time": "2026-04-17T15:45:00Z",
+      "entry_price": 0.41000000000000003,
+      "exit_time": "2026-04-17T16:40:00Z",
+      "exit_price": 0.6599999999999999,
+      "pnl": 1199.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0036058373476906672
+      }
+    },
+    {
+      "day": "2026-04-20",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260420P00708000",
+        "short": "SPY260420P00706000"
+      },
+      "strikes": {
+        "long": 708.0,
+        "short": 706.0
+      },
+      "contracts": 27,
+      "entry_time": "2026-04-20T14:50:00Z",
+      "entry_price": 0.73,
+      "exit_time": "2026-04-20T18:05:00Z",
+      "exit_price": 0.4,
+      "pnl": -890.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0022518388841044562
+      }
+    },
+    {
+      "day": "2026-04-21",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260421P00707000",
+        "short": "SPY260421P00705000"
+      },
+      "strikes": {
+        "long": 707.0,
+        "short": 705.0
+      },
+      "contracts": 27,
+      "entry_time": "2026-04-21T15:00:00Z",
+      "entry_price": 0.7399999999999999,
+      "exit_time": "2026-04-21T17:10:00Z",
+      "exit_price": 1.3099999999999998,
+      "pnl": 1538.9999999999998,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.002948812009707139
+      }
+    },
+    {
+      "day": "2026-04-22",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260422C00710000",
+        "short": "SPY260422C00711000"
+      },
+      "strikes": {
+        "long": 710.0,
+        "short": 711.0
+      },
+      "contracts": 40,
+      "entry_time": "2026-04-22T14:30:00Z",
+      "entry_price": 0.5,
+      "exit_time": "2026-04-22T16:55:00Z",
+      "exit_price": 0.26,
+      "pnl": -960.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0016520057043615196
+      }
+    },
+    {
+      "day": "2026-04-23",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260423P00708000",
+        "short": "SPY260423P00706000"
+      },
+      "strikes": {
+        "long": 708.0,
+        "short": 706.0
+      },
+      "contracts": 31,
+      "entry_time": "2026-04-23T17:05:00Z",
+      "entry_price": 0.63,
+      "exit_time": "2026-04-23T17:20:00Z",
+      "exit_price": 1.07,
+      "pnl": 1364.0000000000002,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.002735090934724453
+      }
+    },
+    {
+      "day": "2026-04-24",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260424C00713000",
+        "short": "SPY260424C00715000"
+      },
+      "strikes": {
+        "long": 713.0,
+        "short": 715.0
+      },
+      "contracts": 23,
+      "entry_time": "2026-04-24T15:45:00Z",
+      "entry_price": 0.86,
+      "exit_time": "2026-04-24T19:30:00Z",
+      "exit_price": 0.8400000000000001,
+      "pnl": -45.99999999999979,
+      "exit_reason": "hard_time_stop",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.002961834645002994
+      }
+    },
+    {
+      "day": "2026-04-27",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260427C00715000",
+        "short": "SPY260427C00716000"
+      },
+      "strikes": {
+        "long": 715.0,
+        "short": 716.0
+      },
+      "contracts": 57,
+      "entry_time": "2026-04-27T18:00:00Z",
+      "entry_price": 0.35000000000000003,
+      "exit_time": "2026-04-27T19:30:00Z",
+      "exit_price": 0.37,
+      "pnl": 113.99999999999979,
+      "exit_reason": "hard_time_stop",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0024908085655748887
+      }
+    },
+    {
+      "day": "2026-04-28",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260428P00710000",
+        "short": "SPY260428P00709000"
+      },
+      "strikes": {
+        "long": 710.0,
+        "short": 709.0
+      },
+      "contracts": 58,
+      "entry_time": "2026-04-28T17:25:00Z",
+      "entry_price": 0.33999999999999997,
+      "exit_time": "2026-04-28T17:55:00Z",
+      "exit_price": 0.17,
+      "pnl": -985.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0029262802476083863
+      }
+    },
+    {
+      "day": "2026-04-29",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260429P00709000",
+        "short": "SPY260429P00708000"
+      },
+      "strikes": {
+        "long": 709.0,
+        "short": 708.0
+      },
+      "contracts": 47,
+      "entry_time": "2026-04-29T18:30:00Z",
+      "entry_price": 0.41999999999999993,
+      "exit_time": "2026-04-29T19:15:00Z",
+      "exit_price": 0.22999999999999998,
+      "pnl": -892.9999999999997,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0018740576871590796
+      }
+    },
+    {
+      "day": "2026-04-30",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260430C00716000",
+        "short": "SPY260430C00717000"
+      },
+      "strikes": {
+        "long": 716.0,
+        "short": 717.0
+      },
+      "contracts": 47,
+      "entry_time": "2026-04-30T17:25:00Z",
+      "entry_price": 0.42000000000000004,
+      "exit_time": "2026-04-30T18:00:00Z",
+      "exit_price": 0.72,
+      "pnl": 1409.9999999999998,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0053808820426249305
+      }
+    },
+    {
+      "day": "2026-05-04",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260504P00719000",
+        "short": "SPY260504P00717000"
+      },
+      "strikes": {
+        "long": 719.0,
+        "short": 717.0
+      },
+      "contracts": 29,
+      "entry_time": "2026-05-04T15:15:00Z",
+      "entry_price": 0.68,
+      "exit_time": "2026-05-04T16:05:00Z",
+      "exit_price": 1.2899999999999998,
+      "pnl": 1768.9999999999993,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.002015834729356873
+      }
+    },
+    {
+      "day": "2026-05-05",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260505C00724000",
+        "short": "SPY260505C00725000"
+      },
+      "strikes": {
+        "long": 724.0,
+        "short": 725.0
+      },
+      "contracts": 74,
+      "entry_time": "2026-05-05T17:15:00Z",
+      "entry_price": 0.27,
+      "exit_time": "2026-05-05T18:10:00Z",
+      "exit_price": 0.55,
+      "pnl": 2072.0000000000005,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.001635300313201516
+      }
+    },
+    {
+      "day": "2026-05-06",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260506C00732000",
+        "short": "SPY260506C00734000"
+      },
+      "strikes": {
+        "long": 732.0,
+        "short": 734.0
+      },
+      "contracts": 34,
+      "entry_time": "2026-05-06T18:00:00Z",
+      "entry_price": 0.5800000000000001,
+      "exit_time": "2026-05-06T18:15:00Z",
+      "exit_price": 0.96,
+      "pnl": 1291.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.002713583028770725
+      }
+    },
+    {
+      "day": "2026-05-07",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260507P00732000",
+        "short": "SPY260507P00730000"
+      },
+      "strikes": {
+        "long": 732.0,
+        "short": 730.0
+      },
+      "contracts": 29,
+      "entry_time": "2026-05-07T16:15:00Z",
+      "entry_price": 0.6799999999999999,
+      "exit_time": "2026-05-07T16:25:00Z",
+      "exit_price": 0.34,
+      "pnl": -985.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0020721150569151326
+      }
+    },
+    {
+      "day": "2026-05-08",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260508C00737000",
+        "short": "SPY260508C00739000"
+      },
+      "strikes": {
+        "long": 737.0,
+        "short": 739.0
+      },
+      "contracts": 25,
+      "entry_time": "2026-05-08T17:35:00Z",
+      "entry_price": 0.7799999999999999,
+      "exit_time": "2026-05-08T18:50:00Z",
+      "exit_price": 0.39,
+      "pnl": -974.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0028042472093655667
+      }
+    },
+    {
+      "day": "2026-05-11",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260511C00740000",
+        "short": "SPY260511C00742000"
+      },
+      "strikes": {
+        "long": 740.0,
+        "short": 742.0
+      },
+      "contracts": 31,
+      "entry_time": "2026-05-11T15:25:00Z",
+      "entry_price": 0.64,
+      "exit_time": "2026-05-11T16:50:00Z",
+      "exit_price": 0.35,
+      "pnl": -899.0000000000001,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0035233259110411495
+      }
+    },
+    {
+      "day": "2026-05-12",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260512P00734000",
+        "short": "SPY260512P00732000"
+      },
+      "strikes": {
+        "long": 734.0,
+        "short": 732.0
+      },
+      "contracts": 31,
+      "entry_time": "2026-05-12T15:05:00Z",
+      "entry_price": 0.6299999999999999,
+      "exit_time": "2026-05-12T15:20:00Z",
+      "exit_price": 1.1700000000000002,
+      "pnl": 1674.000000000001,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0031161126154934256
+      }
+    },
+    {
+      "day": "2026-05-13",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260513C00739000",
+        "short": "SPY260513C00740000"
+      },
+      "strikes": {
+        "long": 739.0,
+        "short": 740.0
+      },
+      "contracts": 46,
+      "entry_time": "2026-05-13T14:55:00Z",
+      "entry_price": 0.43000000000000005,
+      "exit_time": "2026-05-13T16:05:00Z",
+      "exit_price": 0.71,
+      "pnl": 1287.9999999999998,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.00394966723543684
+      }
+    },
+    {
+      "day": "2026-05-14",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260514C00749000",
+        "short": "SPY260514C00750000"
+      },
+      "strikes": {
+        "long": 749.0,
+        "short": 750.0
+      },
+      "contracts": 51,
+      "entry_time": "2026-05-14T15:30:00Z",
+      "entry_price": 0.39,
+      "exit_time": "2026-05-14T17:05:00Z",
+      "exit_price": 0.18,
+      "pnl": -1071.0000000000002,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0030594405594405287
+      }
+    },
+    {
+      "day": "2026-05-15",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260515C00742000",
+        "short": "SPY260515C00744000"
+      },
+      "strikes": {
+        "long": 742.0,
+        "short": 744.0
+      },
+      "contracts": 25,
+      "entry_time": "2026-05-15T17:40:00Z",
+      "entry_price": 0.7899999999999999,
+      "exit_time": "2026-05-15T18:30:00Z",
+      "exit_price": 0.33999999999999997,
+      "pnl": -1124.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0053390427665455315
+      }
+    },
+    {
+      "day": "2026-05-18",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260518P00735000",
+        "short": "SPY260518P00733000"
+      },
+      "strikes": {
+        "long": 735.0,
+        "short": 733.0
+      },
+      "contracts": 25,
+      "entry_time": "2026-05-18T16:25:00Z",
+      "entry_price": 0.77,
+      "exit_time": "2026-05-18T16:50:00Z",
+      "exit_price": 0.32000000000000006,
+      "pnl": -1124.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.005151983513652695
+      }
+    },
+    {
+      "day": "2026-05-19",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260519C00737000",
+        "short": "SPY260519C00739000"
+      },
+      "strikes": {
+        "long": 737.0,
+        "short": 739.0
+      },
+      "contracts": 26,
+      "entry_time": "2026-05-19T17:40:00Z",
+      "entry_price": 0.75,
+      "exit_time": "2026-05-19T18:25:00Z",
+      "exit_price": 0.35,
+      "pnl": -1040.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.004337802998267539
+      }
+    },
+    {
+      "day": "2026-05-20",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260520C00739000",
+        "short": "SPY260520C00741000"
+      },
+      "strikes": {
+        "long": 739.0,
+        "short": 741.0
+      },
+      "contracts": 21,
+      "entry_time": "2026-05-20T14:55:00Z",
+      "entry_price": 0.95,
+      "exit_time": "2026-05-20T19:30:00Z",
+      "exit_price": 1.1999999999999997,
+      "pnl": 524.9999999999995,
+      "exit_reason": "hard_time_stop",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0038947597777534313
+      }
+    },
+    {
+      "day": "2026-05-21",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260521C00742000",
+        "short": "SPY260521C00743000"
+      },
+      "strikes": {
+        "long": 742.0,
+        "short": 743.0
+      },
+      "contracts": 54,
+      "entry_time": "2026-05-21T17:15:00Z",
+      "entry_price": 0.37,
+      "exit_time": "2026-05-21T17:40:00Z",
+      "exit_price": 0.6799999999999999,
+      "pnl": 1673.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0035935614227792347
+      }
+    },
+    {
+      "day": "2026-05-22",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260522C00749000",
+        "short": "SPY260522C00750000"
+      },
+      "strikes": {
+        "long": 749.0,
+        "short": 750.0
+      },
+      "contracts": 52,
+      "entry_time": "2026-05-22T17:25:00Z",
+      "entry_price": 0.37999999999999995,
+      "exit_time": "2026-05-22T17:45:00Z",
+      "exit_price": 0.2,
+      "pnl": -935.9999999999997,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.003124329543016575
+      }
+    },
+    {
+      "day": "2026-05-27",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260527P00748000",
+        "short": "SPY260527P00747000"
+      },
+      "strikes": {
+        "long": 748.0,
+        "short": 747.0
+      },
+      "contracts": 60,
+      "entry_time": "2026-05-27T17:05:00Z",
+      "entry_price": 0.32999999999999996,
+      "exit_time": "2026-05-27T17:15:00Z",
+      "exit_price": 0.18000000000000002,
+      "pnl": -899.9999999999997,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0026827184880678966
+      }
+    },
+    {
+      "day": "2026-05-28",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260528C00753000",
+        "short": "SPY260528C00754000"
+      },
+      "strikes": {
+        "long": 753.0,
+        "short": 754.0
+      },
+      "contracts": 44,
+      "entry_time": "2026-05-28T14:10:00Z",
+      "entry_price": 0.45000000000000007,
+      "exit_time": "2026-05-28T16:15:00Z",
+      "exit_price": 0.73,
+      "pnl": 1231.9999999999998,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0014814814814814996
+      }
+    },
+    {
+      "day": "2026-05-29",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260529P00755000",
+        "short": "SPY260529P00754000"
+      },
+      "strikes": {
+        "long": 755.0,
+        "short": 754.0
+      },
+      "contracts": 54,
+      "entry_time": "2026-05-29T14:40:00Z",
+      "entry_price": 0.3700000000000001,
+      "exit_time": "2026-05-29T15:10:00Z",
+      "exit_price": 0.15000000000000002,
+      "pnl": -1188.0000000000005,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0030903820956363045
+      }
+    },
+    {
+      "day": "2026-06-01",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260601C00757000",
+        "short": "SPY260601C00759000"
+      },
+      "strikes": {
+        "long": 757.0,
+        "short": 759.0
+      },
+      "contracts": 28,
+      "entry_time": "2026-06-01T15:30:00Z",
+      "entry_price": 0.7,
+      "exit_time": "2026-06-01T17:25:00Z",
+      "exit_price": 1.25,
+      "pnl": 1540.0000000000002,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0026234199856904603
+      }
+    },
+    {
+      "day": "2026-06-02",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260602C00760000",
+        "short": "SPY260602C00761000"
+      },
+      "strikes": {
+        "long": 760.0,
+        "short": 761.0
+      },
+      "contracts": 60,
+      "entry_time": "2026-06-02T17:00:00Z",
+      "entry_price": 0.33,
+      "exit_time": "2026-06-02T17:25:00Z",
+      "exit_price": 0.15999999999999998,
+      "pnl": -1020.0000000000002,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0013082259663032825
+      }
+    },
+    {
+      "day": "2026-06-03",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260603P00754000",
+        "short": "SPY260603P00753000"
+      },
+      "strikes": {
+        "long": 754.0,
+        "short": 753.0
+      },
+      "contracts": 57,
+      "entry_time": "2026-06-03T19:55:00Z",
+      "entry_price": 0.35,
+      "exit_time": "2026-06-03T19:55:00Z",
+      "exit_price": 0.35,
+      "pnl": 0.0,
+      "exit_reason": "eod_forced_close",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.005299487274606182
+      }
+    },
+    {
+      "day": "2026-06-04",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260604C00755000",
+        "short": "SPY260604C00757000"
+      },
+      "strikes": {
+        "long": 755.0,
+        "short": 757.0
+      },
+      "contracts": 22,
+      "entry_time": "2026-06-04T15:05:00Z",
+      "entry_price": 0.88,
+      "exit_time": "2026-06-04T16:50:00Z",
+      "exit_price": 1.4300000000000002,
+      "pnl": 1210.0000000000002,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.002907634369968123
+      }
+    },
+    {
+      "day": "2026-06-05",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260605P00746000",
+        "short": "SPY260605P00745000"
+      },
+      "strikes": {
+        "long": 746.0,
+        "short": 745.0
+      },
+      "contracts": 47,
+      "entry_time": "2026-06-05T16:00:00Z",
+      "entry_price": 0.42000000000000015,
+      "exit_time": "2026-06-05T16:40:00Z",
+      "exit_price": 0.71,
+      "pnl": 1362.999999999999,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.005516449169861215
+      }
+    },
+    {
+      "day": "2026-06-08",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260608P00740000",
+        "short": "SPY260608P00739000"
+      },
+      "strikes": {
+        "long": 740.0,
+        "short": 739.0
+      },
+      "contracts": 58,
+      "entry_time": "2026-06-08T17:15:00Z",
+      "entry_price": 0.33999999999999997,
+      "exit_time": "2026-06-08T17:25:00Z",
+      "exit_price": 0.17000000000000004,
+      "pnl": -985.9999999999995,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.004974217758699745
+      }
+    },
+    {
+      "day": "2026-06-09",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260609P00740000",
+        "short": "SPY260609P00739000"
+      },
+      "strikes": {
+        "long": 740.0,
+        "short": 739.0
+      },
+      "contracts": 47,
+      "entry_time": "2026-06-09T14:15:00Z",
+      "entry_price": 0.41999999999999993,
+      "exit_time": "2026-06-09T14:45:00Z",
+      "exit_price": 0.8200000000000003,
+      "pnl": 1880.0000000000016,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.004782500487667001
+      }
+    },
+    {
+      "day": "2026-06-10",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260610P00731000",
+        "short": "SPY260610P00729000"
+      },
+      "strikes": {
+        "long": 731.0,
+        "short": 729.0
+      },
+      "contracts": 24,
+      "entry_time": "2026-06-10T15:10:00Z",
+      "entry_price": 0.8200000000000003,
+      "exit_time": "2026-06-10T18:35:00Z",
+      "exit_price": 1.32,
+      "pnl": 1199.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.007340076544559875
+      }
+    },
+    {
+      "day": "2026-06-11",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260611C00732000",
+        "short": "SPY260611C00734000"
+      },
+      "strikes": {
+        "long": 732.0,
+        "short": 734.0
+      },
+      "contracts": 22,
+      "entry_time": "2026-06-11T17:25:00Z",
+      "entry_price": 0.8699999999999999,
+      "exit_time": "2026-06-11T17:55:00Z",
+      "exit_price": 1.4099999999999997,
+      "pnl": 1187.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.007103817613612853
+      }
+    },
+    {
+      "day": "2026-06-12",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260612C00742000",
+        "short": "SPY260612C00743000"
+      },
+      "strikes": {
+        "long": 742.0,
+        "short": 743.0
+      },
+      "contracts": 45,
+      "entry_time": "2026-06-12T14:50:00Z",
+      "entry_price": 0.43999999999999995,
+      "exit_time": "2026-06-12T19:30:00Z",
+      "exit_price": 0.13,
+      "pnl": -1394.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.007836414840210592
+      }
+    },
+    {
+      "day": "2026-06-15",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260615C00755000",
+        "short": "SPY260615C00756000"
+      },
+      "strikes": {
+        "long": 755.0,
+        "short": 756.0
+      },
+      "contracts": 46,
+      "entry_time": "2026-06-15T15:30:00Z",
+      "entry_price": 0.43000000000000005,
+      "exit_time": "2026-06-15T16:00:00Z",
+      "exit_price": 0.7,
+      "pnl": 1241.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0030594056771928867
+      }
+    },
+    {
+      "day": "2026-06-16",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260616P00754000",
+        "short": "SPY260616P00752000"
+      },
+      "strikes": {
+        "long": 754.0,
+        "short": 752.0
+      },
+      "contracts": 25,
+      "entry_time": "2026-06-16T14:20:00Z",
+      "entry_price": 0.77,
+      "exit_time": "2026-06-16T17:15:00Z",
+      "exit_price": 1.3099999999999998,
+      "pnl": 1349.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0018965265712657176
+      }
+    },
+    {
+      "day": "2026-06-17",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260617P00749000",
+        "short": "SPY260617P00748000"
+      },
+      "strikes": {
+        "long": 749.0,
+        "short": 748.0
+      },
+      "contracts": 49,
+      "entry_time": "2026-06-17T14:45:00Z",
+      "entry_price": 0.40000000000000013,
+      "exit_time": "2026-06-17T18:00:00Z",
+      "exit_price": 0.6900000000000004,
+      "pnl": 1421.0000000000011,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0025471421331981544
+      }
+    },
+    {
+      "day": "2026-06-22",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260622P00745000",
+        "short": "SPY260622P00743000"
+      },
+      "strikes": {
+        "long": 745.0,
+        "short": 743.0
+      },
+      "contracts": 26,
+      "entry_time": "2026-06-22T14:55:00Z",
+      "entry_price": 0.75,
+      "exit_time": "2026-06-22T18:20:00Z",
+      "exit_price": 0.4,
+      "pnl": -910.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.003103388311462386
+      }
+    },
+    {
+      "day": "2026-06-24",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260624P00734000",
+        "short": "SPY260624P00732000"
+      },
+      "strikes": {
+        "long": 734.0,
+        "short": 732.0
+      },
+      "contracts": 26,
+      "entry_time": "2026-06-24T17:15:00Z",
+      "entry_price": 0.7500000000000001,
+      "exit_time": "2026-06-24T17:55:00Z",
+      "exit_price": 1.2099999999999997,
+      "pnl": 1195.999999999999,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.004521312814925848
+      }
+    },
+    {
+      "day": "2026-06-26",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260626C00735000",
+        "short": "SPY260626C00736000"
+      },
+      "strikes": {
+        "long": 735.0,
+        "short": 736.0
+      },
+      "contracts": 42,
+      "entry_time": "2026-06-26T15:50:00Z",
+      "entry_price": 0.4700000000000001,
+      "exit_time": "2026-06-26T17:55:00Z",
+      "exit_price": 0.24,
+      "pnl": -966.0000000000005,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0060395113361214866
+      }
+    },
+    {
+      "day": "2026-06-29",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260629P00734000",
+        "short": "SPY260629P00732000"
+      },
+      "strikes": {
+        "long": 734.0,
+        "short": 732.0
+      },
+      "contracts": 25,
+      "entry_time": "2026-06-29T14:15:00Z",
+      "entry_price": 0.79,
+      "exit_time": "2026-06-29T14:30:00Z",
+      "exit_price": 0.29,
+      "pnl": -1250.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.006092088444069757
+      }
+    },
+    {
+      "day": "2026-06-30",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260630C00745000",
+        "short": "SPY260630C00747000"
+      },
+      "strikes": {
+        "long": 745.0,
+        "short": 747.0
+      },
+      "contracts": 22,
+      "entry_time": "2026-06-30T15:25:00Z",
+      "entry_price": 0.9,
+      "exit_time": "2026-06-30T18:45:00Z",
+      "exit_price": 1.5200000000000002,
+      "pnl": 1364.0000000000005,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.004103117829666726
+      }
+    },
+    {
+      "day": "2026-07-01",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260701C00747000",
+        "short": "SPY260701C00749000"
+      },
+      "strikes": {
+        "long": 747.0,
+        "short": 749.0
+      },
+      "contracts": 22,
+      "entry_time": "2026-07-01T17:05:00Z",
+      "entry_price": 0.8899999999999999,
+      "exit_time": "2026-07-01T18:50:00Z",
+      "exit_price": 0.39,
+      "pnl": -1099.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.00394000417573086
+      }
+    },
+    {
+      "day": "2026-07-02",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260702P00742000",
+        "short": "SPY260702P00740000"
+      },
+      "strikes": {
+        "long": 742.0,
+        "short": 740.0
+      },
+      "contracts": 25,
+      "entry_time": "2026-07-02T17:05:00Z",
+      "entry_price": 0.79,
+      "exit_time": "2026-07-02T18:25:00Z",
+      "exit_price": 0.43000000000000005,
+      "pnl": -900.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.005501124317378752
+      }
+    },
+    {
+      "day": "2026-07-06",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260706C00750000",
+        "short": "SPY260706C00752000"
+      },
+      "strikes": {
+        "long": 750.0,
+        "short": 752.0
+      },
+      "contracts": 27,
+      "entry_time": "2026-07-06T15:10:00Z",
+      "entry_price": 0.72,
+      "exit_time": "2026-07-06T17:05:00Z",
+      "exit_price": 1.25,
+      "pnl": 1431.0,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.002776086854726949
+      }
+    },
+    {
+      "day": "2026-07-07",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260707P00747000",
+        "short": "SPY260707P00745000"
+      },
+      "strikes": {
+        "long": 747.0,
+        "short": 745.0
+      },
+      "contracts": 26,
+      "entry_time": "2026-07-07T14:25:00Z",
+      "entry_price": 0.75,
+      "exit_time": "2026-07-07T16:10:00Z",
+      "exit_price": 0.39,
+      "pnl": -936.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.003588372870029997
+      }
+    },
+    {
+      "day": "2026-07-08",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260708P00742000",
+        "short": "SPY260708P00741000"
+      },
+      "strikes": {
+        "long": 742.0,
+        "short": 741.0
+      },
+      "contracts": 51,
+      "entry_time": "2026-07-08T14:50:00Z",
+      "entry_price": 0.3900000000000001,
+      "exit_time": "2026-07-08T16:45:00Z",
+      "exit_price": 0.16999999999999998,
+      "pnl": -1122.0000000000007,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.002935078223873697
+      }
+    },
+    {
+      "day": "2026-07-09",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260709C00751000",
+        "short": "SPY260709C00753000"
+      },
+      "strikes": {
+        "long": 751.0,
+        "short": 753.0
+      },
+      "contracts": 32,
+      "entry_time": "2026-07-09T17:05:00Z",
+      "entry_price": 0.61,
+      "exit_time": "2026-07-09T19:00:00Z",
+      "exit_price": 0.33,
+      "pnl": -895.9999999999999,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.00467336717110426
+      }
+    },
+    {
+      "day": "2026-07-10",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260710P00751000",
+        "short": "SPY260710P00749000"
+      },
+      "strikes": {
+        "long": 751.0,
+        "short": 749.0
+      },
+      "contracts": 29,
+      "entry_time": "2026-07-10T14:30:00Z",
+      "entry_price": 0.67,
+      "exit_time": "2026-07-10T14:45:00Z",
+      "exit_price": 0.36000000000000004,
+      "pnl": -899.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0018754738564265997
+      }
+    },
+    {
+      "day": "2026-07-13",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260713P00751000",
+        "short": "SPY260713P00749000"
+      },
+      "strikes": {
+        "long": 751.0,
+        "short": 749.0
+      },
+      "contracts": 31,
+      "entry_time": "2026-07-13T16:15:00Z",
+      "entry_price": 0.63,
+      "exit_time": "2026-07-13T16:50:00Z",
+      "exit_price": 1.0699999999999998,
+      "pnl": 1363.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0025334805101539857
+      }
+    },
+    {
+      "day": "2026-07-14",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260714C00753000",
+        "short": "SPY260714C00754000"
+      },
+      "strikes": {
+        "long": 753.0,
+        "short": 754.0
+      },
+      "contracts": 86,
+      "entry_time": "2026-07-14T18:15:00Z",
+      "entry_price": 0.23,
+      "exit_time": "2026-07-14T18:40:00Z",
+      "exit_price": 0.10999999999999999,
+      "pnl": -1032.0000000000002,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0029551458227713425
+      }
+    },
+    {
+      "day": "2026-07-15",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260715P00752000",
+        "short": "SPY260715P00750000"
+      },
+      "strikes": {
+        "long": 752.0,
+        "short": 750.0
+      },
+      "contracts": 32,
+      "entry_time": "2026-07-15T16:05:00Z",
+      "entry_price": 0.62,
+      "exit_time": "2026-07-15T16:20:00Z",
+      "exit_price": 1.0499999999999998,
+      "pnl": 1375.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.003120062666790463
+      }
+    },
+    {
+      "day": "2026-07-16",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260716P00750000",
+        "short": "SPY260716P00748000"
+      },
+      "strikes": {
+        "long": 750.0,
+        "short": 748.0
+      },
+      "contracts": 31,
+      "entry_time": "2026-07-16T19:15:00Z",
+      "entry_price": 0.63,
+      "exit_time": "2026-07-16T19:30:00Z",
+      "exit_price": 1.1,
+      "pnl": 1457.0000000000002,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0037431730384973297
+      }
+    },
+    {
+      "day": "2026-07-17",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260717C00746000",
+        "short": "SPY260717C00747000"
+      },
+      "strikes": {
+        "long": 746.0,
+        "short": 747.0
+      },
+      "contracts": 50,
+      "entry_time": "2026-07-17T16:00:00Z",
+      "entry_price": 0.3999999999999999,
+      "exit_time": "2026-07-17T18:05:00Z",
+      "exit_price": 0.19,
+      "pnl": -1049.9999999999995,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.005440064794816532
+      }
+    },
+    {
+      "day": "2026-07-20",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260720P00745000",
+        "short": "SPY260720P00744000"
+      },
+      "strikes": {
+        "long": 745.0,
+        "short": 744.0
+      },
+      "contracts": 55,
+      "entry_time": "2026-07-20T16:55:00Z",
+      "entry_price": 0.36,
+      "exit_time": "2026-07-20T17:40:00Z",
+      "exit_price": 0.6100000000000001,
+      "pnl": 1375.0000000000007,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.00423186034190224
+      }
+    },
+    {
+      "day": "2026-07-21",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260721C00748000",
+        "short": "SPY260721C00750000"
+      },
+      "strikes": {
+        "long": 748.0,
+        "short": 750.0
+      },
+      "contracts": 26,
+      "entry_time": "2026-07-21T17:15:00Z",
+      "entry_price": 0.75,
+      "exit_time": "2026-07-21T19:30:00Z",
+      "exit_price": 0.41,
+      "pnl": -884.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.003157541148807555
+      }
+    },
+    {
+      "day": "2026-07-23",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260723P00736000",
+        "short": "SPY260723P00735000"
+      },
+      "strikes": {
+        "long": 736.0,
+        "short": 735.0
+      },
+      "contracts": 50,
+      "entry_time": "2026-07-23T15:30:00Z",
+      "entry_price": 0.3999999999999999,
+      "exit_time": "2026-07-23T16:05:00Z",
+      "exit_price": 0.21000000000000002,
+      "pnl": -949.9999999999994,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.005382240636932357
+      }
+    },
+    {
+      "day": "2026-07-24",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260724C00743000",
+        "short": "SPY260724C00744000"
+      },
+      "strikes": {
+        "long": 743.0,
+        "short": 744.0
+      },
+      "contracts": 54,
+      "entry_time": "2026-07-24T16:30:00Z",
+      "entry_price": 0.37,
+      "exit_time": "2026-07-24T16:45:00Z",
+      "exit_price": 0.19999999999999998,
+      "pnl": -918.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0032680624864395314
+      }
+    },
+    {
+      "day": "2026-07-27",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260727P00738000",
+        "short": "SPY260727P00736000"
+      },
+      "strikes": {
+        "long": 738.0,
+        "short": 736.0
+      },
+      "contracts": 27,
+      "entry_time": "2026-07-27T14:30:00Z",
+      "entry_price": 0.74,
+      "exit_time": "2026-07-27T18:55:00Z",
+      "exit_price": 0.35,
+      "pnl": -1053.0,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.005258757854426765
+      }
+    },
+    {
+      "day": "2026-07-28",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260728C00741000",
+        "short": "SPY260728C00742000"
+      },
+      "strikes": {
+        "long": 741.0,
+        "short": 742.0
+      },
+      "contracts": 49,
+      "entry_time": "2026-07-28T17:40:00Z",
+      "entry_price": 0.4000000000000001,
+      "exit_time": "2026-07-28T19:30:00Z",
+      "exit_price": 0.52,
+      "pnl": 587.9999999999998,
+      "exit_reason": "hard_time_stop",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.004633089224331148
+      }
+    },
+    {
+      "day": "2026-07-29",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260729P00734000",
+        "short": "SPY260729P00733000"
+      },
+      "strikes": {
+        "long": 734.0,
+        "short": 733.0
+      },
+      "contracts": 44,
+      "entry_time": "2026-07-29T14:40:00Z",
+      "entry_price": 0.4500000000000002,
+      "exit_time": "2026-07-29T18:00:00Z",
+      "exit_price": 0.18999999999999995,
+      "pnl": -1144.000000000001,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.005077175787030136
+      }
+    },
+    {
+      "day": "2026-07-30",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260730C00740000",
+        "short": "SPY260730C00741000"
+      },
+      "strikes": {
+        "long": 740.0,
+        "short": 741.0
+      },
+      "contracts": 42,
+      "entry_time": "2026-07-30T17:00:00Z",
+      "entry_price": 0.4700000000000001,
+      "exit_time": "2026-07-30T19:20:00Z",
+      "exit_price": 0.7600000000000002,
+      "pnl": 1218.0000000000007,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.005431009841153183
+      }
+    },
+    {
+      "day": "2026-07-31",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260731C00748000",
+        "short": "SPY260731C00749000"
+      },
+      "strikes": {
+        "long": 748.0,
+        "short": 749.0
+      },
+      "contracts": 74,
+      "entry_time": "2026-07-31T19:15:00Z",
+      "entry_price": 0.27,
+      "exit_time": "2026-07-31T19:30:00Z",
+      "exit_price": 0.15,
+      "pnl": -888.0000000000001,
+      "exit_reason": "hard_time_stop",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.006371616974796592
+      }
+    },
+    {
+      "day": "2026-08-03",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260803C00757000",
+        "short": "SPY260803C00758000"
+      },
+      "strikes": {
+        "long": 757.0,
+        "short": 758.0
+      },
+      "contracts": 52,
+      "entry_time": "2026-08-03T17:20:00Z",
+      "entry_price": 0.38,
+      "exit_time": "2026-08-03T18:00:00Z",
+      "exit_price": 0.6799999999999999,
+      "pnl": 1559.9999999999995,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.005886200130804405
+      }
+    },
+    {
+      "day": "2026-08-04",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260804C00771000",
+        "short": "SPY260804C00773000"
+      },
+      "strikes": {
+        "long": 771.0,
+        "short": 773.0
+      },
+      "contracts": 24,
+      "entry_time": "2026-08-04T17:15:00Z",
+      "entry_price": 0.83,
+      "exit_time": "2026-08-04T19:05:00Z",
+      "exit_price": 1.3400000000000003,
+      "pnl": 1224.000000000001,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0038657252179401928
+      }
+    },
+    {
+      "day": "2026-08-05",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260805P00771000",
+        "short": "SPY260805P00769000"
+      },
+      "strikes": {
+        "long": 771.0,
+        "short": 769.0
+      },
+      "contracts": 26,
+      "entry_time": "2026-08-05T15:55:00Z",
+      "entry_price": 0.7599999999999999,
+      "exit_time": "2026-08-05T17:45:00Z",
+      "exit_price": 0.41,
+      "pnl": -909.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.003112086776859463
+      }
+    },
+    {
+      "day": "2026-08-06",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260806P00768000",
+        "short": "SPY260806P00767000"
+      },
+      "strikes": {
+        "long": 768.0,
+        "short": 767.0
+      },
+      "contracts": 55,
+      "entry_time": "2026-08-06T15:55:00Z",
+      "entry_price": 0.3600000000000001,
+      "exit_time": "2026-08-06T18:00:00Z",
+      "exit_price": 0.18000000000000002,
+      "pnl": -990.0000000000003,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0031596192853798693
+      }
+    },
+    {
+      "day": "2026-08-07",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260807C00773000",
+        "short": "SPY260807C00774000"
+      },
+      "strikes": {
+        "long": 773.0,
+        "short": 774.0
+      },
+      "contracts": 62,
+      "entry_time": "2026-08-07T19:10:00Z",
+      "entry_price": 0.32,
+      "exit_time": "2026-08-07T19:30:00Z",
+      "exit_price": 0.21,
+      "pnl": -682.0000000000001,
+      "exit_reason": "hard_time_stop",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.002427089958077543
+      }
+    },
+    {
+      "day": "2026-08-11",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260811P00772000",
+        "short": "SPY260811P00770000"
+      },
+      "strikes": {
+        "long": 772.0,
+        "short": 770.0
+      },
+      "contracts": 33,
+      "entry_time": "2026-08-11T15:35:00Z",
+      "entry_price": 0.6000000000000001,
+      "exit_time": "2026-08-11T17:00:00Z",
+      "exit_price": 1.01,
+      "pnl": 1352.9999999999998,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.002511034313154378
+      }
+    },
+    {
+      "day": "2026-08-13",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260813C00778000",
+        "short": "SPY260813C00780000"
+      },
+      "strikes": {
+        "long": 778.0,
+        "short": 780.0
+      },
+      "contracts": 40,
+      "entry_time": "2026-08-13T19:15:00Z",
+      "entry_price": 0.49000000000000005,
+      "exit_time": "2026-08-13T19:30:00Z",
+      "exit_price": 0.43000000000000005,
+      "pnl": -240.0,
+      "exit_reason": "hard_time_stop",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0044950206021776365
+      }
+    },
+    {
+      "day": "2026-08-14",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260814P00777000",
+        "short": "SPY260814P00775000"
+      },
+      "strikes": {
+        "long": 777.0,
+        "short": 775.0
+      },
+      "contracts": 28,
+      "entry_time": "2026-08-14T15:15:00Z",
+      "entry_price": 0.69,
+      "exit_time": "2026-08-14T17:35:00Z",
+      "exit_price": 1.2,
+      "pnl": 1428.0,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0011508441666987896
+      }
+    },
+    {
+      "day": "2026-08-17",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260817P00774000",
+        "short": "SPY260817P00773000"
+      },
+      "strikes": {
+        "long": 774.0,
+        "short": 773.0
+      },
+      "contracts": 80,
+      "entry_time": "2026-08-17T17:15:00Z",
+      "entry_price": 0.25,
+      "exit_time": "2026-08-17T17:25:00Z",
+      "exit_price": 0.42,
+      "pnl": 1360.0,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0019995097975979495
+      }
+    },
+    {
+      "day": "2026-08-18",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260818P00767000",
+        "short": "SPY260818P00766000"
+      },
+      "strikes": {
+        "long": 767.0,
+        "short": 766.0
+      },
+      "contracts": 105,
+      "entry_time": "2026-08-18T18:05:00Z",
+      "entry_price": 0.18999999999999997,
+      "exit_time": "2026-08-18T18:15:00Z",
+      "exit_price": 0.07,
+      "pnl": -1259.9999999999995,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0020575059902073665
+      }
+    },
+    {
+      "day": "2026-08-20",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260820P00765000",
+        "short": "SPY260820P00763000"
+      },
+      "strikes": {
+        "long": 765.0,
+        "short": 763.0
+      },
+      "contracts": 32,
+      "entry_time": "2026-08-20T17:45:00Z",
+      "entry_price": 0.6100000000000001,
+      "exit_time": "2026-08-20T18:05:00Z",
+      "exit_price": 1.05,
+      "pnl": 1407.9999999999998,
+      "exit_reason": "profit_take",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.002369792006685104
+      }
+    },
+    {
+      "day": "2026-08-21",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260821C00766000",
+        "short": "SPY260821C00768000"
+      },
+      "strikes": {
+        "long": 766.0,
+        "short": 768.0
+      },
+      "contracts": 36,
+      "entry_time": "2026-08-21T19:40:00Z",
+      "entry_price": 0.5499999999999999,
+      "exit_time": "2026-08-21T19:45:00Z",
+      "exit_price": 0.71,
+      "pnl": 576.0000000000001,
+      "exit_reason": "hard_time_stop",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0023619934963393205
+      }
+    },
+    {
+      "day": "2026-08-25",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260825P00764000",
+        "short": "SPY260825P00763000"
+      },
+      "strikes": {
+        "long": 764.0,
+        "short": 763.0
+      },
+      "contracts": 62,
+      "entry_time": "2026-08-25T14:30:00Z",
+      "entry_price": 0.31999999999999995,
+      "exit_time": "2026-08-25T15:25:00Z",
+      "exit_price": 0.15,
+      "pnl": -1053.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.0015806455826834873
+      }
+    },
+    {
+      "day": "2026-08-26",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260826P00764000",
+        "short": "SPY260826P00763000"
+      },
+      "strikes": {
+        "long": 764.0,
+        "short": 763.0
+      },
+      "contracts": 50,
+      "entry_time": "2026-08-26T16:35:00Z",
+      "entry_price": 0.4,
+      "exit_time": "2026-08-26T18:05:00Z",
+      "exit_price": 0.21999999999999997,
+      "pnl": -900.0000000000002,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.002811449792737276
+      }
+    },
+    {
+      "day": "2026-08-27",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260827C00772000",
+        "short": "SPY260827C00773000"
+      },
+      "strikes": {
+        "long": 772.0,
+        "short": 773.0
+      },
+      "contracts": 51,
+      "entry_time": "2026-08-27T16:50:00Z",
+      "entry_price": 0.38999999999999996,
+      "exit_time": "2026-08-27T17:55:00Z",
+      "exit_price": 0.21,
+      "pnl": -917.9999999999998,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0032848427968089865
+      }
+    },
+    {
+      "day": "2026-08-28",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260828P00771000",
+        "short": "SPY260828P00770000"
+      },
+      "strikes": {
+        "long": 771.0,
+        "short": 770.0
+      },
+      "contracts": 51,
+      "entry_time": "2026-08-28T14:05:00Z",
+      "entry_price": 0.3900000000000001,
+      "exit_time": "2026-08-28T14:40:00Z",
+      "exit_price": 0.14,
+      "pnl": -1275.0000000000005,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bearish",
+        "orb_range_pct": 0.001736808678858932
+      }
+    },
+    {
+      "day": "2026-09-01",
+      "strategy": "orb_breakout",
+      "structure": "debit_spread",
+      "legs": {
+        "long": "SPY260901C00765000",
+        "short": "SPY260901C00766000"
+      },
+      "strikes": {
+        "long": 765.0,
+        "short": 766.0
+      },
+      "contracts": 64,
+      "entry_time": "2026-09-01T15:45:00Z",
+      "entry_price": 0.30999999999999994,
+      "exit_time": "2026-09-01T16:10:00Z",
+      "exit_price": 0.13,
+      "pnl": -1151.9999999999995,
+      "exit_reason": "stop_loss",
+      "meta": {
+        "direction": "bullish",
+        "orb_range_pct": 0.0016684182869153728
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "day": "2026-05-01",
+      "reason": "no_breakout_confirmed"
+    },
+    {
+      "day": "2026-05-26",
+      "reason": "no_breakout_confirmed"
+    },
+    {
+      "day": "2026-06-18",
+      "reason": "no_breakout_confirmed"
+    },
+    {
+      "day": "2026-06-23",
+      "reason": "no_breakout_confirmed"
+    },
+    {
+      "day": "2026-06-25",
+      "reason": "no_breakout_confirmed"
+    },
+    {
+      "day": "2026-07-22",
+      "reason": "no_breakout_confirmed"
+    },
+    {
+      "day": "2026-08-10",
+      "reason": "no_breakout_confirmed"
+    },
+    {
+      "day": "2026-08-12",
+      "reason": "no_breakout_confirmed"
+    },
+    {
+      "day": "2026-08-19",
+      "reason": "no_breakout_confirmed"
+    },
+    {
+      "day": "2026-08-24",
+      "reason": "no_breakout_confirmed"
+    },
+    {
+      "day": "2026-08-31",
+      "reason": "no_breakout_confirmed"
+    }
+  ]
+}

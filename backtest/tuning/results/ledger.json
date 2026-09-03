@@ -1,0 +1,542 @@
+{
+  "attempts": [
+    {
+      "params": {
+        "target_delta": 0.125,
+        "wing_width": 1.0,
+        "calm_range_pct_max": 0.005,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "baseline",
+      "score": {
+        "num_trades": 23,
+        "total_pnl": -938.0,
+        "win_rate": 0.826,
+        "profit_factor": 0.692,
+        "sharpe": -0.948,
+        "sortino": -1.514,
+        "max_drawdown_pct": 1.548,
+        "trades_per_year": 69.0,
+        "return_pct": -0.94,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 61,
+        "num_days": 84
+      },
+      "kept": true
+    },
+    {
+      "params": {
+        "target_delta": 0.125,
+        "wing_width": 1.0,
+        "calm_range_pct_max": 0.005,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.5
+      },
+      "param_changed": "stop_loss_multiple",
+      "score": {
+        "num_trades": 23,
+        "total_pnl": -1030.0,
+        "win_rate": 0.783,
+        "profit_factor": 0.654,
+        "sharpe": -1.204,
+        "sortino": -3.304,
+        "max_drawdown_pct": 1.763,
+        "trades_per_year": 69.0,
+        "return_pct": -1.03,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 61,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.125,
+        "wing_width": 1.0,
+        "calm_range_pct_max": 0.005,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 2.0
+      },
+      "param_changed": "stop_loss_multiple",
+      "score": {
+        "num_trades": 23,
+        "total_pnl": -938.0,
+        "win_rate": 0.826,
+        "profit_factor": 0.692,
+        "sharpe": -0.948,
+        "sortino": -1.514,
+        "max_drawdown_pct": 1.548,
+        "trades_per_year": 69.0,
+        "return_pct": -0.94,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 61,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.125,
+        "wing_width": 1.0,
+        "calm_range_pct_max": 0.005,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.65,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "profit_take_pct",
+      "score": {
+        "num_trades": 23,
+        "total_pnl": -1431.0,
+        "win_rate": 0.783,
+        "profit_factor": 0.598,
+        "sharpe": -1.403,
+        "sortino": -2.33,
+        "max_drawdown_pct": 1.471,
+        "trades_per_year": 69.0,
+        "return_pct": -1.43,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 61,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.125,
+        "wing_width": 1.0,
+        "calm_range_pct_max": 0.005,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.35,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "profit_take_pct",
+      "score": {
+        "num_trades": 23,
+        "total_pnl": -1256.0,
+        "win_rate": 0.826,
+        "profit_factor": 0.587,
+        "sharpe": -1.305,
+        "sortino": -2.028,
+        "max_drawdown_pct": 1.733,
+        "trades_per_year": 69.0,
+        "return_pct": -1.26,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 61,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.125,
+        "wing_width": 1.0,
+        "calm_range_pct_max": 0.004,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "calm_range_pct_max",
+      "score": {
+        "num_trades": 19,
+        "total_pnl": 444.0,
+        "win_rate": 0.895,
+        "profit_factor": 1.344,
+        "sharpe": 0.721,
+        "sortino": 1.282,
+        "max_drawdown_pct": 1.119,
+        "trades_per_year": 57.0,
+        "return_pct": 0.44,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 65,
+        "num_days": 84
+      },
+      "kept": true
+    },
+    {
+      "params": {
+        "target_delta": 0.125,
+        "wing_width": 1.0,
+        "calm_range_pct_max": 0.003,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "calm_range_pct_max",
+      "score": {
+        "num_trades": 14,
+        "total_pnl": 1293.0,
+        "win_rate": 1.0,
+        "profit_factor": null,
+        "sharpe": 6.763,
+        "sortino": 0.0,
+        "max_drawdown_pct": 0.0,
+        "trades_per_year": 42.0,
+        "return_pct": 1.29,
+        "passes_drawdown_cap": true,
+        "eligible": false,
+        "skipped_days": 70,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.125,
+        "wing_width": 1.0,
+        "calm_range_pct_max": 0.004,
+        "calm_vwap_slope_max": 0.00015,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "calm_vwap_slope_max",
+      "score": {
+        "num_trades": 15,
+        "total_pnl": 64.0,
+        "win_rate": 0.867,
+        "profit_factor": 1.05,
+        "sharpe": 0.114,
+        "sortino": 0.223,
+        "max_drawdown_pct": 1.121,
+        "trades_per_year": 45.0,
+        "return_pct": 0.06,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 69,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.125,
+        "wing_width": 1.0,
+        "calm_range_pct_max": 0.004,
+        "calm_vwap_slope_max": 0.00025,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "calm_vwap_slope_max",
+      "score": {
+        "num_trades": 28,
+        "total_pnl": 337.0,
+        "win_rate": 0.821,
+        "profit_factor": 1.157,
+        "sharpe": 0.47,
+        "sortino": 0.477,
+        "max_drawdown_pct": 1.254,
+        "trades_per_year": 84.0,
+        "return_pct": 0.34,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 56,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.145,
+        "wing_width": 1.0,
+        "calm_range_pct_max": 0.004,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "target_delta",
+      "score": {
+        "num_trades": 19,
+        "total_pnl": 335.0,
+        "win_rate": 0.842,
+        "profit_factor": 1.226,
+        "sharpe": 0.511,
+        "sortino": 0.453,
+        "max_drawdown_pct": 1.179,
+        "trades_per_year": 57.0,
+        "return_pct": 0.34,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 65,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.105,
+        "wing_width": 1.0,
+        "calm_range_pct_max": 0.004,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "target_delta",
+      "score": {
+        "num_trades": 17,
+        "total_pnl": 734.0,
+        "win_rate": 0.824,
+        "profit_factor": 2.121,
+        "sharpe": 1.815,
+        "sortino": 1.232,
+        "max_drawdown_pct": 0.571,
+        "trades_per_year": 51.0,
+        "return_pct": 0.73,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 67,
+        "num_days": 84
+      },
+      "kept": true
+    },
+    {
+      "params": {
+        "target_delta": 0.085,
+        "wing_width": 1.0,
+        "calm_range_pct_max": 0.004,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "target_delta",
+      "score": {
+        "num_trades": 19,
+        "total_pnl": 621.0,
+        "win_rate": 0.842,
+        "profit_factor": 1.948,
+        "sharpe": 1.554,
+        "sortino": 0.987,
+        "max_drawdown_pct": 0.571,
+        "trades_per_year": 57.0,
+        "return_pct": 0.62,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 65,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.105,
+        "wing_width": 1.25,
+        "calm_range_pct_max": 0.004,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "wing_width",
+      "score": {
+        "num_trades": 17,
+        "total_pnl": 584.0,
+        "win_rate": 0.824,
+        "profit_factor": 2.166,
+        "sharpe": 1.888,
+        "sortino": 1.292,
+        "max_drawdown_pct": 0.435,
+        "trades_per_year": 51.0,
+        "return_pct": 0.58,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 67,
+        "num_days": 84
+      },
+      "kept": true
+    },
+    {
+      "params": {
+        "target_delta": 0.105,
+        "wing_width": 1.5,
+        "calm_range_pct_max": 0.004,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "wing_width",
+      "score": {
+        "num_trades": 18,
+        "total_pnl": 974.0,
+        "win_rate": 0.889,
+        "profit_factor": 3.625,
+        "sharpe": 3.408,
+        "sortino": 2.504,
+        "max_drawdown_pct": 0.342,
+        "trades_per_year": 54.0,
+        "return_pct": 0.97,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 66,
+        "num_days": 84
+      },
+      "kept": true
+    },
+    {
+      "params": {
+        "target_delta": 0.105,
+        "wing_width": 1.75,
+        "calm_range_pct_max": 0.004,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "wing_width",
+      "score": {
+        "num_trades": 19,
+        "total_pnl": 692.0,
+        "win_rate": 0.895,
+        "profit_factor": 2.189,
+        "sharpe": 1.784,
+        "sortino": 1.03,
+        "max_drawdown_pct": 0.556,
+        "trades_per_year": 57.0,
+        "return_pct": 0.69,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 65,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.105,
+        "wing_width": 1.5,
+        "calm_range_pct_max": 0.0045,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "calm_range_pct_max",
+      "score": {
+        "num_trades": 18,
+        "total_pnl": 974.0,
+        "win_rate": 0.889,
+        "profit_factor": 3.625,
+        "sharpe": 3.408,
+        "sortino": 2.504,
+        "max_drawdown_pct": 0.342,
+        "trades_per_year": 54.0,
+        "return_pct": 0.97,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 66,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.105,
+        "wing_width": 1.5,
+        "calm_range_pct_max": 0.004,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.6,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "profit_take_pct",
+      "score": {
+        "num_trades": 18,
+        "total_pnl": 889.0,
+        "win_rate": 0.889,
+        "profit_factor": 3.396,
+        "sharpe": 3.189,
+        "sortino": 2.284,
+        "max_drawdown_pct": 0.343,
+        "trades_per_year": 54.0,
+        "return_pct": 0.89,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 66,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.105,
+        "wing_width": 1.5,
+        "calm_range_pct_max": 0.004,
+        "calm_vwap_slope_max": 0.0002,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.5
+      },
+      "param_changed": "stop_loss_multiple",
+      "score": {
+        "num_trades": 18,
+        "total_pnl": 883.0,
+        "win_rate": 0.833,
+        "profit_factor": 3.025,
+        "sharpe": 3.014,
+        "sortino": 2.55,
+        "max_drawdown_pct": 0.342,
+        "trades_per_year": 54.0,
+        "return_pct": 0.88,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 66,
+        "num_days": 84
+      },
+      "kept": false
+    },
+    {
+      "params": {
+        "target_delta": 0.105,
+        "wing_width": 1.5,
+        "calm_range_pct_max": 0.004,
+        "calm_vwap_slope_max": 0.00025,
+        "profit_take_pct": 0.5,
+        "stop_loss_multiple": 1.75
+      },
+      "param_changed": "calm_vwap_slope_max",
+      "score": {
+        "num_trades": 27,
+        "total_pnl": 193.0,
+        "win_rate": 0.778,
+        "profit_factor": 1.13,
+        "sharpe": 0.399,
+        "sortino": 0.415,
+        "max_drawdown_pct": 0.899,
+        "trades_per_year": 81.0,
+        "return_pct": 0.19,
+        "passes_drawdown_cap": true,
+        "eligible": true,
+        "skipped_days": 57,
+        "num_days": 84
+      },
+      "kept": false
+    }
+  ],
+  "best": {
+    "params": {
+      "target_delta": 0.105,
+      "wing_width": 1.5,
+      "calm_range_pct_max": 0.004,
+      "calm_vwap_slope_max": 0.0002,
+      "profit_take_pct": 0.5,
+      "stop_loss_multiple": 1.75
+    },
+    "score": {
+      "num_trades": 18,
+      "total_pnl": 974.0,
+      "win_rate": 0.889,
+      "profit_factor": 3.625,
+      "sharpe": 3.408,
+      "sortino": 2.504,
+      "max_drawdown_pct": 0.342,
+      "trades_per_year": 54.0,
+      "return_pct": 0.97,
+      "passes_drawdown_cap": true,
+      "eligible": true,
+      "skipped_days": 66,
+      "num_days": 84
+    }
+  }
+}

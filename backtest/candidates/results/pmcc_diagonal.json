@@ -1,0 +1,934 @@
+{
+  "strategy": "pmcc_diagonal",
+  "events": [
+    {
+      "date": "2026-03-04",
+      "action": "open_long",
+      "symbol": "SPY260316C00673000",
+      "strike": 673.0,
+      "expiry": "2026-03-16",
+      "price": 15.21
+    },
+    {
+      "date": "2026-03-04",
+      "action": "open_short",
+      "symbol": "SPY260310C00693000",
+      "strike": 693.0,
+      "expiry": "2026-03-10",
+      "price": 2
+    },
+    {
+      "date": "2026-03-10",
+      "action": "close_short",
+      "symbol": "SPY260310C00693000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-03-10",
+      "action": "open_short",
+      "symbol": "SPY260313C00682000",
+      "strike": 682.0,
+      "expiry": "2026-03-13",
+      "price": 3.95
+    },
+    {
+      "date": "2026-03-13",
+      "action": "close_long",
+      "symbol": "SPY260316C00673000",
+      "price": 0.64
+    },
+    {
+      "date": "2026-03-13",
+      "action": "close_short_no_long_backing",
+      "symbol": "SPY260313C00682000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-03-19",
+      "action": "open_long",
+      "symbol": "SPY260331C00648000",
+      "strike": 648.0,
+      "expiry": "2026-03-31",
+      "price": 15.71
+    },
+    {
+      "date": "2026-03-19",
+      "action": "open_short",
+      "symbol": "SPY260325C00668000",
+      "strike": 668.0,
+      "expiry": "2026-03-25",
+      "price": 2.99
+    },
+    {
+      "date": "2026-03-25",
+      "action": "close_short",
+      "symbol": "SPY260325C00668000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-03-25",
+      "action": "open_short",
+      "symbol": "SPY260330C00664000",
+      "strike": 664.0,
+      "expiry": "2026-03-30",
+      "price": 3.61
+    },
+    {
+      "date": "2026-03-31",
+      "action": "close_long",
+      "symbol": "SPY260331C00648000",
+      "price": 2.37
+    },
+    {
+      "date": "2026-03-31",
+      "action": "close_short_no_long_backing",
+      "symbol": "SPY260330C00664000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-04-09",
+      "action": "open_long",
+      "symbol": "SPY260421C00661000",
+      "strike": 661.0,
+      "expiry": "2026-04-21",
+      "price": 18.85
+    },
+    {
+      "date": "2026-04-09",
+      "action": "open_short",
+      "symbol": "SPY260415C00693000",
+      "strike": 693.0,
+      "expiry": "2026-04-15",
+      "price": 0.45
+    },
+    {
+      "date": "2026-04-15",
+      "action": "close_short",
+      "symbol": "SPY260415C00693000",
+      "price": 6.42
+    },
+    {
+      "date": "2026-04-15",
+      "action": "open_short",
+      "symbol": "SPY260420C00711000",
+      "strike": 711.0,
+      "expiry": "2026-04-20",
+      "price": 0.45
+    },
+    {
+      "date": "2026-04-21",
+      "action": "close_long",
+      "symbol": "SPY260421C00661000",
+      "price": 45.93
+    },
+    {
+      "date": "2026-04-21",
+      "action": "open_long",
+      "symbol": "SPY260504C00686000",
+      "strike": 686.0,
+      "expiry": "2026-05-04",
+      "price": 23.97
+    },
+    {
+      "date": "2026-04-21",
+      "action": "close_short",
+      "symbol": "SPY260420C00711000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-04-21",
+      "action": "open_short",
+      "symbol": "SPY260427C00715000",
+      "strike": 715.0,
+      "expiry": "2026-04-27",
+      "price": 2.08
+    },
+    {
+      "date": "2026-04-27",
+      "action": "close_short",
+      "symbol": "SPY260427C00715000",
+      "price": 0.28
+    },
+    {
+      "date": "2026-04-27",
+      "action": "open_short",
+      "symbol": "SPY260501C00723000",
+      "strike": 723.0,
+      "expiry": "2026-05-01",
+      "price": 1.6
+    },
+    {
+      "date": "2026-04-30",
+      "action": "close_short",
+      "symbol": "SPY260501C00723000",
+      "price": 0.45
+    },
+    {
+      "date": "2026-04-30",
+      "action": "open_short",
+      "symbol": "SPY260501C00721000",
+      "strike": 721.0,
+      "expiry": "2026-05-01",
+      "price": 1.04
+    },
+    {
+      "date": "2026-05-06",
+      "action": "close_long",
+      "symbol": "SPY260504C00686000",
+      "price": 31.68
+    },
+    {
+      "date": "2026-05-06",
+      "action": "open_long",
+      "symbol": "SPY260518C00724000",
+      "strike": 724.0,
+      "expiry": "2026-05-18",
+      "price": 12.48
+    },
+    {
+      "date": "2026-05-06",
+      "action": "close_short",
+      "symbol": "SPY260501C00721000",
+      "price": 0.04
+    },
+    {
+      "date": "2026-05-06",
+      "action": "open_short",
+      "symbol": "SPY260512C00741000",
+      "strike": 741.0,
+      "expiry": "2026-05-12",
+      "price": 1.65
+    },
+    {
+      "date": "2026-05-12",
+      "action": "close_short",
+      "symbol": "SPY260512C00741000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-05-12",
+      "action": "open_short",
+      "symbol": "SPY260515C00743000",
+      "strike": 743.0,
+      "expiry": "2026-05-15",
+      "price": 1.41
+    },
+    {
+      "date": "2026-05-15",
+      "action": "close_long",
+      "symbol": "SPY260518C00724000",
+      "price": 16.53
+    },
+    {
+      "date": "2026-05-15",
+      "action": "close_short_no_long_backing",
+      "symbol": "SPY260515C00743000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-05-21",
+      "action": "open_long",
+      "symbol": "SPY260602C00733000",
+      "strike": 733.0,
+      "expiry": "2026-06-02",
+      "price": 11.9
+    },
+    {
+      "date": "2026-05-21",
+      "action": "open_short",
+      "symbol": "SPY260527C00750000",
+      "strike": 750.0,
+      "expiry": "2026-05-27",
+      "price": 1.65
+    },
+    {
+      "date": "2026-05-27",
+      "action": "close_short",
+      "symbol": "SPY260527C00750000",
+      "price": 0.9
+    },
+    {
+      "date": "2026-05-27",
+      "action": "open_short",
+      "symbol": "SPY260601C00757000",
+      "strike": 757.0,
+      "expiry": "2026-06-01",
+      "price": 1.18
+    },
+    {
+      "date": "2026-06-02",
+      "action": "close_long",
+      "symbol": "SPY260602C00733000",
+      "price": 26.13
+    },
+    {
+      "date": "2026-06-02",
+      "action": "open_long",
+      "symbol": "SPY260615C00750000",
+      "strike": 750.0,
+      "expiry": "2026-06-15",
+      "price": 13.67
+    },
+    {
+      "date": "2026-06-02",
+      "action": "close_short",
+      "symbol": "SPY260601C00757000",
+      "price": 1.62
+    },
+    {
+      "date": "2026-06-02",
+      "action": "open_short",
+      "symbol": "SPY260608C00766000",
+      "strike": 766.0,
+      "expiry": "2026-06-08",
+      "price": 1.44
+    },
+    {
+      "date": "2026-06-05",
+      "action": "close_short",
+      "symbol": "SPY260608C00766000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-06-05",
+      "action": "open_short",
+      "symbol": "SPY260611C00746000",
+      "strike": 746.0,
+      "expiry": "2026-06-11",
+      "price": 2.22
+    },
+    {
+      "date": "2026-06-11",
+      "action": "close_short",
+      "symbol": "SPY260611C00746000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-06-11",
+      "action": "open_short",
+      "symbol": "SPY260612C00742000",
+      "strike": 742.0,
+      "expiry": "2026-06-12",
+      "price": 2.08
+    },
+    {
+      "date": "2026-06-17",
+      "action": "close_long",
+      "symbol": "SPY260615C00750000",
+      "price": 4.57
+    },
+    {
+      "date": "2026-06-17",
+      "action": "open_long",
+      "symbol": "SPY260629C00725000",
+      "strike": 725.0,
+      "expiry": "2026-06-29",
+      "price": 26.53
+    },
+    {
+      "date": "2026-06-17",
+      "action": "close_short",
+      "symbol": "SPY260612C00742000",
+      "price": 0.58
+    },
+    {
+      "date": "2026-06-17",
+      "action": "open_short",
+      "symbol": "SPY260623C00752000",
+      "strike": 752.0,
+      "expiry": "2026-06-23",
+      "price": 1.03
+    },
+    {
+      "date": "2026-06-23",
+      "action": "close_short",
+      "symbol": "SPY260623C00752000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-06-23",
+      "action": "open_short",
+      "symbol": "SPY260626C00741000",
+      "strike": 741.0,
+      "expiry": "2026-06-26",
+      "price": 2.43
+    },
+    {
+      "date": "2026-06-26",
+      "action": "close_long",
+      "symbol": "SPY260629C00725000",
+      "price": 8.28
+    },
+    {
+      "date": "2026-06-26",
+      "action": "close_short_no_long_backing",
+      "symbol": "SPY260626C00741000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-07-08",
+      "action": "open_long",
+      "symbol": "SPY260720C00730000",
+      "strike": 730.0,
+      "expiry": "2026-07-20",
+      "price": 17.51
+    },
+    {
+      "date": "2026-07-08",
+      "action": "open_short",
+      "symbol": "SPY260714C00756000",
+      "strike": 756.0,
+      "expiry": "2026-07-14",
+      "price": 0.65
+    },
+    {
+      "date": "2026-07-14",
+      "action": "close_short",
+      "symbol": "SPY260714C00756000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-07-14",
+      "action": "open_short",
+      "symbol": "SPY260717C00758000",
+      "strike": 758.0,
+      "expiry": "2026-07-17",
+      "price": 0.92
+    },
+    {
+      "date": "2026-07-17",
+      "action": "close_long",
+      "symbol": "SPY260720C00730000",
+      "price": 14.5
+    },
+    {
+      "date": "2026-07-17",
+      "action": "open_long",
+      "symbol": "SPY260729C00732000",
+      "strike": 732.0,
+      "expiry": "2026-07-29",
+      "price": 15.04
+    },
+    {
+      "date": "2026-07-17",
+      "action": "close_short",
+      "symbol": "SPY260717C00758000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-07-17",
+      "action": "open_short",
+      "symbol": "SPY260723C00751000",
+      "strike": 751.0,
+      "expiry": "2026-07-23",
+      "price": 1.62
+    },
+    {
+      "date": "2026-07-20",
+      "action": "close_short",
+      "symbol": "SPY260723C00751000",
+      "price": 0.74
+    },
+    {
+      "date": "2026-07-20",
+      "action": "open_short",
+      "symbol": "SPY260727C00751000",
+      "strike": 751.0,
+      "expiry": "2026-07-27",
+      "price": 1.8
+    },
+    {
+      "date": "2026-07-23",
+      "action": "close_short",
+      "symbol": "SPY260727C00751000",
+      "price": 0.23
+    },
+    {
+      "date": "2026-07-23",
+      "action": "open_short",
+      "symbol": "SPY260728C00745000",
+      "strike": 745.0,
+      "expiry": "2026-07-28",
+      "price": 2.03
+    },
+    {
+      "date": "2026-07-29",
+      "action": "close_long",
+      "symbol": "SPY260729C00732000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-07-29",
+      "action": "open_long",
+      "symbol": "SPY260810C00719000",
+      "strike": 719.0,
+      "expiry": "2026-08-10",
+      "price": 25.3
+    },
+    {
+      "date": "2026-07-29",
+      "action": "close_short",
+      "symbol": "SPY260728C00745000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-07-29",
+      "action": "open_short",
+      "symbol": "SPY260804C00737000",
+      "strike": 737.0,
+      "expiry": "2026-08-04",
+      "price": 3.12
+    },
+    {
+      "date": "2026-08-04",
+      "action": "close_short",
+      "symbol": "SPY260804C00737000",
+      "price": 36.1
+    },
+    {
+      "date": "2026-08-04",
+      "action": "open_short",
+      "symbol": "SPY260807C00778000",
+      "strike": 778.0,
+      "expiry": "2026-08-07",
+      "price": 1.67
+    },
+    {
+      "date": "2026-08-07",
+      "action": "close_long",
+      "symbol": "SPY260810C00719000",
+      "price": 28.5
+    },
+    {
+      "date": "2026-08-07",
+      "action": "open_long",
+      "symbol": "SPY260819C00758000",
+      "strike": 758.0,
+      "expiry": "2026-08-19",
+      "price": 17.11
+    },
+    {
+      "date": "2026-08-07",
+      "action": "close_short",
+      "symbol": "SPY260807C00778000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-08-07",
+      "action": "open_short",
+      "symbol": "SPY260813C00783000",
+      "strike": 783.0,
+      "expiry": "2026-08-13",
+      "price": 0.8
+    },
+    {
+      "date": "2026-08-10",
+      "action": "close_short",
+      "symbol": "SPY260813C00783000",
+      "price": 0.39
+    },
+    {
+      "date": "2026-08-10",
+      "action": "open_short",
+      "symbol": "SPY260817C00784000",
+      "strike": 784.0,
+      "expiry": "2026-08-17",
+      "price": 0.83
+    },
+    {
+      "date": "2026-08-19",
+      "action": "close_long",
+      "symbol": "SPY260819C00758000",
+      "price": 10.99
+    },
+    {
+      "date": "2026-08-19",
+      "action": "open_long",
+      "symbol": "SPY260831C00755000",
+      "strike": 755.0,
+      "expiry": "2026-08-31",
+      "price": 16.7
+    },
+    {
+      "date": "2026-08-19",
+      "action": "close_short",
+      "symbol": "SPY260817C00784000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-08-19",
+      "action": "open_short",
+      "symbol": "SPY260825C00779000",
+      "strike": 779.0,
+      "expiry": "2026-08-25",
+      "price": 0.4
+    },
+    {
+      "date": "2026-08-25",
+      "action": "close_short",
+      "symbol": "SPY260825C00779000",
+      "price": 0.01
+    },
+    {
+      "date": "2026-08-25",
+      "action": "open_short",
+      "symbol": "SPY260828C00772000",
+      "strike": 772.0,
+      "expiry": "2026-08-28",
+      "price": 1.37
+    },
+    {
+      "date": "2026-08-28",
+      "action": "wind_down_close_long",
+      "symbol": "SPY260831C00755000",
+      "price": 14.43
+    },
+    {
+      "date": "2026-08-28",
+      "action": "wind_down_close_short",
+      "symbol": "SPY260828C00772000",
+      "price": 0.01
+    }
+  ],
+  "skipped": [
+    {
+      "checkpoint": "2026-03-07",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-03-13",
+      "reason": "no_liquid_long_leg"
+    },
+    {
+      "checkpoint": "2026-03-16",
+      "reason": "no_liquid_long_leg"
+    },
+    {
+      "checkpoint": "2026-03-22",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-03-28",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-03-31",
+      "reason": "no_liquid_long_leg"
+    },
+    {
+      "checkpoint": "2026-04-03",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-04-06",
+      "reason": "no_liquid_long_leg"
+    },
+    {
+      "checkpoint": "2026-04-12",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-04-18",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-05-03",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-05-09",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-05-15",
+      "reason": "no_liquid_long_leg"
+    },
+    {
+      "checkpoint": "2026-05-18",
+      "reason": "no_liquid_long_leg"
+    },
+    {
+      "checkpoint": "2026-05-24",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-05-30",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-06-14",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-06-20",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-06-26",
+      "reason": "no_liquid_long_leg"
+    },
+    {
+      "checkpoint": "2026-06-29",
+      "reason": "no_liquid_long_leg"
+    },
+    {
+      "checkpoint": "2026-07-02",
+      "reason": "no_liquid_long_leg"
+    },
+    {
+      "checkpoint": "2026-07-05",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-07-11",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-07-26",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-08-01",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-08-16",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-08-22",
+      "reason": "no_equity_bar"
+    },
+    {
+      "checkpoint": "2026-08-28",
+      "reason": "long_roll_due_but_past_open_cutoff_wound_down"
+    }
+  ],
+  "equity_curve": [
+    [
+      "2026-03-04",
+      100000.0
+    ],
+    [
+      "2026-03-10",
+      92950.57
+    ],
+    [
+      "2026-03-13",
+      77608.85
+    ],
+    [
+      "2026-03-16",
+      77633.13
+    ],
+    [
+      "2026-03-19",
+      77657.41
+    ],
+    [
+      "2026-03-25",
+      80539.98
+    ],
+    [
+      "2026-03-31",
+      60178.55
+    ],
+    [
+      "2026-04-06",
+      60227.11
+    ],
+    [
+      "2026-04-09",
+      60251.4
+    ],
+    [
+      "2026-04-15",
+      92721.96
+    ],
+    [
+      "2026-04-21",
+      116378.53
+    ],
+    [
+      "2026-04-24",
+      130000.81
+    ],
+    [
+      "2026-04-27",
+      135251.09
+    ],
+    [
+      "2026-04-30",
+      138655.38
+    ],
+    [
+      "2026-05-06",
+      146815.94
+    ],
+    [
+      "2026-05-12",
+      159760.51
+    ],
+    [
+      "2026-05-15",
+      165322.79
+    ],
+    [
+      "2026-05-18",
+      165347.07
+    ],
+    [
+      "2026-05-21",
+      165371.36
+    ],
+    [
+      "2026-05-27",
+      184321.92
+    ],
+    [
+      "2026-06-02",
+      203272.49
+    ],
+    [
+      "2026-06-05",
+      176932.77
+    ],
+    [
+      "2026-06-08",
+      177425.06
+    ],
+    [
+      "2026-06-11",
+      180283.34
+    ],
+    [
+      "2026-06-17",
+      193097.9
+    ],
+    [
+      "2026-06-23",
+      160880.47
+    ],
+    [
+      "2026-06-26",
+      154664.75
+    ],
+    [
+      "2026-06-29",
+      154689.04
+    ],
+    [
+      "2026-07-02",
+      154713.32
+    ],
+    [
+      "2026-07-08",
+      154761.89
+    ],
+    [
+      "2026-07-14",
+      170280.45
+    ],
+    [
+      "2026-07-17",
+      151038.73
+    ],
+    [
+      "2026-07-20",
+      151869.02
+    ],
+    [
+      "2026-07-23",
+      146433.3
+    ],
+    [
+      "2026-07-29",
+      123679.87
+    ],
+    [
+      "2026-08-04",
+      46300.43
+    ],
+    [
+      "2026-08-07",
+      50640.72
+    ],
+    [
+      "2026-08-10",
+      51731.0
+    ],
+    [
+      "2026-08-13",
+      66575.28
+    ],
+    [
+      "2026-08-19",
+      38023.85
+    ],
+    [
+      "2026-08-25",
+      28114.41
+    ],
+    [
+      "2026-08-28",
+      36744.7
+    ],
+    [
+      "2026-08-31",
+      36768.98
+    ]
+  ],
+  "weekly_returns": [
+    -0.07049429999999993,
+    -0.16505245745130986,
+    0.00031285091841972703,
+    0.0003127530733334961,
+    0.037119059211477595,
+    -0.2528114608421804,
+    0.0008069320380766514,
+    0.0004033067500665543,
+    0.5389179338571387,
+    0.25513449025451995,
+    0.11705148707411925,
+    0.040386517591698076,
+    0.025170148351484695,
+    0.05885498276374128,
+    0.0881686961238678,
+    0.034816363568193405,
+    0.00014686420426366403,
+    0.00014690311718241542,
+    0.11459396596847259,
+    0.10281235134703445,
+    -0.12957838023236692,
+    0.0027823562588208403,
+    0.01610978742236299,
+    0.07108011200591247,
+    -0.16684505631599306,
+    -0.038635640485137825,
+    0.00015704935998673354,
+    0.00015696005353707564,
+    0.00031393547756590695,
+    0.1002737818722684,
+    -0.1130001711881781,
+    0.005497199294511938,
+    -0.03579215826901366,
+    -0.1553842602741316,
+    -0.6256429603297611,
+    0.09374189397377089,
+    0.021529709688171868,
+    0.28695134445496895,
+    -0.4288593303700713,
+    -0.26061116904258774,
+    0.30697034012095564,
+    0.0006607755676330495
+  ],
+  "contracts": 26,
+  "allocation_used": 9.1,
+  "unallocated_cash": 65654.0,
+  "total_pnl": -63231.02,
+  "final_nav": 36768.98,
+  "return_pct": -63.23,
+  "num_rolls": 42,
+  "wound_down_early": true,
+  "data_constraint_note": "Alpaca's historical option-bars API only serves contracts that have already expired (no OPRA real-time entitlement on this account) - new long/short legs are only opened if guaranteed to fully expire before today; if a roll came due after that cutoff the position was wound down to cash rather than faked with theoretical pricing."
+}
