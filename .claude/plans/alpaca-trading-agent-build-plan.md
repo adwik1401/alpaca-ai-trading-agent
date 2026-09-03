@@ -1,6 +1,6 @@
 # Alpaca AI Trading Agent — Build Plan
 
-**Overall Progress:** `49%` (19/39 checkboxes)
+**Overall Progress:** `56%` (24/43 checkboxes)
 
 > **2026-09-02 update: ~2.5 days remain** until the Sep 4, 8:30 PM IST deadline (was ~3.5 days when this plan was created). Phase 2 scope must stay tight — no gold-plating.
 >
@@ -35,7 +35,7 @@ Each code phase follows this portfolio's standard pipeline:
 - [x] 🟩 Create an Alpaca paper trading account for dev/backtesting use (account `PA37YZBHY6Q7`, options approved level 3, $100k default paper balance)
 - [x] 🟩 Generate Alpaca paper API key + secret, supply as env vars — verified working via `/v2/account`
 - [x] 🟩 Create a Featherless AI account + API key — verified working, 21,906 models available; picked `meta-llama/Meta-Llama-3.1-8B-Instruct` (fast/cheap tier) and `deepseek-ai/DeepSeek-V3.2` (heavy reasoning tier)
-- [ ] 🟥 Confirm or create the public GitHub repository this project will live in
+- [x] 🟩 Confirm or create the public GitHub repository this project will live in — created 2026-09-03: **https://github.com/adwik1401/alpaca-ai-trading-agent** (public), initial commit pushed (77 files)
 - [ ] 🟥 Confirm Netlify account access (likely already available from other portfolio projects)
 
 ### Phase 1 — Backtest Harness & Strategy Selection (today — hours, not days)
@@ -64,10 +64,14 @@ Each code phase follows this portfolio's standard pipeline:
 - [x] 🟩 **Step 7: Create the fresh, dedicated Alpaca paper account for judging** — done 2026-09-03
   - [x] 🟩 Starting balance confirmed exactly $100,000 (verified live via `/v2/account`: cash=$100,000, equity=$100,000)
   - [x] 🟩 Account ID: **PA3WNF5ZV8W3** (confirmed distinct from the dev account PA37YZBHY6Q7, options approved level 3, status ACTIVE, created 2026-09-03) — credentials in `.env.local` as `ALPACA_SUBMISSION_*`
-- [ ] 🟥 **Step 8: GitHub Actions scheduled workflow**
-  - [ ] 🟥 Cron trigger at a chosen interval (e.g. every 15 min during market hours)
-  - [ ] 🟥 Installs the Alpaca CLI and runs the agent script against the fresh submission account
-  - [ ] 🟥 Commits/pushes audit-log output for the dashboard to read
+- [ ] 🟨 **Step 8: GitHub Actions scheduled workflow** — code written, committed, pushed; blocked on repo secrets (see below)
+  - [x] 🟩 `.github/workflows/trading-agent.yml` — cron every 15 min, 13:00-20:00 UTC Mon-Fri (~9 AM-4 PM ET), plus `workflow_dispatch` for manual testing
+  - [x] 🟩 Installs Alpaca CLI via `go install` (Linux CI target — local dev used the prebuilt Windows binary, so `agent/config.py` gained an `ALPACA_CLI_PATH` env override for CI to point at its own install)
+  - [x] 🟩 Runs `python -m agent.run_agent` with `AGENT_ACCOUNT=submission` — full cycle smoke-tested locally against the real submission account (PA3WNF5ZV8W3) 2026-09-03: circuit breakers, live signal evaluation, Featherless analyst debate, and the Alpaca CLI itself all verified working end-to-end (no trade fired that cycle - `no_liquid_short_strikes`, a legitimate outcome)
+  - [x] 🟩 Commits/pushes `agent/audit_log.jsonl` after each run (`if: always()` - captures failure events too)
+  - [ ] 🟥 **Blocked on Adwik**: 4 GitHub Actions repository secrets need to be set (`ALPACA_SUBMISSION_API_KEY`, `ALPACA_SUBMISSION_SECRET_KEY`, `ALPACA_SUBMISSION_ACCOUNT_ID`, `FEATHERLESS_API_KEY`) — Claude Code's safety classifier blocked piping these from `.env.local` into `gh secret set` directly, even read-only/non-displaying, so this needs to be done manually (command or GitHub web UI, both given to Adwik)
+  - [ ] 🟥 Verify the workflow actually fires on schedule (or trigger manually via `workflow_dispatch` once secrets are set) and produces a real audit log commit
+  - [ ] 🟥 **Time-sensitive**: 2026-09-03 is the actual live trading target date decided below (Sep 4 is NFP day, avoided) — the cron needs to be live *today*, not just before the Sep 4 submission deadline, or the strategy's one real live-trading opportunity is missed
 
 > **2026-09-02, mid-Phase-2 finding:** with only ~2.5 days left, there is exactly ONE weekly SPY cycle left before the deadline. Also discovered SPY has *daily* expiries, and that the obvious "next Friday" (Sep 4) is Non-Farm Payrolls day — switched the live target to **2026-09-03** to avoid trading into a scheduled catalyst our Black-Scholes-based strike selection can't price. See architecture-decisions.md.
 
