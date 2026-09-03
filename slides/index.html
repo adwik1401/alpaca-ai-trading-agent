@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Alpaca AI Trading Agent — Slides</title>
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --surface: #1a1a19;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #898781;
+    --border: rgba(255,255,255,0.10);
+    --blue: #3987e5;
+    --good: #0ca30c;
+    --warning: #fab219;
+    --critical: #e66767;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #333; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  @media print {
+    @page { size: 1280px 720px; margin: 0; }
+    html, body { background: var(--bg); }
+  }
+  .slide {
+    width: 1280px; height: 720px;
+    background: var(--bg);
+    color: var(--text-primary);
+    margin: 24px auto;
+    padding: 72px;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+  @media print {
+    .slide { margin: 0; page-break-after: always; }
+  }
+  .kicker { color: var(--blue); font-size: 15px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px; }
+  h1 { font-size: 48px; margin: 0 0 20px; line-height: 1.15; }
+  h2 { font-size: 36px; margin: 0 0 28px; }
+  p.lead { font-size: 22px; color: var(--text-secondary); line-height: 1.5; max-width: 900px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 36px; }
+  .grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 30px; }
+  .box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 26px; }
+  .box h3 { margin: 0 0 10px; font-size: 18px; color: var(--blue); }
+  .box p { margin: 0; font-size: 15px; color: var(--text-secondary); line-height: 1.55; }
+  .stat { font-size: 42px; font-weight: 700; color: var(--blue); }
+  .stat-label { font-size: 14px; color: var(--text-muted); margin-top: 4px; }
+  .pipeline { display: flex; align-items: center; gap: 0; margin-top: 40px; }
+  .pipe-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; flex: 1; }
+  .pipe-box h3 { margin: 0 0 8px; color: var(--blue); font-size: 19px; }
+  .pipe-box p { margin: 0; font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+  .arrow { color: var(--text-muted); font-size: 28px; padding: 0 16px; }
+  table.slidetable { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 17px; }
+  table.slidetable th { text-align: left; color: var(--text-muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.03em; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  table.slidetable td { padding: 14px 12px; border-bottom: 1px solid var(--border); }
+  .footer { position: absolute; bottom: 40px; left: 72px; right: 72px; display: flex; justify-content: space-between; font-size: 13px; color: var(--text-muted); }
+  .badge { display: inline-block; padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; }
+  .badge-good { background: color-mix(in srgb, var(--good) 18%, transparent); color: #4ade4a; }
+  .center { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: 100%; }
+  ul.plain { list-style: none; padding: 0; margin: 24px 0 0; }
+  ul.plain li { font-size: 18px; color: var(--text-secondary); padding: 10px 0 10px 28px; border-bottom: 1px solid var(--border); position: relative; }
+  ul.plain li::before { content: "→"; position: absolute; left: 0; color: var(--blue); }
+</style>
+</head>
+<body>
+
+<!-- 1: Title -->
+<section class="slide">
+  <div class="center">
+    <div class="kicker">Alpaca AI Trading Agents Hackathon</div>
+    <h1 style="font-size:64px">Alpaca AI Trading Agent</h1>
+    <p class="lead">An autonomous options trading agent that runs unattended, trades real (paper) SPY iron condors on a backtested volatility signal, and logs every decision it makes.</p>
+    <div style="margin-top:40px;display:flex;gap:16px;align-items:center">
+      <span class="badge badge-good">● Live on GitHub Actions cron</span>
+      <span style="color:var(--text-muted);font-size:15px">Account PA3WNF5ZV8W3 · $100,000 paper</span>
+    </div>
+  </div>
+</section>
+
+<!-- 2: Architecture -->
+<section class="slide">
+  <div class="kicker">Architecture</div>
+  <h2>Analyst → Governor → Executor</h2>
+  <p class="lead">Each layer has a strictly bounded role. The LLM never touches option math or picks a strike; no order reaches the broker without deterministic validation.</p>
+  <div class="pipeline">
+    <div class="pipe-box">
+      <h3>Analyst</h3>
+      <p>Featherless LLM (DeepSeek-V3.2). Bull/bear/risk debate. <strong>Advisory only</strong> — logged for audit value, never gates a trade.</p>
+    </div>
+    <div class="arrow">→</div>
+    <div class="pipe-box">
+      <h3>Governor</h3>
+      <p>Deterministic Python. Black-Scholes IV/delta, real strike selection from the live chain, builds the exact order plan.</p>
+    </div>
+    <div class="arrow">→</div>
+    <div class="pipe-box">
+      <h3>Executor</h3>
+      <p>Pydantic-validated order plan → Alpaca CLI → one atomic multi-leg (MLEG) order. All legs fill together, or none do.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3: Strategy -->
+<section class="slide">
+  <div class="kicker">Strategy</div>
+  <h2>Hybrid VRP + Skew Iron Condor</h2>
+  <p class="lead">Market-neutral, defined-risk. Sell a weekly SPY iron condor only when two independent real-data signals agree.</p>
+  <div class="grid2">
+    <div class="box">
+      <h3>Volatility risk premium</h3>
+      <p>Enter only when implied vol (Black-Scholes, backed out of real option prices) exceeds 20-day realized vol by ≥2 points — options are priced richer than actual movement justifies.</p>
+    </div>
+    <div class="box">
+      <h3>Skew regime filter</h3>
+      <p>Enter only when put-call skew isn't elevated vs. its own recent history — avoids selling premium into a market already pricing in unusual fear.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4: Backtest results -->
+<section class="slide">
+  <div class="kicker">Validation</div>
+  <h2>52-week backtest, real Alpaca historical data</h2>
+  <div class="grid3">
+    <div class="box"><div class="stat">2.53</div><div class="stat-label">Sharpe ratio</div></div>
+    <div class="box"><div class="stat">90.9%</div><div class="stat-label">Win rate</div></div>
+    <div class="box"><div class="stat">1.99%</div><div class="stat-label">Max drawdown</div></div>
+  </div>
+  <p class="lead" style="margin-top:32px">SPY buy-and-hold returned +18.9% over the same window — expected, since this is a market-neutral strategy, not a directional bet. The fair comparison is risk-adjusted return, where it wins decisively.</p>
+</section>
+
+<!-- 5: What we tried and rejected -->
+<section class="slide">
+  <div class="kicker">Due diligence</div>
+  <h2>4 directional alternatives, researched and rejected</h2>
+  <p class="lead">Could something beat SPY's raw return? Backtested a leveraged call diagonal, a bull risk reversal, a call-spread barbell, and momentum verticals against real data.</p>
+  <ul class="plain">
+    <li>None beat SPY on a risk-adjusted basis</li>
+    <li>The top-ranked candidate (leveraged diagonal) was the <strong>worst</strong> performer once tested for real — a normal pullback erased its "safe" cushion</li>
+    <li>Decision: stay market-neutral, let the edge come from selectivity, not leverage</li>
+  </ul>
+</section>
+
+<!-- 6: Risk gates -->
+<section class="slide">
+  <div class="kicker">Risk management</div>
+  <h2>Every trade passes through hard gates first</h2>
+  <table class="slidetable">
+    <tr><th>Gate</th><th>Threshold</th></tr>
+    <tr><td>Risk per trade</td><td>≤2% of NAV</td></tr>
+    <tr><td>Margin utilization</td><td>≤25% of buying power</td></tr>
+    <tr><td>Intraday drawdown</td><td>halt new entries at 3%</td></tr>
+    <tr><td>Total drawdown</td><td>kill switch (liquidate everything) at 6%</td></tr>
+    <tr><td>Bid-ask spread</td><td>reject any strike wider than 5% of mid</td></tr>
+    <tr><td>0-DTE positions</td><td>force-liquidated 3:30 PM ET</td></tr>
+  </table>
+</section>
+
+<!-- 7: Infra -->
+<section class="slide">
+  <div class="kicker">Infrastructure</div>
+  <h2>Runs unattended, on schedule, with a public audit trail</h2>
+  <div class="grid2">
+    <div class="box">
+      <h3>GitHub Actions cron</h3>
+      <p>Every 15 minutes during US market hours. Each cycle: check circuit breakers → manage any open position → evaluate a new entry if flat and not halted.</p>
+    </div>
+    <div class="box">
+      <h3>Alpaca CLI</h3>
+      <p>The only component that touches the broker. Built for agents/CI, not interactive use — satisfies the "MCP or CLI" requirement by construction.</p>
+    </div>
+    <div class="box">
+      <h3>Audit log</h3>
+      <p>One structured JSON event per decision, committed back to the repo every cycle — including "nothing happened" cycles.</p>
+    </div>
+    <div class="box">
+      <h3>Live dashboard</h3>
+      <p>Static site reading the repo's own audit log directly — P&L, current status, and the full decision feed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8: Close -->
+<section class="slide">
+  <div class="center">
+    <div class="kicker">Links</div>
+    <h1>Thank you</h1>
+    <ul class="plain" style="margin-top:12px">
+      <li>github.com/adwik1401/alpaca-ai-trading-agent</li>
+      <li>WRITEUP.md — full strategy, risk gate, and architecture detail</li>
+      <li>dashboard/ — live audit trail and P&L</li>
+    </ul>
+  </div>
+</section>
+
+</body>
+</html>
