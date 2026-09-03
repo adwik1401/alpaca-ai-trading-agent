@@ -1,6 +1,6 @@
 # Alpaca AI Trading Agent — Build Plan
 
-**Overall Progress:** `56%` (24/43 checkboxes)
+**Overall Progress:** `64%` (27/42 checkboxes)
 
 > **2026-09-02 update: ~2.5 days remain** until the Sep 4, 8:30 PM IST deadline (was ~3.5 days when this plan was created). Phase 2 scope must stay tight — no gold-plating.
 >
@@ -64,14 +64,16 @@ Each code phase follows this portfolio's standard pipeline:
 - [x] 🟩 **Step 7: Create the fresh, dedicated Alpaca paper account for judging** — done 2026-09-03
   - [x] 🟩 Starting balance confirmed exactly $100,000 (verified live via `/v2/account`: cash=$100,000, equity=$100,000)
   - [x] 🟩 Account ID: **PA3WNF5ZV8W3** (confirmed distinct from the dev account PA37YZBHY6Q7, options approved level 3, status ACTIVE, created 2026-09-03) — credentials in `.env.local` as `ALPACA_SUBMISSION_*`
-- [ ] 🟨 **Step 8: GitHub Actions scheduled workflow** — code written, committed, pushed; blocked on repo secrets (see below)
+- [x] 🟩 **Step 8: GitHub Actions scheduled workflow** — done 2026-09-03, verified live in CI
   - [x] 🟩 `.github/workflows/trading-agent.yml` — cron every 15 min, 13:00-20:00 UTC Mon-Fri (~9 AM-4 PM ET), plus `workflow_dispatch` for manual testing
   - [x] 🟩 Installs Alpaca CLI via `go install` (Linux CI target — local dev used the prebuilt Windows binary, so `agent/config.py` gained an `ALPACA_CLI_PATH` env override for CI to point at its own install)
-  - [x] 🟩 Runs `python -m agent.run_agent` with `AGENT_ACCOUNT=submission` — full cycle smoke-tested locally against the real submission account (PA3WNF5ZV8W3) 2026-09-03: circuit breakers, live signal evaluation, Featherless analyst debate, and the Alpaca CLI itself all verified working end-to-end (no trade fired that cycle - `no_liquid_short_strikes`, a legitimate outcome)
+  - [x] 🟩 Runs `python -m agent.run_agent` with `AGENT_ACCOUNT=submission`
   - [x] 🟩 Commits/pushes `agent/audit_log.jsonl` after each run (`if: always()` - captures failure events too)
-  - [ ] 🟥 **Blocked on Adwik**: 4 GitHub Actions repository secrets need to be set (`ALPACA_SUBMISSION_API_KEY`, `ALPACA_SUBMISSION_SECRET_KEY`, `ALPACA_SUBMISSION_ACCOUNT_ID`, `FEATHERLESS_API_KEY`) — Claude Code's safety classifier blocked piping these from `.env.local` into `gh secret set` directly, even read-only/non-displaying, so this needs to be done manually (command or GitHub web UI, both given to Adwik)
-  - [ ] 🟥 Verify the workflow actually fires on schedule (or trigger manually via `workflow_dispatch` once secrets are set) and produces a real audit log commit
-  - [ ] 🟥 **Time-sensitive**: 2026-09-03 is the actual live trading target date decided below (Sep 4 is NFP day, avoided) — the cron needs to be live *today*, not just before the Sep 4 submission deadline, or the strategy's one real live-trading opportunity is missed
+  - [x] 🟩 4 GitHub Actions repository secrets set (`ALPACA_SUBMISSION_API_KEY`, `ALPACA_SUBMISSION_SECRET_KEY`, `ALPACA_SUBMISSION_ACCOUNT_ID`, `FEATHERLESS_API_KEY`) by Adwik directly — Claude Code's safety classifier correctly blocked Claude from piping these from `.env.local` into `gh secret set`, even read-only/non-displaying
+  - [x] 🟩 **Verified live via `workflow_dispatch`, 2 real bugs caught and fixed before it worked**:
+    1. `alpaca --version` (a flag) doesn't exist on this CLI - it uses `version` as a subcommand, per its own README. Wrong flag routed into an authenticated-API code path instead of erroring cleanly, producing a misleading "authentication required" failure.
+    2. `backtest/data.py` read the *dev* account's `ALPACA_API_KEY`/`ALPACA_SECRET_KEY` unconditionally at import time; `agent/governor.py` transitively imports that module (via `backtest.strategies.common`) just for the pure `delta_offset_pct` function, but Python still executes the whole module on import. Never surfaced locally because dev credentials always happened to be present in `.env.local` alongside submission ones - CI correctly sets only submission credentials, so it crashed with `KeyError: 'ALPACA_API_KEY'` before ever reaching the account-mode branching logic in `agent/config.py`. Fixed by making the credential read lazy (`_headers()` function, not a module-level dict) in both `backtest/data.py` and `backtest/intraday/data.py` (which imported the same constant directly).
+    3. Third run (after both fixes) succeeded end-to-end: circuit breaker check → live signal evaluation → Featherless analyst debate → audit log committed and pushed (`0f1378a`). Scheduled cron now live for real, unattended.
 
 > **2026-09-02, mid-Phase-2 finding:** with only ~2.5 days left, there is exactly ONE weekly SPY cycle left before the deadline. Also discovered SPY has *daily* expiries, and that the obvious "next Friday" (Sep 4) is Non-Farm Payrolls day — switched the live target to **2026-09-03** to avoid trading into a scheduled catalyst our Black-Scholes-based strike selection can't price. See architecture-decisions.md.
 
