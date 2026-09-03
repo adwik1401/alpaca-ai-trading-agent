@@ -1,6 +1,6 @@
 # Alpaca AI Trading Agent — Build Plan
 
-**Overall Progress:** `64%` (27/42 checkboxes)
+**Overall Progress:** `67%` (28/42 checkboxes)
 
 > **2026-09-02 update: ~2.5 days remain** until the Sep 4, 8:30 PM IST deadline (was ~3.5 days when this plan was created). Phase 2 scope must stay tight — no gold-plating.
 >
@@ -88,13 +88,13 @@ Each code phase follows this portfolio's standard pipeline:
 ### Phase 4 — Submission Packaging (last day)
 > Claude-managed — content/logistics, not code
 
-- [ ] 🟥 One-page write-up: AI logic, risk gates, Alpaca infrastructure implementation
+- [x] 🟩 One-page write-up: AI logic, risk gates, Alpaca infrastructure implementation — done 2026-09-03, `WRITEUP.md` at repo root
 - [ ] 🟥 Cover image
 - [ ] 🟥 Video presentation
 - [ ] 🟥 Slide presentation
-- [ ] 🟥 Final GitHub repo polish (public, README)
-- [ ] 🟥 Submit demo URL (Netlify)
-- [ ] 🟥 Submit the final Alpaca paper trading account ID
+- [ ] 🟥 Final GitHub repo polish (public, README) — repo is public; a proper `README.md` (distinct from `WRITEUP.md`) still not written
+- [ ] 🟥 Submit demo URL (Netlify) — not a hard challenge requirement per challenge-and-requirements.md, first thing to cut if time runs out
+- [ ] 🟥 Submit the final Alpaca paper trading account ID — account ready (`PA3WNF5ZV8W3`), submission itself not yet filed
 - [ ] 🟥 (Optional) up to 5 Build-in-Public social post links (X/LinkedIn, tagging @lablabai + @AlpacaHQ)
 - [ ] 🟥 Submit before **Sep 4, 8:30 PM IST**
 
