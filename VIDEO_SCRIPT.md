@@ -1,8 +1,17 @@
 # Video Presentation Script
 
-I can't produce the actual video file — no recording, screen-capture, or video generation
-capability. This is a script/storyboard for you to record yourself (screen recording + voiceover,
-~2-3 minutes). Each beat names exactly what to have on screen.
+**Update**: this script became a real video — `video/presentation.mp4` (2:34, 8 scenes, one per
+slide in `slides/index.html`). Built from this exact narration text via `ffmpeg`'s `libflite`
+text-to-speech filter (synthesized voiceover per scene) composited over a screenshot of each
+slide, then concatenated. No manual recording was needed in the end. The beat-by-beat breakdown
+below is kept as the source-of-truth script the real video was generated from, and as a
+reference if you want to re-record a version with your own voice instead.
+
+Regenerate it: for each scene, `ffmpeg -f lavfi -i "flite=text='...'" narration_N.wav` (avoid `:`
+and `'` inside the text — the filtergraph parser treats them as syntax), screenshot the matching
+slide via `slides/index.html?slide=N`, then `ffmpeg -loop 1 -i slide_N.png -i narration_N.wav
+-c:v libx264 -tune stillimage -c:a aac -shortest segment_N.mp4` per scene and concatenate with
+the `concat` demuxer.
 
 ---
 

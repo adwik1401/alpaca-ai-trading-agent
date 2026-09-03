@@ -194,5 +194,19 @@
   </div>
 </section>
 
+<script>
+  // Single-slide capture mode for exporting individual PNGs (video production) -
+  // ?slide=N (1-indexed) hides every other slide and drops the page's gray letterboxing
+  // so a screenshot at exactly 1280x720 crops cleanly with nothing else on screen.
+  const params = new URLSearchParams(location.search);
+  const n = params.get("slide");
+  if (n) {
+    document.body.style.background = "#0d0d0d";
+    document.querySelectorAll(".slide").forEach((el, i) => {
+      el.style.display = (i === Number(n) - 1) ? "block" : "none";
+      el.style.margin = "0";
+    });
+  }
+</script>
 </body>
 </html>
