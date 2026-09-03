@@ -1,0 +1,46 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0d0d"/>
+      <stop offset="100%" stop-color="#12161d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- payoff diagram motif: classic iron condor shape -->
+  <g transform="translate(0,60)" opacity="0.9">
+    <line x1="120" y1="380" x2="1080" y2="380" stroke="#383835" stroke-width="1"/>
+    <path d="M 120 460 L 340 460 L 480 300 L 720 300 L 860 460 L 1080 460"
+          fill="none" stroke="#3987e5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="480" cy="300" r="6" fill="#3987e5"/>
+    <circle cx="720" cy="300" r="6" fill="#3987e5"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="120" y="140" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="56" font-weight="700" fill="#ffffff">
+    Alpaca AI Trading Agent
+  </text>
+  <text x="120" y="185" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="24" fill="#c3c2b7">
+    Autonomous options trading · Hybrid VRP + Skew Iron Condor
+  </text>
+
+  <!-- stat row -->
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+    <text x="120" y="565" font-size="34" font-weight="700" fill="#3987e5">2.53</text>
+    <text x="120" y="592" font-size="15" fill="#898781">Backtested Sharpe</text>
+
+    <text x="320" y="565" font-size="34" font-weight="700" fill="#3987e5">90.9%</text>
+    <text x="320" y="592" font-size="15" fill="#898781">Win rate</text>
+
+    <text x="560" y="565" font-size="34" font-weight="700" fill="#3987e5">1.99%</text>
+    <text x="560" y="592" font-size="15" fill="#898781">Max drawdown</text>
+
+    <text x="800" y="565" font-size="34" font-weight="700" fill="#3987e5">52wk</text>
+    <text x="800" y="592" font-size="15" fill="#898781">Real historical data</text>
+  </g>
+
+  <text x="1080" y="592" font-size="15" fill="#52514e" text-anchor="end" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+    lablab.ai hackathon
+  </text>
+</svg>
