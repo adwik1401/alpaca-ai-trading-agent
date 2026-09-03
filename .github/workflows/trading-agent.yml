@@ -45,7 +45,7 @@ jobs:
           echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
 
       - name: Verify Alpaca CLI installed
-        run: alpaca --version
+        run: alpaca version
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt
