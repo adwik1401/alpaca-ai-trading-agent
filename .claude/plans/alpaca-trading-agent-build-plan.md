@@ -1,6 +1,6 @@
 # Alpaca AI Trading Agent — Build Plan
 
-**Overall Progress:** `76%` (32/42 checkboxes)
+**Overall Progress:** `79%` (33/42 checkboxes)
 
 > **2026-09-02 update: ~2.5 days remain** until the Sep 4, 8:30 PM IST deadline (was ~3.5 days when this plan was created). Phase 2 scope must stay tight — no gold-plating.
 >
@@ -90,7 +90,7 @@ Each code phase follows this portfolio's standard pipeline:
 
 - [x] 🟩 One-page write-up: AI logic, risk gates, Alpaca infrastructure implementation — done 2026-09-03, `WRITEUP.md` at repo root
 - [x] 🟩 Cover image — done 2026-09-03, `cover.svg` (source) + `cover.png` (1200×630, rendered via headless Chrome — `file://` URLs broke on the spaces in this project's path, served locally over HTTP instead)
-- [ ] 🟨 Video presentation — Claude cannot record/generate video; wrote `VIDEO_SCRIPT.md` (full beat-by-beat script + recording notes) for Adwik to record by hand
+- [x] 🟩 Video presentation — done 2026-09-03, `video/presentation.mp4` (2:34, 8 scenes). Wrote `VIDEO_SCRIPT.md` first assuming Claude had no recording capability, but found `ffmpeg` was compiled with `libflite` (real text-to-speech) and used it to synthesize narration per scene, composited over a screenshot of each slide (added a `?slide=N` single-slide capture mode to `slides/index.html` for this), then concatenated - no manual recording needed after all
 - [x] 🟩 Slide presentation — done 2026-09-03, `slides/index.html` (8 slides, same visual identity as the cover image) + `slides/deck.pdf` (exported via headless Chrome, verified 8 pages at consistent 16:9)
 - [x] 🟩 Final GitHub repo polish (public, README) — done 2026-09-03, `README.md` added (overview, architecture, project structure, run instructions)
 - [ ] 🟥 Submit demo URL (Netlify) — not a hard challenge requirement per challenge-and-requirements.md, first thing to cut if time runs out
