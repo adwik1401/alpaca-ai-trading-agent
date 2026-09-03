@@ -1,6 +1,6 @@
 # Alpaca AI Trading Agent — Build Plan
 
-**Overall Progress:** `69%` (29/42 checkboxes)
+**Overall Progress:** `76%` (32/42 checkboxes)
 
 > **2026-09-02 update: ~2.5 days remain** until the Sep 4, 8:30 PM IST deadline (was ~3.5 days when this plan was created). Phase 2 scope must stay tight — no gold-plating.
 >
@@ -82,20 +82,20 @@ Each code phase follows this portfolio's standard pipeline:
 ### Phase 3 — Demo Dashboard (can overlap the tail end of Phase 2)
 > `[DELEGATING → Codex /run-code]` → `[DELEGATING → Codex /review]`
 
-- [ ] 🟥 Netlify site reading the GitHub Actions job's output — P&L curve, current positions, audit trail
-- [ ] 🟥 Deploy and confirm the live demo URL
+- [x] 🟩 Netlify site reading the GitHub Actions job's output — P&L curve, current positions, audit trail — `dashboard/index.html` built 2026-09-03, static site fetching `agent/audit_log.jsonl` directly from the repo (no backend, no client-side API keys), styled to the dataviz skill's validated default palette
+- [ ] 🟨 Deploy and confirm the live demo URL — blocked on Adwik logging into a non-QCIN Netlify account (the CLI's default logged-in account is the work/QCIN one, deliberately not used for a personal submission); code is ready to deploy the moment that's done
 
 ### Phase 4 — Submission Packaging (last day)
 > Claude-managed — content/logistics, not code
 
 - [x] 🟩 One-page write-up: AI logic, risk gates, Alpaca infrastructure implementation — done 2026-09-03, `WRITEUP.md` at repo root
-- [ ] 🟥 Cover image
-- [ ] 🟥 Video presentation
-- [ ] 🟥 Slide presentation
+- [x] 🟩 Cover image — done 2026-09-03, `cover.svg` (source) + `cover.png` (1200×630, rendered via headless Chrome — `file://` URLs broke on the spaces in this project's path, served locally over HTTP instead)
+- [ ] 🟨 Video presentation — Claude cannot record/generate video; wrote `VIDEO_SCRIPT.md` (full beat-by-beat script + recording notes) for Adwik to record by hand
+- [x] 🟩 Slide presentation — done 2026-09-03, `slides/index.html` (8 slides, same visual identity as the cover image) + `slides/deck.pdf` (exported via headless Chrome, verified 8 pages at consistent 16:9)
 - [x] 🟩 Final GitHub repo polish (public, README) — done 2026-09-03, `README.md` added (overview, architecture, project structure, run instructions)
 - [ ] 🟥 Submit demo URL (Netlify) — not a hard challenge requirement per challenge-and-requirements.md, first thing to cut if time runs out
 - [ ] 🟥 Submit the final Alpaca paper trading account ID — account ready (`PA3WNF5ZV8W3`), submission itself not yet filed
-- [ ] 🟥 (Optional) up to 5 Build-in-Public social post links (X/LinkedIn, tagging @lablabai + @AlpacaHQ)
+- [ ] 🟨 (Optional) up to 5 Build-in-Public social post links (X/LinkedIn, tagging @lablabai + @AlpacaHQ) — 5 drafts written in `SOCIAL_POSTS.md`; Claude does not post on the user's behalf, actual publishing (and the resulting links) is Adwik's to do
 - [ ] 🟥 Submit before **Sep 4, 8:30 PM IST**
 
 ## Reference repos to review before writing strategy code
