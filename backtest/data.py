@@ -11,15 +11,25 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).resolve().parent.parent / ".env.local")
 
-ALPACA_API_KEY = os.environ["ALPACA_API_KEY"]
-ALPACA_SECRET_KEY = os.environ["ALPACA_SECRET_KEY"]
-
 TRADING_BASE = "https://paper-api.alpaca.markets"
 DATA_BASE = "https://data.alpaca.markets"
-HEADERS = {
-    "APCA-API-KEY-ID": ALPACA_API_KEY,
-    "APCA-API-SECRET-KEY": ALPACA_SECRET_KEY,
-}
+
+
+def _headers() -> dict:
+    """Lazy (not module-level) so importing this module - e.g. transitively, for DATA_BASE/
+    TRADING_BASE or a single pure function like delta_offset_pct - never requires
+    ALPACA_API_KEY/ALPACA_SECRET_KEY (this project's dev-account credentials) to be present.
+    Real callers of the functions below still need them at call time, same as before - this only
+    defers *when* they're read. Bug found 2026-09-03: the live agent's GitHub Actions workflow
+    deliberately sets only the submission account's credentials (not dev's), and
+    agent/governor.py transitively imports this module via backtest.strategies.common just for
+    delta_offset_pct - the old module-level read made that import fail in CI with a KeyError on
+    ALPACA_API_KEY despite the agent never calling any function that needs it."""
+    return {
+        "APCA-API-KEY-ID": os.environ["ALPACA_API_KEY"],
+        "APCA-API-SECRET-KEY": os.environ["ALPACA_SECRET_KEY"],
+    }
+
 
 CACHE_DIR = Path(__file__).resolve().parent / ".cache"
 CACHE_DIR.mkdir(exist_ok=True)
@@ -50,7 +60,7 @@ def get_equity_bars(symbol: str, start: str, end: str, timeframe: str = "1Day") 
         params = {"timeframe": timeframe, "start": start, "end": end, "limit": 1000, "feed": "iex"}
         if page_token:
             params["page_token"] = page_token
-        r = requests.get(f"{DATA_BASE}/v2/stocks/{symbol}/bars", headers=HEADERS, params=params)
+        r = requests.get(f"{DATA_BASE}/v2/stocks/{symbol}/bars", headers=_headers(), params=params)
         r.raise_for_status()
         d = r.json()
         bars.extend(d.get("bars", []))
@@ -87,7 +97,7 @@ def get_option_bars(symbols: list[str], start: str, end: str, timeframe: str = "
             }
             if page_token:
                 params["page_token"] = page_token
-            r = requests.get(f"{DATA_BASE}/v1beta1/options/bars", headers=HEADERS, params=params)
+            r = requests.get(f"{DATA_BASE}/v1beta1/options/bars", headers=_headers(), params=params)
             r.raise_for_status()
             d = r.json()
             for sym, bars in d.get("bars", {}).items():
@@ -122,7 +132,7 @@ def get_option_chain_snapshot(underlying: str, expiration_gte: str = None, expir
         if page_token:
             params["page_token"] = page_token
         r = requests.get(
-            f"{DATA_BASE}/v1beta1/options/snapshots/{underlying}", headers=HEADERS, params=params
+            f"{DATA_BASE}/v1beta1/options/snapshots/{underlying}", headers=_headers(), params=params
         )
         r.raise_for_status()
         d = r.json()
@@ -142,6 +152,6 @@ def construct_option_symbol(underlying: str, expiry: date, right: str, strike: f
 
 
 def get_latest_trade_price(symbol: str) -> float:
-    r = requests.get(f"{DATA_BASE}/v2/stocks/{symbol}/trades/latest", headers=HEADERS)
+    r = requests.get(f"{DATA_BASE}/v2/stocks/{symbol}/trades/latest", headers=_headers())
     r.raise_for_status()
     return r.json()["trade"]["p"]

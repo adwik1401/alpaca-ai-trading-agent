@@ -10,7 +10,7 @@ from zoneinfo import ZoneInfo
 
 import requests
 
-from backtest.data import HEADERS, DATA_BASE, TRADING_BASE  # reuse auth/base URLs
+from backtest.data import _headers, DATA_BASE, TRADING_BASE  # reuse auth/base URLs (lazy headers)
 
 ET = ZoneInfo("America/New_York")
 CACHE_DIR = Path(__file__).resolve().parent / ".cache"
@@ -45,7 +45,7 @@ def get_trading_days(start: date, end: date) -> list[date]:
 
     r = requests.get(
         f"{DATA_BASE}/v2/stocks/SPY/bars",
-        headers=HEADERS,
+        headers=_headers(),
         params={"timeframe": "1Day", "start": start.isoformat(), "end": end.isoformat(), "limit": 1000, "feed": "iex"},
     )
     r.raise_for_status()
@@ -63,7 +63,7 @@ def get_intraday_equity_bars(day: date, timeframe: str = "5Min") -> list[dict]:
     start, end = market_open_close_utc(day)
     r = requests.get(
         f"{DATA_BASE}/v2/stocks/SPY/bars",
-        headers=HEADERS,
+        headers=_headers(),
         params={"timeframe": timeframe, "start": start, "end": end, "limit": 200, "feed": "iex"},
     )
     r.raise_for_status()
@@ -84,7 +84,7 @@ def get_intraday_option_bars(symbols: list[str], day: date, timeframe: str = "5M
     result = {s: [] for s in symbols}
     r = requests.get(
         f"{DATA_BASE}/v1beta1/options/bars",
-        headers=HEADERS,
+        headers=_headers(),
         params={"symbols": ",".join(symbols), "timeframe": timeframe, "start": start, "end": end, "limit": 10000},
     )
     r.raise_for_status()
