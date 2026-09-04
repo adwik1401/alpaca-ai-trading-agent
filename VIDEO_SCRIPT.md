@@ -1,17 +1,31 @@
 # Video Presentation Script
 
-**Update**: this script became a real video — `video/presentation.mp4` (2:34, 8 scenes, one per
-slide in `slides/index.html`). Built from this exact narration text via `ffmpeg`'s `libflite`
-text-to-speech filter (synthesized voiceover per scene) composited over a screenshot of each
-slide, then concatenated. No manual recording was needed in the end. The beat-by-beat breakdown
-below is kept as the source-of-truth script the real video was generated from, and as a
-reference if you want to re-record a version with your own voice instead.
+**Update 2 (current)**: `video/presentation.mp4` (2:33) is now a proper animated HyperFrames
+composition — 8 scenes with real motion (waterfall text cascades, spring-pop card entrances,
+count-up stat animations, staggered table/list reveals), not static slide screenshots, and real
+ElevenLabs voiceover (user-generated from this exact script) instead of synthesized TTS. Source
+composition: `video/hyperframes-source/index.html` (GSAP timeline, one scene per `.clip`,
+`data-start`/`data-duration` per scene computed from each narration file's real duration + a
+~0.5s pad) and `video/hyperframes-source/assets/audio/narration_1.mp3` .. `narration_8.mp3`.
 
-Regenerate it: for each scene, `ffmpeg -f lavfi -i "flite=text='...'" narration_N.wav` (avoid `:`
-and `'` inside the text — the filtergraph parser treats them as syntax), screenshot the matching
-slide via `slides/index.html?slide=N`, then `ffmpeg -loop 1 -i slide_N.png -i narration_N.wav
--c:v libx264 -tune stillimage -c:a aac -shortest segment_N.mp4` per scene and concatenate with
-the `concat` demuxer.
+Regenerate/re-render: `npx hyperframes init <name> --example blank --resolution landscape
+--non-interactive`, copy `index.html` and `assets/audio/` in, `npx hyperframes check` (lint +
+runtime + layout + motion + contrast), `npx hyperframes preview --background` to review, then
+`npx hyperframes render --quality high --output out.mp4`. If new narration audio has different
+durations, each scene's `data-start`/`data-duration` (on both the `.clip` div and the matching
+`const S = ...` in the timeline script) needs recomputing to the new cumulative durations — see
+the git history for the retiming approach used when swapping flite audio for ElevenLabs audio.
+
+**Update 1 (superseded)**: the first version used `ffmpeg`'s `libflite` TTS composited over static
+slide screenshots (`slides/index.html`) — kept working but replaced once real narration + real
+motion were available. That process: `ffmpeg -f lavfi -i "flite=text='...'" narration_N.wav` per
+scene (avoid `:` and `'` inside the text — the filtergraph parser treats them as syntax),
+screenshot via `slides/index.html?slide=N`, `ffmpeg -loop 1 -i slide_N.png -i narration_N.wav -c:v
+libx264 -tune stillimage -c:a aac -shortest segment_N.mp4` per scene, concatenate with the
+`concat` demuxer.
+
+The beat-by-beat breakdown below is the source-of-truth narration script both versions were built
+from.
 
 ---
 

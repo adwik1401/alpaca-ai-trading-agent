@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #0d0d0d;
+      }
+      body {
+        font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+        color: #fff;
+      }
+
+      :root {
+        --bg: #0d0d0d;
+        --surface: #1a1a19;
+        --text-primary: #ffffff;
+        --text-secondary: #c3c2b7;
+        --text-muted: #898781;
+        --border: rgba(255, 255, 255, 0.1);
+        --blue: #3987e5;
+      }
+
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 1920px;
+        height: 1080px;
+        background: var(--bg);
+        padding: 108px;
+      }
+
+      .kicker {
+        color: var(--blue);
+        font-size: 23px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        opacity: 0;
+      }
+      h1.scene-title {
+        font-size: 96px;
+        margin: 0 0 30px;
+        line-height: 1.12;
+      }
+      h1.scene-title span.word {
+        display: inline-block;
+        opacity: 0;
+        margin-right: 24px;
+      }
+      h2.scene-title {
+        font-size: 54px;
+        margin: 0 0 42px;
+      }
+      h2.scene-title span.word {
+        display: inline-block;
+        opacity: 0;
+        margin-right: 18px;
+      }
+      p.lead {
+        font-size: 33px;
+        color: var(--text-secondary);
+        line-height: 1.5;
+        max-width: 1350px;
+        opacity: 0;
+      }
+
+      .box {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 40px;
+        opacity: 0;
+        transform-origin: 50% 50%;
+        will-change: transform;
+      }
+      .box h3 {
+        margin: 0 0 14px;
+        font-size: 27px;
+        color: var(--blue);
+      }
+      .box p {
+        margin: 0;
+        font-size: 22px;
+        color: var(--text-secondary);
+        line-height: 1.55;
+      }
+
+      .pipeline {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        margin-top: 60px;
+      }
+      .pipeline .box {
+        flex: 1;
+      }
+      .pipeline .arrow {
+        color: var(--text-muted);
+        font-size: 42px;
+        padding: 0 24px;
+        opacity: 0;
+      }
+
+      .grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 42px;
+        margin-top: 46px;
+      }
+      .grid3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 36px;
+        margin-top: 54px;
+      }
+
+      .counter-wrap {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+        width: 100%;
+      }
+      .counter {
+        font-variant-numeric: tabular-nums;
+        display: inline-block;
+        font-size: 63px;
+        font-weight: 700;
+        color: var(--blue);
+        transform-origin: center center;
+        transform: scale(0);
+      }
+      .counter-suffix {
+        font-size: 63px;
+        font-weight: 700;
+        color: var(--blue);
+        opacity: 0;
+        margin-left: 4px;
+      }
+      .counter-label {
+        font-size: 21px;
+        color: var(--text-muted);
+        margin-top: 6px;
+        opacity: 0;
+      }
+      .stat-box {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 40px;
+      }
+
+      ul.plain {
+        list-style: none;
+        padding: 0;
+        margin: 40px 0 0;
+        max-width: 1600px;
+      }
+      ul.plain li {
+        font-size: 30px;
+        color: var(--text-secondary);
+        padding: 18px 0 18px 42px;
+        border-bottom: 1px solid var(--border);
+        position: relative;
+        opacity: 0;
+      }
+      ul.plain li::before {
+        content: "\2192";
+        position: absolute;
+        left: 0;
+        color: var(--blue);
+      }
+      ul.plain li strong {
+        color: var(--text-primary);
+      }
+
+      table.scenetable {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 40px;
+        font-size: 27px;
+      }
+      table.scenetable th {
+        text-align: left;
+        color: var(--text-muted);
+        font-size: 19px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--border);
+      }
+      table.scenetable td {
+        padding: 20px 16px;
+        border-bottom: 1px solid var(--border);
+      }
+      tr.datarow {
+        opacity: 0;
+      }
+
+      .center {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 22px;
+        border-radius: 999px;
+        font-size: 21px;
+        font-weight: 600;
+        background: color-mix(in srgb, #0ca30c 18%, transparent);
+        color: #4ade4a;
+        opacity: 0;
+        transform-origin: 0% 50%;
+      }
+      .badge .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #4ade4a;
+      }
+      .badge-sub {
+        color: var(--text-muted);
+        font-size: 22px;
+        opacity: 0;
+      }
+
+      /* iron-condor payoff-diagram motif for the title scene */
+      .payoff {
+        position: absolute;
+        right: 108px;
+        bottom: 108px;
+        width: 760px;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-12qj" id="root" data-composition-id="main" data-start="0" data-duration="153" data-width="1920" data-height="1080">
+      <!-- ============ SCENE 1: TITLE (0 - 14.0) ============ -->
+      <div data-hf-id="hf-19kx" class="clip scene" data-start="0" data-duration="14.6" data-track-index="1" id="scene1">
+        <div data-hf-id="hf-0oij" class="center">
+          <div data-hf-id="hf-3zj5" class="kicker" id="s1-kicker">ALPACA AI TRADING AGENTS HACKATHON</div>
+          <h1 data-hf-id="hf-36uo" class="scene-title" id="s1-title">
+            <span data-hf-id="hf-ul2f" class="word">Alpaca</span> <span data-hf-id="hf-fry3" class="word">AI</span>
+            <span data-hf-id="hf-6fbi" class="word">Trading</span> <span data-hf-id="hf-5mfe" class="word">Agent</span>
+          </h1>
+          <p data-hf-id="hf-f78e" class="lead" id="s1-lead">
+            An autonomous options trading agent that runs unattended, trades real (paper) SPY iron
+            condors on a backtested volatility signal, and logs every decision it makes.
+          </p>
+          <div data-hf-id="hf-mgsk" style="margin-top: 48px; display: flex; gap: 20px; align-items: center">
+            <span data-hf-id="hf-h5hp" class="badge" id="s1-badge"><span data-hf-id="hf-9gry" class="dot"></span>Live on GitHub Actions cron</span>
+            <span data-hf-id="hf-p8fi" class="badge-sub" id="s1-badgesub">Account PA3WNF5ZV8W3 · $100,000 paper</span>
+          </div>
+        </div>
+        <svg data-hf-id="hf-sp4i" class="payoff" id="s1-payoff" viewBox="0 0 760 260" xmlns="http://www.w3.org/2000/svg">
+          <line data-hf-id="hf-ah40" x1="0" y1="200" x2="760" y2="200" stroke="#383835" stroke-width="1" />
+          <path data-hf-id="hf-342t" id="s1-payoff-path" d="M 0 240 L 160 240 L 280 120 L 480 120 L 600 240 L 760 240" fill="none" stroke="#3987e5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <audio data-hf-id="hf-kugy" id="narration-1" src="assets/audio/narration_1.mp3" data-start="0.4"></audio>
+
+      <!-- ============ SCENE 2: ARCHITECTURE (14.0 - 43.2) ============ -->
+      <div data-hf-id="hf-5b4t" class="clip scene" data-start="14.6" data-duration="34.3" data-track-index="1" id="scene2">
+        <div data-hf-id="hf-jpdj" class="kicker" id="s2-kicker">ARCHITECTURE</div>
+        <h2 data-hf-id="hf-djy8" class="scene-title" id="s2-title">
+          <span data-hf-id="hf-qtx9" class="word">Analyst</span> <span data-hf-id="hf-4ojd" class="word">→</span>
+          <span data-hf-id="hf-g10n" class="word">Governor</span> <span data-hf-id="hf-yex9" class="word">→</span>
+          <span data-hf-id="hf-v8kw" class="word">Executor</span>
+        </h2>
+        <p data-hf-id="hf-8xff" class="lead" id="s2-lead">
+          Each layer has a strictly bounded role. The LLM never touches option math or picks a strike;
+          no order reaches the broker without deterministic validation.
+        </p>
+        <div data-hf-id="hf-vcte" class="pipeline">
+          <div data-hf-id="hf-c4hv" class="box" id="s2-box1">
+            <h3 data-hf-id="hf-uc82">Analyst</h3>
+            <p data-hf-id="hf-lz46">Featherless LLM (DeepSeek-V3.2). Bull/bear/risk debate. <strong data-hf-id="hf-sajd">Advisory only</strong> —
+              logged for audit value, never gates a trade.</p>
+          </div>
+          <div data-hf-id="hf-hdt3" class="arrow" id="s2-arrow1">→</div>
+          <div data-hf-id="hf-3gm0" class="box" id="s2-box2">
+            <h3 data-hf-id="hf-zxja">Governor</h3>
+            <p data-hf-id="hf-fbdc">Deterministic Python. Black-Scholes IV/delta, real strike selection from the live chain,
+              builds the exact order plan.</p>
+          </div>
+          <div data-hf-id="hf-oh36" class="arrow" id="s2-arrow2">→</div>
+          <div data-hf-id="hf-489t" class="box" id="s2-box3">
+            <h3 data-hf-id="hf-5czt">Executor</h3>
+            <p data-hf-id="hf-gp37">Pydantic-validated order plan → Alpaca CLI → one atomic multi-leg (MLEG) order.
+              All legs fill together, or none do.</p>
+          </div>
+        </div>
+      </div>
+      <audio data-hf-id="hf-50x7" id="narration-2" src="assets/audio/narration_2.mp3" data-start="15.0"></audio>
+
+      <!-- ============ SCENE 3: STRATEGY (43.2 - 59.5) ============ -->
+      <div data-hf-id="hf-6imr" class="clip scene" data-start="48.9" data-duration="20.1" data-track-index="1" id="scene3">
+        <div data-hf-id="hf-alby" class="kicker" id="s3-kicker">STRATEGY</div>
+        <h2 data-hf-id="hf-fsqx" class="scene-title" id="s3-title">
+          <span data-hf-id="hf-7bav" class="word">Hybrid</span> <span data-hf-id="hf-w2nz" class="word">VRP</span> <span data-hf-id="hf-ynv2" class="word">+</span>
+          <span data-hf-id="hf-juyb" class="word">Skew</span> <span data-hf-id="hf-gsx3" class="word">Iron</span> <span data-hf-id="hf-wk7s" class="word">Condor</span>
+        </h2>
+        <p data-hf-id="hf-75bi" class="lead" id="s3-lead">
+          Market-neutral, defined-risk. Sell a weekly SPY iron condor only when two independent
+          real-data signals agree.
+        </p>
+        <div data-hf-id="hf-6ldu" class="grid2">
+          <div data-hf-id="hf-lag0" class="box" id="s3-box1">
+            <h3 data-hf-id="hf-d3d7">Volatility risk premium</h3>
+            <p data-hf-id="hf-hwgo">Enter only when implied vol (Black-Scholes, backed out of real option prices) exceeds
+              20-day realized vol by ≥2 points — options are priced richer than actual
+              movement justifies.</p>
+          </div>
+          <div data-hf-id="hf-tybv" class="box" id="s3-box2">
+            <h3 data-hf-id="hf-gfcp">Skew regime filter</h3>
+            <p data-hf-id="hf-0tzm">Enter only when put-call skew isn’t elevated vs. its own recent history —
+              avoids selling premium into a market already pricing in unusual fear.</p>
+          </div>
+        </div>
+      </div>
+      <audio data-hf-id="hf-33bv" id="narration-3" src="assets/audio/narration_3.mp3" data-start="49.3"></audio>
+
+      <!-- ============ SCENE 4: BACKTEST RESULTS (59.5 - 78.6) ============ -->
+      <div data-hf-id="hf-slj9" class="clip scene" data-start="69" data-duration="20.1" data-track-index="1" id="scene4">
+        <div data-hf-id="hf-tyxl" class="kicker" id="s4-kicker">VALIDATION</div>
+        <h2 data-hf-id="hf-iro6" class="scene-title" id="s4-title">
+          <span data-hf-id="hf-m0q5" class="word">52-week</span> <span data-hf-id="hf-8qvy" class="word">backtest,</span>
+          <span data-hf-id="hf-gajd" class="word">real</span> <span data-hf-id="hf-yvuv" class="word">Alpaca</span>
+          <span data-hf-id="hf-my5p" class="word">historical</span> <span data-hf-id="hf-0kgx" class="word">data</span>
+        </h2>
+        <div data-hf-id="hf-ajhv" class="grid3">
+          <div data-hf-id="hf-inpa" class="stat-box">
+            <div data-hf-id="hf-n1k9" class="counter-wrap"><span data-hf-id="hf-xkj3" class="counter" id="s4-c1">0</span></div>
+            <div data-hf-id="hf-tocu" class="counter-label" id="s4-l1">SHARPE RATIO</div>
+          </div>
+          <div data-hf-id="hf-f2oy" class="stat-box">
+            <div data-hf-id="hf-w87x" class="counter-wrap"><span data-hf-id="hf-8v76" class="counter" id="s4-c2">0</span><span data-hf-id="hf-jrpg" class="counter-suffix" id="s4-suf2">%</span></div>
+            <div data-hf-id="hf-sce1" class="counter-label" id="s4-l2">WIN RATE</div>
+          </div>
+          <div data-hf-id="hf-fgzz" class="stat-box">
+            <div data-hf-id="hf-xf50" class="counter-wrap"><span data-hf-id="hf-5anp" class="counter" id="s4-c3">0</span><span data-hf-id="hf-5iwv" class="counter-suffix" id="s4-suf3">%</span></div>
+            <div data-hf-id="hf-0yos" class="counter-label" id="s4-l3">MAX DRAWDOWN</div>
+          </div>
+        </div>
+        <p data-hf-id="hf-ut4g" class="lead" id="s4-lead" style="margin-top: 44px">
+          SPY buy-and-hold returned +18.9% over the same window — expected, since this is a
+          market-neutral strategy, not a directional bet. The fair comparison is risk-adjusted return,
+          where it wins decisively.
+        </p>
+      </div>
+      <audio data-hf-id="hf-k6ib" id="narration-4" src="assets/audio/narration_4.mp3" data-start="69.4"></audio>
+
+      <!-- ============ SCENE 5: DUE DILIGENCE (78.6 - 97.6) ============ -->
+      <div data-hf-id="hf-tvmf" class="clip scene" data-start="89.1" data-duration="20" data-track-index="1" id="scene5">
+        <div data-hf-id="hf-xkuz" class="kicker" id="s5-kicker">DUE DILIGENCE</div>
+        <h2 data-hf-id="hf-dn93" class="scene-title" id="s5-title">
+          <span data-hf-id="hf-70an" class="word">4</span> <span data-hf-id="hf-3dpn" class="word">directional</span>
+          <span data-hf-id="hf-mnrv" class="word">alternatives,</span> <span data-hf-id="hf-qart" class="word">researched</span>
+          <span data-hf-id="hf-u9cq" class="word">and</span> <span data-hf-id="hf-8nez" class="word">rejected</span>
+        </h2>
+        <p data-hf-id="hf-dv68" class="lead" id="s5-lead">
+          Could something beat SPY’s raw return? Backtested a leveraged call diagonal, a bull
+          risk reversal, a call-spread barbell, and momentum verticals against real data.
+        </p>
+        <ul data-hf-id="hf-1cso" class="plain">
+          <li data-hf-id="hf-sk5y" id="s5-li1">None beat SPY on a risk-adjusted basis</li>
+          <li data-hf-id="hf-gtk3" id="s5-li2">
+            The top-ranked candidate (leveraged diagonal) was the <strong data-hf-id="hf-xcl5">worst</strong> performer once
+            tested for real — a normal pullback erased its “safe” cushion
+          </li>
+          <li data-hf-id="hf-b073" id="s5-li3">
+            Decision: stay market-neutral, let the edge come from selectivity, not leverage
+          </li>
+        </ul>
+      </div>
+      <audio data-hf-id="hf-aao2" id="narration-5" src="assets/audio/narration_5.mp3" data-start="89.5"></audio>
+
+      <!-- ============ SCENE 6: RISK GATES (97.6 - 114.7) ============ -->
+      <div data-hf-id="hf-itse" class="clip scene" data-start="109.1" data-duration="19.5" data-track-index="1" id="scene6">
+        <div data-hf-id="hf-wu42" class="kicker" id="s6-kicker">RISK MANAGEMENT</div>
+        <h2 data-hf-id="hf-lumc" class="scene-title" id="s6-title">
+          <span data-hf-id="hf-bvtc" class="word">Every</span> <span data-hf-id="hf-w839" class="word">trade</span> <span data-hf-id="hf-n6lc" class="word">passes</span>
+          <span data-hf-id="hf-vy0u" class="word">through</span> <span data-hf-id="hf-evo0" class="word">hard</span> <span data-hf-id="hf-ln1b" class="word">gates</span>
+          <span data-hf-id="hf-mc2t" class="word">first</span>
+        </h2>
+        <table data-hf-id="hf-559b" class="scenetable">
+          <tr data-hf-id="hf-p3r7"><th data-hf-id="hf-qu2e">Gate</th><th data-hf-id="hf-jdms">Threshold</th></tr>
+          <tr data-hf-id="hf-pesq" class="datarow" id="s6-r1"><td data-hf-id="hf-cytn">Risk per trade</td><td data-hf-id="hf-wxk2">≤2% of NAV</td></tr>
+          <tr data-hf-id="hf-j92x" class="datarow" id="s6-r2"><td data-hf-id="hf-sfmr">Margin utilization</td><td data-hf-id="hf-br8f">≤25% of buying power</td></tr>
+          <tr data-hf-id="hf-ihf4" class="datarow" id="s6-r3"><td data-hf-id="hf-w5nf">Intraday drawdown</td><td data-hf-id="hf-c78r">halt new entries at 3%</td></tr>
+          <tr data-hf-id="hf-ejb3" class="datarow" id="s6-r4"><td data-hf-id="hf-43px">Total drawdown</td><td data-hf-id="hf-x1wn">kill switch (liquidate everything) at 6%</td></tr>
+          <tr data-hf-id="hf-al72" class="datarow" id="s6-r5"><td data-hf-id="hf-l29j">Bid-ask spread</td><td data-hf-id="hf-0a55">reject any strike wider than 5% of mid</td></tr>
+          <tr data-hf-id="hf-6n31" class="datarow" id="s6-r6"><td data-hf-id="hf-e2ht">0-DTE positions</td><td data-hf-id="hf-tzgn">force-liquidated 3:30 PM ET</td></tr>
+        </table>
+      </div>
+      <audio data-hf-id="hf-rjvn" id="narration-6" src="assets/audio/narration_6.mp3" data-start="109.5"></audio>
+
+      <!-- ============ SCENE 7: INFRASTRUCTURE (114.7 - 131.6) ============ -->
+      <div data-hf-id="hf-hs7h" class="clip scene" data-start="128.6" data-duration="17.4" data-track-index="1" id="scene7">
+        <div data-hf-id="hf-m6ak" class="kicker" id="s7-kicker">INFRASTRUCTURE</div>
+        <h2 data-hf-id="hf-gpkt" class="scene-title" id="s7-title">
+          <span data-hf-id="hf-9lbr" class="word">Runs</span> <span data-hf-id="hf-tfdx" class="word">unattended,</span>
+          <span data-hf-id="hf-70f0" class="word">on</span> <span data-hf-id="hf-9zok" class="word">schedule,</span>
+          <span data-hf-id="hf-pbdx" class="word">with</span> <span data-hf-id="hf-d7bk" class="word">a</span>
+          <span data-hf-id="hf-a8fg" class="word">public</span> <span data-hf-id="hf-yyqs" class="word">audit</span> <span data-hf-id="hf-c7nr" class="word">trail</span>
+        </h2>
+        <div data-hf-id="hf-k7c6" class="grid2">
+          <div data-hf-id="hf-xvhg" class="box" id="s7-box1">
+            <h3 data-hf-id="hf-o30c">GitHub Actions cron</h3>
+            <p data-hf-id="hf-n6oy">Every 15 minutes during US market hours. Each cycle: check circuit breakers →
+              manage any open position → evaluate a new entry if flat and not halted.</p>
+          </div>
+          <div data-hf-id="hf-6jdb" class="box" id="s7-box2">
+            <h3 data-hf-id="hf-qu1s">Alpaca CLI</h3>
+            <p data-hf-id="hf-v7na">The only component that touches the broker. Built for agents/CI, not interactive use
+              — satisfies the “MCP or CLI” requirement by construction.</p>
+          </div>
+          <div data-hf-id="hf-2l9a" class="box" id="s7-box3">
+            <h3 data-hf-id="hf-wzut">Audit log</h3>
+            <p data-hf-id="hf-2yq4">One structured JSON event per decision, committed back to the repo every cycle —
+              including “nothing happened” cycles.</p>
+          </div>
+          <div data-hf-id="hf-dgqx" class="box" id="s7-box4">
+            <h3 data-hf-id="hf-0iu2">Live dashboard</h3>
+            <p data-hf-id="hf-tm5c">Static site reading the repo’s own audit log directly — P&amp;L, current
+              status, and the full decision feed.</p>
+          </div>
+        </div>
+      </div>
+      <audio data-hf-id="hf-whpg" id="narration-7" src="assets/audio/narration_7.mp3" data-start="129.0"></audio>
+
+      <!-- ============ SCENE 8: CLOSE (131.6 - 139.0) ============ -->
+      <div data-hf-id="hf-gwvf" class="clip scene" data-start="146" data-duration="7" data-track-index="1" id="scene8">
+        <div data-hf-id="hf-rdqz" class="center">
+          <div data-hf-id="hf-tf5r" class="kicker" id="s8-kicker">LINKS</div>
+          <h1 data-hf-id="hf-ir1d" class="scene-title" id="s8-title">
+            <span data-hf-id="hf-g3jb" class="word">Thank</span> <span data-hf-id="hf-3qww" class="word">you</span>
+          </h1>
+          <ul data-hf-id="hf-5l3g" class="plain" style="margin-top: 20px">
+            <li data-hf-id="hf-ka94" id="s8-li1">github.com/adwik1401/alpaca-ai-trading-agent</li>
+            <li data-hf-id="hf-dxvw" id="s8-li2">WRITEUP.md — full strategy, risk gate, and architecture detail</li>
+            <li data-hf-id="hf-aagy" id="s8-li3">dashboard/ — live audit trail and P&amp;L</li>
+          </ul>
+        </div>
+      </div>
+      <audio data-hf-id="hf-fk5i" id="narration-8" src="assets/audio/narration_8.mp3" data-start="146.4"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const F = 1 / 60;
+
+      // ---- reusable choreography helpers ----
+      // Waterfall word cascade (title.md rule): CSS opacity:0, tl.set (instant reveal + offset)
+      // then tl.to (whip to rest). Binary opacity via .set, never a fade.
+      function waterfallWords(selector, startAt, opts) {
+        opts = opts || {};
+        const yOff = opts.y || 46;
+        const dur = opts.dur || 0.15;
+        const overlap = opts.overlap != null ? opts.overlap : F;
+        let t = startAt;
+        gsap.utils.toArray(selector).forEach((el, i) => {
+          tl.set(el, { opacity: 1, y: yOff }, t);
+          tl.to(el, { y: 0, duration: dur, ease: "power4.out" }, t);
+          t = t + dur - overlap;
+        });
+        return t; // returns the time the cascade settles
+      }
+
+      // Simple fade-up for a single line (kicker / lead / label) — fromTo so t=0 is correct under seek.
+      function fadeUp(selector, at, opts) {
+        opts = opts || {};
+        tl.fromTo(
+          selector,
+          { opacity: 0, y: opts.y || 16 },
+          { opacity: 1, y: 0, duration: opts.dur || 0.5, ease: "power2.out" },
+          at,
+        );
+      }
+
+      // Spring-pop staggered group (spring-pop-entrance.md).
+      function popGroup(selector, groupAt, opts) {
+        opts = opts || {};
+        const stagger = opts.stagger || 0.08;
+        const dur = opts.dur || 0.55;
+        const yRise = opts.y != null ? opts.y : 24;
+        gsap.utils.toArray(selector).forEach((el, i) => {
+          tl.fromTo(
+            el,
+            { scale: 0, opacity: 0, y: yRise },
+            { scale: 1, opacity: 1, y: 0, duration: dur, ease: "power3.out" },
+            groupAt + i * stagger,
+          );
+        });
+      }
+
+      // ================= SCENE 1: TITLE (global 0) =================
+      (function () {
+        const S = 0;
+        fadeUp("#s1-kicker", S + 0.15, { dur: 0.5 });
+        const settleT = waterfallWords("#s1-title .word", S + 0.55, { y: 60, dur: 0.17 });
+        fadeUp("#s1-lead", settleT + 0.1, { dur: 0.6 });
+        tl.fromTo(
+          "#s1-badge",
+          { scale: 0, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" },
+          settleT + 0.7,
+        );
+        fadeUp("#s1-badgesub", settleT + 0.95, { dur: 0.5, y: 8 });
+        tl.fromTo("#s1-payoff", { opacity: 0 }, { opacity: 1, duration: 1.0, ease: "power2.out" }, S + 1.0);
+        // path draws in via stroke-dashoffset (svg-path-draw.md)
+        const pathEl = document.getElementById("s1-payoff-path");
+        const pathLen = pathEl.getTotalLength();
+        gsap.set(pathEl, { strokeDasharray: pathLen, strokeDashoffset: pathLen });
+        tl.to(pathEl, { strokeDashoffset: 0, duration: 1.6, ease: "power2.inOut" }, S + 1.2);
+      })();
+
+      // ================= SCENE 2: ARCHITECTURE (global 14.0) =================
+      (function () {
+        const S = 14.6;
+        fadeUp("#s2-kicker", S + 0.15, { dur: 0.5 });
+        const settleT = waterfallWords("#s2-title .word", S + 0.5, { y: 40, dur: 0.14 });
+        fadeUp("#s2-lead", settleT + 0.1, { dur: 0.6 });
+        const boxAt = settleT + 0.7;
+        popGroup("#s2-box1, #s2-box2, #s2-box3", boxAt, { stagger: 0.35, dur: 0.6, y: 30 });
+        fadeUp("#s2-arrow1", boxAt + 0.5, { dur: 0.4, y: 0 });
+        fadeUp("#s2-arrow2", boxAt + 0.85, { dur: 0.4, y: 0 });
+      })();
+
+      // ================= SCENE 3: STRATEGY (global 43.2) =================
+      (function () {
+        const S = 48.9;
+        fadeUp("#s3-kicker", S + 0.15, { dur: 0.5 });
+        const settleT = waterfallWords("#s3-title .word", S + 0.5, { y: 40, dur: 0.14 });
+        fadeUp("#s3-lead", settleT + 0.1, { dur: 0.6 });
+        popGroup("#s3-box1, #s3-box2", settleT + 0.7, { stagger: 0.15, dur: 0.6, y: 30 });
+      })();
+
+      // ================= SCENE 4: BACKTEST STATS (global 59.5) =================
+      (function () {
+        const S = 69;
+        fadeUp("#s4-kicker", S + 0.15, { dur: 0.5 });
+        const settleT = waterfallWords("#s4-title .word", S + 0.5, { y: 40, dur: 0.13 });
+
+        const countAt = settleT + 0.3;
+        const COUNT_DUR = 1.6;
+        const COUNT_EASE = "power3.out";
+
+        // Stat 1: Sharpe 2.53 (no suffix)
+        (function () {
+          const el = document.getElementById("s4-c1");
+          const state = { v: 0 };
+          tl.to(state, { v: 2.53, duration: COUNT_DUR, ease: COUNT_EASE, onUpdate: () => (el.textContent = state.v.toFixed(2)) }, countAt);
+          tl.fromTo(el, { scale: 0.5 }, { scale: 1, duration: COUNT_DUR, ease: COUNT_EASE }, countAt);
+        })();
+        // Stat 2: Win rate 90.9%
+        (function () {
+          const el = document.getElementById("s4-c2");
+          const state = { v: 0 };
+          tl.to(state, { v: 90.9, duration: COUNT_DUR, ease: COUNT_EASE, onUpdate: () => (el.textContent = state.v.toFixed(1)) }, countAt);
+          tl.fromTo(el, { scale: 0.5 }, { scale: 1, duration: COUNT_DUR, ease: COUNT_EASE }, countAt);
+          tl.fromTo("#s4-suf2", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.6)" }, countAt + COUNT_DUR);
+        })();
+        // Stat 3: Max drawdown 1.99%
+        (function () {
+          const el = document.getElementById("s4-c3");
+          const state = { v: 0 };
+          tl.to(state, { v: 1.99, duration: COUNT_DUR, ease: COUNT_EASE, onUpdate: () => (el.textContent = state.v.toFixed(2)) }, countAt);
+          tl.fromTo(el, { scale: 0.5 }, { scale: 1, duration: COUNT_DUR, ease: COUNT_EASE }, countAt);
+          tl.fromTo("#s4-suf3", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.6)" }, countAt + COUNT_DUR);
+        })();
+
+        fadeUp("#s4-l1, #s4-l2, #s4-l3", countAt - 0.2, { dur: 0.5, y: 10 });
+        fadeUp("#s4-lead", countAt + COUNT_DUR + 0.4, { dur: 0.6 });
+      })();
+
+      // ================= SCENE 5: DUE DILIGENCE (global 78.6) =================
+      (function () {
+        const S = 89.1;
+        fadeUp("#s5-kicker", S + 0.15, { dur: 0.5 });
+        const settleT = waterfallWords("#s5-title .word", S + 0.5, { y: 40, dur: 0.13 });
+        fadeUp("#s5-lead", settleT + 0.1, { dur: 0.6 });
+        const listT = settleT + 0.8;
+        tl.set("#s5-li1", { opacity: 1, y: 32 }, listT);
+        tl.to("#s5-li1", { y: 0, duration: 0.35, ease: "power3.out" }, listT);
+        tl.set("#s5-li2", { opacity: 1, y: 32 }, listT + 0.4);
+        tl.to("#s5-li2", { y: 0, duration: 0.35, ease: "power3.out" }, listT + 0.4);
+        tl.set("#s5-li3", { opacity: 1, y: 32 }, listT + 0.8);
+        tl.to("#s5-li3", { y: 0, duration: 0.35, ease: "power3.out" }, listT + 0.8);
+      })();
+
+      // ================= SCENE 6: RISK GATES (global 97.6) =================
+      (function () {
+        const S = 109.1;
+        fadeUp("#s6-kicker", S + 0.15, { dur: 0.5 });
+        const settleT = waterfallWords("#s6-title .word", S + 0.5, { y: 40, dur: 0.13 });
+        const rowT = settleT + 0.4;
+        ["#s6-r1", "#s6-r2", "#s6-r3", "#s6-r4", "#s6-r5", "#s6-r6"].forEach((sel, i) => {
+          const t = rowT + i * 0.28;
+          tl.set(sel, { opacity: 1, y: 20 }, t);
+          tl.to(sel, { y: 0, duration: 0.3, ease: "power3.out" }, t);
+        });
+      })();
+
+      // ================= SCENE 7: INFRASTRUCTURE (global 114.7) =================
+      (function () {
+        const S = 128.6;
+        fadeUp("#s7-kicker", S + 0.15, { dur: 0.5 });
+        const settleT = waterfallWords("#s7-title .word", S + 0.5, { y: 40, dur: 0.12 });
+        popGroup("#s7-box1, #s7-box2, #s7-box3, #s7-box4", settleT + 0.6, { stagger: 0.1, dur: 0.55, y: 26 });
+      })();
+
+      // ================= SCENE 8: CLOSE (global 131.6) =================
+      (function () {
+        const S = 146;
+        fadeUp("#s8-kicker", S + 0.15, { dur: 0.5 });
+        const settleT = waterfallWords("#s8-title .word", S + 0.5, { y: 60, dur: 0.16 });
+        const listT = settleT + 0.15;
+        tl.set("#s8-li1", { opacity: 1, y: 24 }, listT);
+        tl.to("#s8-li1", { y: 0, duration: 0.3, ease: "power3.out" }, listT);
+        tl.set("#s8-li2", { opacity: 1, y: 24 }, listT + 0.22);
+        tl.to("#s8-li2", { y: 0, duration: 0.3, ease: "power3.out" }, listT + 0.22);
+        tl.set("#s8-li3", { opacity: 1, y: 24 }, listT + 0.44);
+        tl.to("#s8-li3", { y: 0, duration: 0.3, ease: "power3.out" }, listT + 0.44);
+      })();
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
