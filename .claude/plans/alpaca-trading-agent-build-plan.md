@@ -1,10 +1,12 @@
 # Alpaca AI Trading Agent — Build Plan
 
-**Overall Progress:** `79%` (33/42 checkboxes)
+**Overall Progress:** `98%` (41/42 checkboxes) — **SUBMITTED** 2026-09-04, ahead of the Sep 4, 8:30 PM IST deadline
 
 > **2026-09-02 update: ~2.5 days remain** until the Sep 4, 8:30 PM IST deadline (was ~3.5 days when this plan was created). Phase 2 scope must stay tight — no gold-plating.
 >
 > **2026-09-03 update: ~1 day remains.** Critical path is now Step 7 (done) → Step 8 (GH Actions cron) → Phase 3 (dashboard, can be minimal) → Phase 4 (write-up, required). Everything else is cut if time runs short.
+>
+> **2026-09-04: Submitted.** GitHub repo, live cron agent, dashboard (GitHub Pages), write-up, cover image, slide deck, and an animated video presentation with real narration all shipped. The one open item (publishing the drafted social posts) is optional and left to Adwik post-submission.
 
 ## TLDR
 Backtest 4 candidate options strategies against real historical Alpaca options data, pick the strongest, then build and run a live autonomous agent on a fresh Alpaca paper account for the remaining runway of the Alpaca AI Trading Agents Hackathon (deadline: **Sep 4, 2026, 8:30 PM IST — only ~3.5 days from today, 2026-09-01**). Ship a public GitHub repo, a Netlify demo dashboard, and the full submission package.
@@ -36,16 +38,16 @@ Each code phase follows this portfolio's standard pipeline:
 - [x] 🟩 Generate Alpaca paper API key + secret, supply as env vars — verified working via `/v2/account`
 - [x] 🟩 Create a Featherless AI account + API key — verified working, 21,906 models available; picked `meta-llama/Meta-Llama-3.1-8B-Instruct` (fast/cheap tier) and `deepseek-ai/DeepSeek-V3.2` (heavy reasoning tier)
 - [x] 🟩 Confirm or create the public GitHub repository this project will live in — created 2026-09-03: **https://github.com/adwik1401/alpaca-ai-trading-agent** (public), initial commit pushed (77 files)
-- [ ] 🟥 Confirm Netlify account access (likely already available from other portfolio projects)
+- [x] 🟩 Confirm Netlify account access — superseded: only Netlify account authenticated locally was QCIN's work tenant (`sarpanch.samvaad@qcin.org`), deliberately not used for a personal submission; deployed the dashboard via GitHub Pages instead (zero new auth needed, already had repo write access) — see Phase 3.
 
 ### Phase 1 — Backtest Harness & Strategy Selection (today — hours, not days)
 > `[DELEGATING → Codex /run-code]` (scripts execute cleanly) → `[DELEGATING → Codex /review]` (sanity-check backtest math/logic)
 
 - [x] 🟩 **Step 1: Data access spike** — confirmed on 2026-09-01: Alpaca's historical option bars endpoint (`/v1beta1/options/bars`) returns real daily OHLCV for already-expired SPY contracts (full contract lifetime); SPY equity bars available back to Jan 2026 (8 months). Plan A (real historical option prices + our own Black-Scholes implied-vol inversion) confirmed viable — synthetic fallback not needed.
-- [ ] 🟥 **Step 2: Implement 3 candidate strategies as backtest modules** (SPY as default underlying) — dropped the 4th (event-driven earnings IV crush): SPY is an ETF with no earnings events, and early September is a dead zone for single-name earnings generally (Q2 reporters done in August, Q3 doesn't start until mid-October) — no valid catalyst to test against in our live window regardless.
+- [x] 🟩 **Step 2: Implement 3 candidate strategies as backtest modules** (SPY as default underlying) — dropped the 4th (event-driven earnings IV crush): SPY is an ETF with no earnings events, and early September is a dead zone for single-name earnings generally (Q2 reporters done in August, Q3 doesn't start until mid-October) — no valid catalyst to test against in our live window regardless.
   - [x] 🟩 (a) VRP / Iron Condor selling — sell 4-leg delta-neutral condors (3–7 DTE) when IV (backed out via Black-Scholes from real historical option prices) exceeds 20-day realized vol by a threshold. Implemented in `backtest/strategies/vrp_iron_condor.py`.
-  - [ ] 🟥 (b) **Renamed from "Dealer Gamma (GEX) positioning" to "Put-Call Skew Regime"** — confirmed 2026-09-01 that Alpaca's data API (bars and snapshots both) has no open-interest field anywhere, so true GEX (`OI × Gamma × Spot²`) cannot be computed at all, live or historical. Substituted a real, non-fabricated signal instead: put-call IV skew (steepening = hedging demand/fear, flattening = complacency), backed out the same way as the VRP signal, no OI required.
-  - [ ] 🟥 (c) Hybrid — VRP core with the skew regime as a filter that skips/resizes trades in unfavorable conditions (FRED net-liquidity overlay dropped for now — no FRED_API_KEY provided yet; can be added later if time permits)
+  - [x] 🟩 (b) **Renamed from "Dealer Gamma (GEX) positioning" to "Put-Call Skew Regime"** — confirmed 2026-09-01 that Alpaca's data API (bars and snapshots both) has no open-interest field anywhere, so true GEX (`OI × Gamma × Spot²`) cannot be computed at all, live or historical. Substituted a real, non-fabricated signal instead: put-call IV skew (steepening = hedging demand/fear, flattening = complacency), backed out the same way as the VRP signal, no OI required. Implemented in `backtest/strategies/skew_regime.py`.
+  - [x] 🟩 (c) Hybrid — VRP core with the skew regime as a filter that skips/resizes trades in unfavorable conditions (FRED net-liquidity overlay dropped for now — no FRED_API_KEY provided yet; can be added later if time permits). Implemented in `backtest/strategies/hybrid.py` — this is the live strategy (see Step 3).
 - [x] 🟩 **Step 3: Score & select** — Hybrid VRP+Skew wins on every risk-adjusted metric (win rate, profit factor, max drawdown, Sharpe) across two overlapping lookback windows (30wk and 34wk), while capturing nearly as much total P&L as the more trade-happy skew-only variant with about half the trades. Selected as the live strategy. Full numbers and caveats in `backtest-results.md`.
 
 ### Phase 2 — Live Autonomous Agent (bulk of remaining time)
@@ -83,7 +85,7 @@ Each code phase follows this portfolio's standard pipeline:
 > `[DELEGATING → Codex /run-code]` → `[DELEGATING → Codex /review]`
 
 - [x] 🟩 Netlify site reading the GitHub Actions job's output — P&L curve, current positions, audit trail — `dashboard/index.html` built 2026-09-03, static site fetching `agent/audit_log.jsonl` directly from the repo (no backend, no client-side API keys), styled to the dataviz skill's validated default palette
-- [ ] 🟨 Deploy and confirm the live demo URL — blocked on Adwik logging into a non-QCIN Netlify account (the CLI's default logged-in account is the work/QCIN one, deliberately not used for a personal submission); code is ready to deploy the moment that's done
+- [x] 🟩 Deploy and confirm the live demo URL — done 2026-09-04 via GitHub Pages instead of Netlify (avoided the QCIN-account conflict entirely, zero new auth needed): **https://adwik1401.github.io/alpaca-ai-trading-agent/dashboard/** — verified live (HTTP 200 + correct page title) before handing to Adwik
 
 ### Phase 4 — Submission Packaging (last day)
 > Claude-managed — content/logistics, not code
@@ -93,10 +95,10 @@ Each code phase follows this portfolio's standard pipeline:
 - [x] 🟩 Video presentation — done 2026-09-03, superseded 2026-09-04. First pass: `video/presentation.mp4` (2:34, 8 static-slide scenes) via `ffmpeg`'s `libflite` TTS composited over slide screenshots. User flagged the flite voice as bad and generated real ElevenLabs narration; also asked to rebuild via `/hyperframes-animation` for real motion instead of static slides. Rebuilt as a genuine 8-scene GSAP-animated HyperFrames composition (waterfall text cascades, spring-pop card entrances, count-up stat animations, staggered table/list reveals) with the ElevenLabs voiceover - `npx hyperframes check` passed clean (0 errors, contrast checks passing) both before and after retiming to the new audio's real durations. One real diagnostic moment: user reported a black canvas in Studio's live preview; proved via the deterministic `snapshot` CLI path (bypasses Studio's live player) that the composition itself rendered correctly at that exact timestamp - a Studio-live-view-specific hiccup, not a composition bug. Final render verified (153.0s exact, real audio, `test -s` + `ffprobe` + a visual spot-check). Source composition preserved at `video/hyperframes-source/` for reproducibility.
 - [x] 🟩 Slide presentation — done 2026-09-03, `slides/index.html` (8 slides, same visual identity as the cover image) + `slides/deck.pdf` (exported via headless Chrome, verified 8 pages at consistent 16:9)
 - [x] 🟩 Final GitHub repo polish (public, README) — done 2026-09-03, `README.md` added (overview, architecture, project structure, run instructions)
-- [ ] 🟥 Submit demo URL (Netlify) — not a hard challenge requirement per challenge-and-requirements.md, first thing to cut if time runs out
-- [ ] 🟥 Submit the final Alpaca paper trading account ID — account ready (`PA3WNF5ZV8W3`), submission itself not yet filed
-- [ ] 🟨 (Optional) up to 5 Build-in-Public social post links (X/LinkedIn, tagging @lablabai + @AlpacaHQ) — 5 drafts written in `SOCIAL_POSTS.md`; Claude does not post on the user's behalf, actual publishing (and the resulting links) is Adwik's to do
-- [ ] 🟥 Submit before **Sep 4, 8:30 PM IST**
+- [x] 🟩 Submit demo URL — done, GitHub Pages URL above filled into the LabLab submission form
+- [x] 🟩 Submit the final Alpaca paper trading account ID — `PA3WNF5ZV8W3` filled into the submission form
+- [ ] 🟨 (Optional) up to 5 Build-in-Public social post links (X/LinkedIn, tagging @lablabai + @AlpacaHQ) — 5 drafts written in `SOCIAL_POSTS.md`; Claude does not post on the user's behalf. Left for Adwik post-submission if desired — not required for the submission itself
+- [x] 🟩 **Submitted before Sep 4, 8:30 PM IST deadline** — confirmed by Adwik 2026-09-04
 
 ## Reference repos to review before writing strategy code
 - [github.com/alpacahq/options-wheel](https://github.com/alpacahq/options-wheel) — config-driven strategy runner, structured JSON logging pattern
