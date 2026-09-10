@@ -47,3 +47,6 @@
 {"timestamp": "2026-09-10T16:45:23.169472+00:00", "event": "position_status", "expiry": "2026-09-10", "entry_credit": 775.0, "current_value": 720.0, "captured_pct": 0.07096774193548387, "loss_multiple": 0}
 {"timestamp": "2026-09-10T19:17:39.770270+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.0}
 {"timestamp": "2026-09-10T19:17:39.961675+00:00", "event": "position_status", "expiry": "2026-09-10", "entry_credit": 775.0, "current_value": 1220.0, "captured_pct": -0.5741935483870968, "loss_multiple": 0.5741935483870968}
+{"timestamp": "2026-09-10T21:43:31.580888+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.0}
+{"timestamp": "2026-09-10T21:43:31.615554+00:00", "event": "zero_dte_liquidation", "expiry": "2026-09-10", "positions": 2}
+{"timestamp": "2026-09-10T21:43:31.676462+00:00", "event": "liquidation_result", "result": [{"body": {"notional": null, "time_in_force": "", "type": ""}, "status": 422, "symbol": "SPY260910C00766000"}, {"body": {"notional": null, "time_in_force": "", "type": ""}, "status": 422, "symbol": "SPY260910C00771000"}]}
