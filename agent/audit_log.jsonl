@@ -43,3 +43,5 @@
 {"timestamp": "2026-09-09T19:35:16.995465+00:00", "event": "position_status", "expiry": "2026-09-10", "entry_credit": 775.0, "current_value": 760.0, "captured_pct": 0.01935483870967742, "loss_multiple": 0}
 {"timestamp": "2026-09-09T21:57:06.718490+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.0}
 {"timestamp": "2026-09-09T21:57:06.750965+00:00", "event": "position_status", "expiry": "2026-09-10", "entry_credit": 775.0, "current_value": 760.0, "captured_pct": 0.01935483870967742, "loss_multiple": 0}
+{"timestamp": "2026-09-10T16:45:23.095148+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.0}
+{"timestamp": "2026-09-10T16:45:23.169472+00:00", "event": "position_status", "expiry": "2026-09-10", "entry_credit": 775.0, "current_value": 720.0, "captured_pct": 0.07096774193548387, "loss_multiple": 0}
