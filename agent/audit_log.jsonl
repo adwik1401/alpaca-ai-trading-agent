@@ -50,3 +50,5 @@
 {"timestamp": "2026-09-10T21:43:31.580888+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.0}
 {"timestamp": "2026-09-10T21:43:31.615554+00:00", "event": "zero_dte_liquidation", "expiry": "2026-09-10", "positions": 2}
 {"timestamp": "2026-09-10T21:43:31.676462+00:00", "event": "liquidation_result", "result": [{"body": {"notional": null, "time_in_force": "", "type": ""}, "status": 422, "symbol": "SPY260910C00766000"}, {"body": {"notional": null, "time_in_force": "", "type": ""}, "status": 422, "symbol": "SPY260910C00771000"}]}
+{"timestamp": "2026-09-11T16:50:39.858690+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.0023526858439457043}
+{"timestamp": "2026-09-11T16:50:43.276796+00:00", "event": "agent_error", "error": "504 Server Error: Gateway Timeout for url: https://data.alpaca.markets/v2/stocks/SPY/trades/latest", "type": "HTTPError"}
