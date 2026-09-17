@@ -78,3 +78,6 @@
 {"timestamp": "2026-09-16T20:17:45.663731+00:00", "event": "position_status", "expiry": "2026-09-17", "entry_credit": 2008.0, "current_value": 2024.0, "captured_pct": -0.00796812749003984, "loss_multiple": 0.00796812749003984}
 {"timestamp": "2026-09-16T23:05:00.945566+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.011458764146966222}
 {"timestamp": "2026-09-16T23:05:01.166582+00:00", "event": "position_status", "expiry": "2026-09-17", "entry_credit": 2008.0, "current_value": 2024.0, "captured_pct": -0.00796812749003984, "loss_multiple": 0.00796812749003984}
+{"timestamp": "2026-09-17T17:22:23.129679+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.011153099844709727}
+{"timestamp": "2026-09-17T17:22:23.376745+00:00", "event": "position_status", "expiry": "2026-09-17", "entry_credit": 2008.0, "current_value": 264.0, "captured_pct": 0.8685258964143426, "loss_multiple": 0}
+{"timestamp": "2026-09-17T17:22:23.376866+00:00", "event": "exit_triggered", "reason": "profit_take_50pct", "captured_pct": 0.8685258964143426}
