@@ -84,3 +84,6 @@
 {"timestamp": "2026-09-17T20:26:51.971818+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.011153099844709727}
 {"timestamp": "2026-09-17T20:26:52.199263+00:00", "event": "zero_dte_liquidation", "expiry": "2026-09-17", "positions": 2}
 {"timestamp": "2026-09-17T20:26:52.631458+00:00", "event": "liquidation_result", "result": [{"body": {"notional": null, "time_in_force": "", "type": ""}, "status": 422, "symbol": "SPY260917C00768000"}, {"body": {"notional": null, "time_in_force": "", "type": ""}, "status": 422, "symbol": "SPY260917P00752000"}]}
+{"timestamp": "2026-09-17T22:57:39.397350+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.011153099844709727}
+{"timestamp": "2026-09-17T22:57:39.598137+00:00", "event": "zero_dte_liquidation", "expiry": "2026-09-17", "positions": 2}
+{"timestamp": "2026-09-17T22:57:40.001414+00:00", "event": "liquidation_result", "result": [{"body": {"notional": null, "time_in_force": "", "type": ""}, "status": 422, "symbol": "SPY260917C00768000"}, {"body": {"notional": null, "time_in_force": "", "type": ""}, "status": 422, "symbol": "SPY260917P00752000"}]}
