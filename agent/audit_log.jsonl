@@ -121,3 +121,6 @@
 {"timestamp": "2026-09-24T17:38:50.081674+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.0}
 {"timestamp": "2026-09-24T17:38:50.322546+00:00", "event": "position_status", "expiry": "2026-09-24", "entry_credit": 470.00000000000006, "current_value": 100.00000000000001, "captured_pct": 0.7872340425531915, "loss_multiple": 0}
 {"timestamp": "2026-09-24T17:38:50.322685+00:00", "event": "exit_triggered", "reason": "profit_take_50pct", "captured_pct": 0.7872340425531915}
+{"timestamp": "2026-09-24T20:47:16.996540+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.0}
+{"timestamp": "2026-09-24T20:47:17.052315+00:00", "event": "zero_dte_liquidation", "expiry": "2026-09-24", "positions": 2}
+{"timestamp": "2026-09-24T20:47:17.120860+00:00", "event": "liquidation_result", "result": [{"body": {"notional": null, "time_in_force": "", "type": ""}, "status": 422, "symbol": "SPY260924C00777000"}, {"body": {"notional": null, "time_in_force": "", "type": ""}, "status": 422, "symbol": "SPY260924P00758000"}]}
