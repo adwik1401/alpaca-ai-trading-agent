@@ -199,3 +199,6 @@
 {"timestamp": "2026-10-14T17:41:35.880160+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.0}
 {"timestamp": "2026-10-14T17:41:35.949160+00:00", "event": "position_status", "expiry": "2026-10-14", "entry_credit": 615.0, "current_value": 2360.000000000001, "captured_pct": -2.837398373983741, "loss_multiple": 2.837398373983741}
 {"timestamp": "2026-10-14T17:41:35.949324+00:00", "event": "exit_triggered", "reason": "stop_loss_2x_credit", "loss_multiple": 2.837398373983741}
+{"timestamp": "2026-10-14T20:58:32.787505+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.0}
+{"timestamp": "2026-10-14T20:58:33.121036+00:00", "event": "zero_dte_liquidation", "expiry": "2026-10-14", "positions": 1}
+{"timestamp": "2026-10-14T20:58:33.547069+00:00", "event": "liquidation_result", "result": [{"body": {"notional": null, "time_in_force": "", "type": ""}, "status": 422, "symbol": "SPY261014C00787000"}]}
