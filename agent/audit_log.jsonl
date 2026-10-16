@@ -209,3 +209,5 @@
 {"timestamp": "2026-10-15T20:28:40.555671+00:00", "event": "position_status", "expiry": "2026-10-16", "entry_credit": 795.0, "current_value": 815.0, "captured_pct": -0.025157232704402517, "loss_multiple": 0.025157232704402517}
 {"timestamp": "2026-10-15T23:11:08.616388+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.021648933674664212}
 {"timestamp": "2026-10-15T23:11:08.652876+00:00", "event": "position_status", "expiry": "2026-10-16", "entry_credit": 795.0, "current_value": 815.0, "captured_pct": -0.025157232704402517, "loss_multiple": 0.025157232704402517}
+{"timestamp": "2026-10-16T17:04:52.879397+00:00", "event": "circuit_breaker_check", "action": "normal", "drawdown_pct": 0.021755820420059982}
+{"timestamp": "2026-10-16T17:04:53.234371+00:00", "event": "position_status", "expiry": "2026-10-16", "entry_credit": 795.0, "current_value": 905.0, "captured_pct": -0.13836477987421383, "loss_multiple": 0.13836477987421383}
