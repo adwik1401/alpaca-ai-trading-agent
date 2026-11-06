@@ -273,3 +273,5 @@
 {"timestamp": "2026-11-05T20:24:00.844071+00:00", "event": "entry_halted", "reason": "intraday_drawdown_breaker", "action": "halt_new_entries", "drawdown_pct": 0.03123389705540254}
 {"timestamp": "2026-11-06T01:00:27.041327+00:00", "event": "circuit_breaker_check", "action": "halt_new_entries", "drawdown_pct": 0.03123389705540254}
 {"timestamp": "2026-11-06T01:00:27.167116+00:00", "event": "entry_halted", "reason": "intraday_drawdown_breaker", "action": "halt_new_entries", "drawdown_pct": 0.03123389705540254}
+{"timestamp": "2026-11-06T19:45:57.686811+00:00", "event": "circuit_breaker_check", "action": "halt_new_entries", "drawdown_pct": 0.03123389705540254}
+{"timestamp": "2026-11-06T19:45:57.897137+00:00", "event": "entry_halted", "reason": "intraday_drawdown_breaker", "action": "halt_new_entries", "drawdown_pct": 0.03123389705540254}
